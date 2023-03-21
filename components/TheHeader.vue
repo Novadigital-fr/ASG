@@ -20,6 +20,19 @@
     </nav>
     <button><img src="" alt=""></button>
     </header>
+    <div class="navtel">
+      <ul>
+          <li class="link link--metis">
+            <NuxtLink to="/">Services</NuxtLink>
+          </li>
+          <li class="link link--metis">
+            <NuxtLink to="/notreblog">Expertise</NuxtLink>
+          </li>
+          <li class="link link--metis">
+            <NuxtLink to="/contact">Contact</NuxtLink>
+          </li>
+        </ul>
+    </div>
     </div>
 </template>
 
@@ -41,6 +54,25 @@ button{
 img{
   width: 60%;
 }
+.navtel{
+  display: none;
+}
 
+@media screen and (max-width: 767px) {
+    /* mobile */
+    header{
+      display: none;
+    }
+//     .navtel {
+//       display: flex;
+// flex-direction: row;
+// justify-content: center;
+// align-items: center;
+// background-color: var(--color-orange);
+// position: fixed;
+// top: 0;
+
+//     }
+  }
 
 </style>

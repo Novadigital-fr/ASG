@@ -23,14 +23,14 @@
           <div>
             <div class="service">
               <img
-                src="../assets/img/Services Icons/alexander_strategy_group_services_national_security_white.svg"
+                src="../assets/img/Services_Icons/alexander_strategy_group_services_national_security_white.svg"
                 alt=""
               />
               <p>National Security</p>
             </div>
             <div class="service">
               <img
-                src="../assets/img/Services Icons/alexander_strategy_group_services_urban_planning_white.svg"
+                src="../assets/img/Services_Icons/alexander_strategy_group_services_urban_planning_white.svg"
                 alt=""
               />
               <p>National Security</p>
@@ -39,14 +39,14 @@
           <div>
             <div class="service">
               <img
-                src="../assets/img/Services Icons/alexander_strategy_group_services_law_enforcement_white.svg"
+                src="../assets/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg"
                 alt=""
               />
               <p>National Security</p>
             </div>
             <div class="service">
               <img
-                src="../assets/img/Services Icons/alexander_strategy_group_services_city_resilience_white.svg"
+                src="../assets/img/Services_Icons/alexander_strategy_group_services_city_resilience_white.svg"
                 alt=""
               />
               <p>National Security</p>
@@ -54,7 +54,7 @@
           </div>
           <div class="service">
             <img
-              src="../assets/img/Services Icons/alexander_strategy_group_services_communication_white.svg"
+              src="../assets/img/Services_Icons/alexander_strategy_group_services_communication_white.svg"
               alt=""
             />
             <p>National Security</p>
@@ -111,4 +111,21 @@ footer {
 text-align: end;
   }
 }
+
+@media screen and (max-width: 767px) {
+    /* mobile */
+
+    .top{
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .bottom{
+      .left{
+        display: none;
+      }
+      .right{
+        text-align: center;
+      }
+    }
+  }
 </style>

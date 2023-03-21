@@ -1,7 +1,7 @@
 <template>
     <div class="home7" ref="container">
     <div  id="container" class="container" >
-    <section class="panel"></section>
+    <section class="tel panel"></section>
       <section class="panel">
         <div>
           <img src="../assets/img/Img_HP/alexander_strategy_group_world_interconnected.webp" alt="" />
@@ -113,16 +113,17 @@
       position: relative;
       z-index: 4;
       width: 100vw;
-      margin: 15vh 10vw 10vh 3vw;
+      margin: 15vh 5vw 10vh 3vw;
       font-weight: 300;
       overflow: hidden;
     }
     .panel div {
       margin: 0 4%;
     }
-    .panel img{
-    height: 100px;
-  }
+    .tel{
+      display: none;
+    }
+    
   }
   
   @media screen and (max-width: 767px) {

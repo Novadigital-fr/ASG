@@ -33,17 +33,19 @@
         <h2>
           Strategic guidance, implementation support, and tactical solutions
         </h2>
-        <img
-          src="../assets/img/Services Icons/alexander_strategy_group_services_law_enforcement_white.svg"
-          alt=""
-        />
-      </div>       
+       
         <p>
           Alexander Strategy Group provides strategic guidance, implementation
           support, and tactical solutions in security systems, training, human
           capital, and technology development. We are with you from planning to
           execution.
         </p>
+      </div>  
+      <img
+          src="../assets/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg"
+          alt=""
+        />     
+      
       </div>
     </div>
   </div>
@@ -53,7 +55,7 @@
 
 <style lang="scss" scoped>
 .full {
-  margin-top: 20vh;
+  margin: 20vh 0;
   margin-left: 12vw;
 }
 .top {
@@ -77,7 +79,10 @@
     display: flex;
     color: var(--color-text);
     margin: 5vh 0;
-
+    h2{
+          margin-bottom: 2vh;
+            
+        }
 
     .left{
         border-radius: 20px;
@@ -91,12 +96,73 @@
         border-radius: 20px;
         padding: 4%;
         margin: 0 5vw 0 2%;
+        display: flex;
+        flex-direction: row-reverse;
 
-        .textligne{
-            display: flex;
-            align-items: flex-start;
+        img{
+          width: 60%;
+          margin-right: 4vw;
         }
+
+        
 
     }
 }
+@media screen and (max-width: 767px) {
+    /* mobile */
+    .full {
+  margin: 20vh 0;
+  margin-left: 0;
+}
+  .top {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-secondaire);
+
+  .left img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .right {
+    padding: 2% 5%;
+    
+
+    p {
+      margin: 4vh 0;
+    }
+  }
+}
+.bottom{
+    display: flex;
+    flex-direction: column-reverse;
+    color: var(--color-text);
+    margin: 5vh 0;
+
+
+    .left{
+        border-radius: 20px;
+        background-color: var(--color-bg-dark);
+        padding: 15% 5%;
+        width: 100%;
+        margin-top: 5vh;
+
+    }
+    .right{
+        background-color: var(--color-orange);
+        border-radius: 20px;
+        padding: 15% 5%;
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+
+       img{
+        width: 20%;
+        margin-right: 0;
+text-align: center;
+       }
+
+    }
+}
+
+  }
 </style>
