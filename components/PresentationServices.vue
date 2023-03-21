@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="right">
-    <img src="../assets/img/Anim/Service Wheel.gif" alt="">
+    <img src="../assets/img/Anim/Service_Wheel.gif" alt="">
     </div>
   </div>
 </template>
