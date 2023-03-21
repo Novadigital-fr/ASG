@@ -1,7 +1,7 @@
 <template>
     <div>
     <header>
-    <img src="../assets/img/logos/alexander_strategy_group_Logo_vertical.png" alt="">
+    <!-- <img src="../assets/img/logos/alexander_strategy_group_Logo_vertical.png" alt=""> -->
     <nav>
         <ul>
           <li class="link link--metis">
