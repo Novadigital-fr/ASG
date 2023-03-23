@@ -74,7 +74,7 @@
 .service{
     background: rgba(32, 42, 53, 0.05);
     border-radius: 100px;  
-    padding: 2vh 4vw 2vh 2vw; 
+    padding: 2.5vh 4vw 2.5vh 2.5vw; 
     margin-bottom: 5vh;
     display: flex;
     // width: max-content;
@@ -113,27 +113,29 @@
 
 
     img{
-        width: 60%;
+        width: 50%;
 
     }
 }
 .left{
     width: 100%; 
     align-items: flex-start;
-    padding: 0 10vw;
+    padding: 0 5vw;
 
     h2{
         margin-bottom: 10vh;
         width: 100%;
+        text-align: center;
+
     }
     
 }
 .service{
-    padding: 2vh 4vw 2vh 4vw; 
+    padding: 2vh 6vw 2vh 6vw; 
     margin-bottom: 5vh;
     img{
         margin-right: 5vw;
-        width: 20%;
+        width: 15%;
     }
 
 }

@@ -7,8 +7,8 @@
             Alexander Strategy Group is carefully <br />
             crafting insights each month
           </h4>
-          <input type="your@email.com" />
-          <button>Sign up</button>
+          <input type="email" placeholder="your@email.com" />
+          <ButtonWhite text="Sign up" />
         </div>
 
         <div>
@@ -82,6 +82,18 @@ footer {
   justify-content: space-between;
   margin-bottom: 10vh;
 }
+input{
+  margin: 2vh 0;
+  width: 100%;
+  border-radius: 100px;
+  padding: 1.5vh 1vw;
+  border: none;
+  outline: none;
+  background-color: #FFFFFF66;
+  color: var(--color-text);
+  font-size: 20px;
+}
+
 .signup {
   display: flex;
   flex-direction: column;
@@ -125,6 +137,13 @@ text-align: end;
       }
       .right{
         text-align: center;
+      }
+    }
+
+    .signup{
+
+      h4{
+        margin: 5vh 0;
       }
     }
   }

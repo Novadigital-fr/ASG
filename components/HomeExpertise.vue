@@ -15,7 +15,7 @@
           Group provides national security and risk management advisory services
           to clients worldwide.
         </p>
-        <button>Expertise</button>
+        <Button text="Expertise" />
       </div>
     </div>
     <div class="bottom">
@@ -130,6 +130,7 @@
     p {
       margin: 4vh 0;
     }
+    
   }
 }
 .bottom{
@@ -156,9 +157,9 @@
         flex-direction: column-reverse;
 
        img{
-        width: 20%;
-        margin-right: 0;
-text-align: center;
+        width: 30%;
+        margin:0 auto 5vh auto;
+
        }
 
     }

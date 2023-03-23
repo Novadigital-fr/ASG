@@ -18,6 +18,7 @@
 
 html {
 	scroll-behavior: initial;
+	overflow-x: hidden;
 	-ms-overflow-style: none; /* cache les barres de défilement sur IE et Edge #FCF4DC*/
 	scrollbar-width: none; /* cache les barres de défilement sur Firefox*/
 }
@@ -133,7 +134,7 @@ p {
 		font-family: "Nexa";
 		font-style: normal;
 		font-weight: 700;
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 18px;
 	}
 	p {

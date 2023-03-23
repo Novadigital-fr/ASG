@@ -29,9 +29,13 @@
           </p>
         </div>
       </section>
-      
+      <div class="slider__progress-wrap js-progress-wrap">
+    <div class="slider__progress js-progress"></div>
+  </div>
     </div>
+   
     </div>
+   
 </template>
   
   <script setup>
@@ -45,7 +49,7 @@
   onMounted(() => {    
     const container = document.querySelector('.container');
   
-    if (window.matchMedia("(min-width: 1024px)").matches) {
+    // if (window.matchMedia("(min-width: 1024px)").matches) {
       let sections = gsap.utils.toArray(".panel");
   
       scrollTween.value = gsap.to(sections, {
@@ -59,7 +63,22 @@
           end: "+=2000",
         },
       });
-    }
+    
+
+
+    window.addEventListener('scroll', function() {
+    // Calcule la progression du défilement de la page horizontale
+    // const container = document.querySelector('.container');
+    const progressBar = document.querySelector('.slider__progress');
+
+    const scrollLeft = window.scrollY;
+    const totalWidth = document.documentElement.scrollWidth - document.documentElement.clientWidth;
+    const progress = scrollLeft / totalWidth;
+
+    // Met à jour la barre de progression
+    progressBar.style.transform = `scaleX(${progress - 0.5})` ;
+  });
+
   });
   
   onUnmounted(() => {
@@ -68,6 +87,8 @@
       scrollTween.value = null;
     }
   });
+
+  
   </script>
   
   <style  lang="scss" scoped>
@@ -93,7 +114,33 @@
     }
   }
   
+  .slider__progress-wrap {
+    left: 15vw;
+    bottom: 3.125vw;
+    width: 70vw;
+    overflow: hidden;
+    background-color: #D5512733;
+    transform-origin: left center;
+    opacity: 1;
+    visibility: inherit;
+}
 
+.slider__progress,
+.slider__progress-wrap {
+    display: block;
+    position: fixed;
+    height: 2px;
+    will-change: transform;
+}
+
+.slider__progress {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-orange);
+    transform: scaleX(0);
+    transform-origin: left center;
+}
  
   
   @media screen and (max-width: 1024px) {
@@ -128,6 +175,15 @@
   
   @media screen and (max-width: 767px) {
     /* mobile */
+    .panel {
+      position: relative;
+      z-index: 4;
+      width: 100vw;
+      margin: 10vh 5vw 10vh 3vw;
+      font-weight: 300;
+      overflow: hidden;
+    }
+   
   }
   </style>
   
