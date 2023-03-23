@@ -179,7 +179,7 @@
       position: relative;
       z-index: 4;
       width: 100vw;
-      margin: 10vh 5vw 10vh 3vw;
+      margin: 5vh 5vw 10vh 3vw;
       font-weight: 300;
       overflow: hidden;
     }
