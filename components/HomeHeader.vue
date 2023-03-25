@@ -12,7 +12,7 @@
 
 <style lang="scss" scoped>
 .full{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: linear-gradient(180deg, rgba(32, 42, 53, 0) 37.45%, rgba(32, 42, 53, 0.395797) 65.9%, rgba(32, 42, 53, 0.87) 100%), url('../assets/img/Img_HP/alexander_strategy_group_homepage.webp');
     display: flex;

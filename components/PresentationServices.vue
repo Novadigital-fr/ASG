@@ -5,42 +5,53 @@
         We offer a wide array of <span class="orange">strategic consulting services</span> supported by our
         team of advisors
       </h2>
+      
       <div class="sevices">
+        <NuxtLink to="/national_security">
         <div class="service">
-          <img src="../assets/img/Services_Icons/alexander_strategy_group_services_national_security.svg" alt="" />
+          <div class="image image1"></div>
           <div>
             <h3>National Security</h3>
             <p>Create secure environments</p>
           </div>
         </div>
+      </NuxtLink>
+        <NuxtLink to="/law_enforcement">
         <div class="service">
-          <img src="../assets/img/Services_Icons/alexander_strategy_group_services_law_enforcement.svg" alt="" />
+          <div class="image image2"></div>
           <div>
             <h3>Law Enforcement</h3>
             <p>Make communities safer</p>
           </div>
         </div>
+      </NuxtLink>
+      <NuxtLink to="/urban_planning">
         <div class="service">
-          <img src="../assets/img/Services_Icons/alexander_strategy_group_services_urban_planning.svg" alt="" />
+          <div class="image image3"></div>
           <div>
             <h3>Urban Planning</h3>
             <p>Thrive in the 21st century</p>
           </div>
         </div>
+      </NuxtLink>
+      <NuxtLink to="/city_resilience">
         <div class="service">
-          <img src="../assets/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg" alt="" />
+          <div class="image image4"></div>
           <div>
             <h3>City Resilience</h3>
             <p>Ready for the unexpected</p>
           </div>
         </div>
+      </NuxtLink>
+      <NuxtLink to="/communications">
         <div class="service">
-          <img src="../assets/img/Services_Icons/alexander_strategy_group_services_communication.svg" alt="" />
+          <div class="image image5"></div>
           <div>
             <h3>Communications</h3>
             <p>Get the message across</p>
           </div>
         </div>
+      </NuxtLink>
       </div>
     </div>
     <div class="right">
@@ -77,9 +88,55 @@
     padding: 2.5vh 4vw 2.5vh 2.5vw; 
     margin-bottom: 5vh;
     display: flex;
+    align-items: center;
     // width: max-content;
-    img{
-        margin-right: 2vw;
+    .image{
+      width: 50px;
+      height: 50px;
+      margin-right: 2vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .image1{
+      background-image: url('/img/Services_Icons/alexander_strategy_group_services_national_security.svg');
+    }
+    .image2{
+      background-image: url('/img/Services_Icons/alexander_strategy_group_services_law_enforcement.svg');
+    }
+    .image3{
+      background-image: url('/img/Services_Icons/alexander_strategy_group_services_urban_planning.svg');
+    }
+    .image4{
+      background-image: url('/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg');
+    }
+    .image5{
+      background-image: url('/img/Services_Icons/alexander_strategy_group_services_communication.svg');
+    }
+
+}
+.service:hover{
+  background: var(--color-orange);
+  transition: 0.5s;
+  color: var(--color-text);
+
+    .image{
+        rotate: 45deg;
+        transition:  1s;
+    }
+    .image1{
+      background-image: url('/img/Services_Icons/alexander_strategy_group_services_national_security_white.svg');
+    }
+    .image2{
+      background-image: url('/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg');
+    }
+    .image3{
+      background-image: url('/img/Services_Icons/alexander_strategy_group_services_urban_planning_white.svg');
+    }
+    .image4{
+      background-image: url('/img/Services_Icons/alexander_strategy_group_services_city_resilience_white.svg');
+    }
+    .image5{
+      background-image: url('/img/Services_Icons/alexander_strategy_group_services_communication_white.svg');
     }
 
 }

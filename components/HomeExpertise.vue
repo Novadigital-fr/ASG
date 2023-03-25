@@ -2,10 +2,10 @@
   <div class="full">
     <div class="top">
       <div class="left">
-        <img
+        <!-- <img
           src="../assets/img/Img_HP/alexander_strategy_group_expertise_governement.webp"
           alt=""
-        />
+        /> -->
       </div>
       <div class="right">
         <h2>Expertise at the highest-levels of government</h2>
@@ -41,10 +41,13 @@
           execution.
         </p>
       </div>  
-      <img
+      <!-- <img
           src="../assets/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg"
           alt=""
-        />     
+        />      -->
+        <video loop autoplay>
+      <source src="../assets/img/Anim/asg_services_wheel_white.json" type="application/json" />
+    </video>
       
       </div>
     </div>
@@ -62,13 +65,19 @@
   display: flex;
   color: var(--color-secondaire);
 
-  .left img {
-    width: 45vw;
+  .left  {
+    width: 65vw;
+    height: auto;
+    background-image: url(../assets/img/Img_HP/alexander_strategy_group_expertise_governement.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 20px;
   }
   .right {
-    padding: 2% 5%;
-
+    padding:2% 5%;
+    margin: 2% 0;
+    width:35vw;
     p {
       margin: 4vh 0;
     }
@@ -78,7 +87,7 @@
 .bottom{
     display: flex;
     color: var(--color-text);
-    margin: 5vh 0;
+    margin: 2% 0;
     h2{
           margin-bottom: 2vh;
             
@@ -88,7 +97,7 @@
         border-radius: 20px;
         background-color: var(--color-bg-dark);
         padding: 4%;
-        width: 100%;
+        width: 35vw;
 
     }
     .right{
@@ -98,6 +107,8 @@
         margin: 0 5vw 0 2%;
         display: flex;
         flex-direction: row-reverse;
+        width: 65vw;
+
 
         img{
           width: 60%;

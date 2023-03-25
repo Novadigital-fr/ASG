@@ -94,7 +94,7 @@
   <style  lang="scss" scoped>
   .container {
     width: 200vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: nowrap;
     overscroll-behavior: none;

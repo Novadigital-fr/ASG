@@ -23,41 +23,41 @@
           <div>
             <div class="service">
               <img
-                src="../assets/img/Services_Icons/alexander_strategy_group_services_national_security_white.svg"
+                src="/img/Services_Icons/alexander_strategy_group_services_national_security_white.svg"
                 alt=""
               />
               <p>National Security</p>
             </div>
             <div class="service">
               <img
-                src="../assets/img/Services_Icons/alexander_strategy_group_services_urban_planning_white.svg"
+                src="/img/Services_Icons/alexander_strategy_group_services_urban_planning_white.svg"
                 alt=""
               />
-              <p>National Security</p>
+              <p>Urban Planing</p>
             </div>
           </div>
           <div>
             <div class="service">
               <img
-                src="../assets/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg"
+                src="/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg"
                 alt=""
               />
-              <p>National Security</p>
+              <p>Law Enforcement</p>
             </div>
             <div class="service">
               <img
-                src="../assets/img/Services_Icons/alexander_strategy_group_services_city_resilience_white.svg"
+                src="/img/Services_Icons/alexander_strategy_group_services_city_resilience_white.svg"
                 alt=""
               />
-              <p>National Security</p>
+              <p>City Resilience</p>
             </div>
           </div>
           <div class="service">
             <img
-              src="../assets/img/Services_Icons/alexander_strategy_group_services_communication_white.svg"
+              src="/img/Services_Icons/alexander_strategy_group_services_communication_white.svg"
               alt=""
             />
-            <p>National Security</p>
+            <p>Communication</p>
           </div>
         </div>
         <div class="right">
@@ -107,10 +107,12 @@ input{
   .left {
     display: flex;
     align-items: flex-end;
+   
     .service {
       display: flex;
       align-items: center;
       margin-bottom: 2vh;
+      font-weight: 700;
     }
     img {
       width: 10%;
