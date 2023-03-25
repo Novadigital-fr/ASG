@@ -2,10 +2,10 @@
   <div>
     <header>
       <div class="menu_ordi">
-        <img
-          src="../assets/img/logos/alexander_strategy_group_Logo_icon.png"
+        <!-- <img
+          src="../assets/img/logos/alexander_strategy_group_Logo_icon.svg"
           alt=""
-        />
+        /> -->
         <p class="text_logo">
           alexander <br />
           strategy <br />
