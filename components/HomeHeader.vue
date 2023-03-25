@@ -1,8 +1,15 @@
 <template>
     <div class="full">
+    <div class="div_logo">
     <img class="logo" src="../assets/img/Logos/alexander_strategy_group_Logo_icon.svg" alt="">
+    </div>
+    <div class="title">
+    <!-- <div class="div top_title"></div> -->
     <h1>We help mitigate risk to keep <br> communities, companies, <br> and individuals safe</h1>
+    <!-- <div class="div bottom_title"></div> -->
+    </div>
     <h4>alexander strategy group</h4>
+
     </div>
 </template>
 
@@ -22,11 +29,78 @@
     text-align: center;
     padding-top: 10%;
 
+    .div_logo{
+        overflow: hidden;
+
+        .logo{
+            animation: logo 4s;
+
+            @keyframes logo {
+
+                0%{
+                    transform: translateY(200px);
+                }
+                60%{
+                    transform: translateY(200px);
+                }
+                100%{
+                }
+                
+            }
+        }
+    }
+
+    .title{
+        overflow: hidden;
+    }
+
     h1{
         margin: 2% 0;
+        animation: title 4s;
+
+        @keyframes title {
+        
+            0%{
+                transform: translateY(-150px);
+            }
+            40%{
+                transform: translateY(-150px);
+            }
+            60%{
+            //   transform: translateY(20px);
+            }
+            100%{
+            }
+        }
     }
     h4{
         color: var(--color-orange);
+        // position: fixed;
+        z-index: 13;
+        animation: loading 4s;
+
+    @keyframes loading {
+    0% {
+      opacity: 0;
+    }
+    9%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    30%{
+        transform: translateY(-150px);
+    }
+    40%{
+        transform: translateY(-150px);
+    }
+    60%{
+    //   transform: translateY(20px);
+    }
+    100%{
+    }
+  }
     }
 }
 @media screen and (max-width: 767px) {
