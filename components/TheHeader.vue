@@ -3,7 +3,7 @@
     <header>
       <div class="menu_ordi">
         <img
-          src="../assets/img/logos/alexander_strategy_group_Logo_icon.svg"
+          src="../assets/img/logos/alexander_strategy_group_Logo_icon.png"
           alt=""
         />
         <p class="text_logo">
