@@ -45,9 +45,14 @@
           src="../assets/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg"
           alt=""
         />      -->
-        <video loop autoplay>
-      <source src="../assets/img/Anim/asg_services_wheel_white.json" type="application/json" />
-    </video>
+     
+    <client-only>
+  <Vue3Lottie
+    animationLink="https://lottie.host/70f6fbc0-495d-48e7-90da-3ba359faa8ae/4nxMyA2nn3.json"
+    :height="200"
+    :width="200"
+  />
+</client-only>
       
       </div>
     </div>

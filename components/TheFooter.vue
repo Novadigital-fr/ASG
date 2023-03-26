@@ -99,6 +99,7 @@ input{
   flex-direction: column;
   align-items: flex-start;
 }
+
 .bottom {
     display: flex;
     align-items: flex-end;
@@ -112,7 +113,10 @@ input{
       display: flex;
       align-items: center;
       margin-bottom: 2vh;
+    }
+    p{
       font-weight: 700;
+
     }
     img {
       width: 10%;

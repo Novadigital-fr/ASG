@@ -2,10 +2,10 @@
   <div>
     <header>
       <div class="menu_ordi">
-        <!-- <img
-          src="../assets/img/logos/alexander_strategy_group_Logo_icon.svg"
+        <img
+          src="/img/logos/alexander_strategy_group_Logo_icon.svg"
           alt=""
-        /> -->
+        />
         <p class="text_logo">
           alexander <br />
           strategy <br />
@@ -59,7 +59,7 @@
         <div class="menu__content">
           <nav class="menu__nav-content">
             <div class="column">
-            <img src="../assets/img/Logos/alexander_strategy_group_Logo_iconwhite.svg" alt="">
+            <img src="/img/Logos/alexander_strategy_group_Logo_iconwhite.svg" alt="">
             <h4>Services</h4>
             <div>
               <NuxtLink to="/national_security">
@@ -325,6 +325,19 @@ header {
     mix-blend-mode: normal;
   }
 }
+header{
+  animation: ordi 4s;
+
+  @keyframes ordi {
+    50% {
+      margin-left: -30vw;
+    }
+    100% {
+      margin-left: 0vw;
+    }
+
+  }
+}
 nav {
   margin-top: 15vh;
 
@@ -392,7 +405,18 @@ button:hover {
 
   header {
     mix-blend-mode: normal;
+  animation: ordi 4s;
+
+  @keyframes ordi {
+    50% {
+      margin-top: -40vh;
+    }
+    100% {
+      margin-top: 0vh;
+    }
+
   }
+}
   .menu_ordi {
     display: none;
   }

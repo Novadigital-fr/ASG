@@ -55,7 +55,16 @@
       </div>
     </div>
     <div class="right">
-    <img src="../assets/img/Anim/Service_Wheel.gif" alt="">
+      <div class="video">
+      <client-only>
+        <Vue3Lottie
+          class="video"
+          animationLink="https://lottie.host/685ab8ec-13b5-45af-a9d3-17ab62db421b/tHboDR8bB8.json"
+          :height="100"
+          :width="100"
+        />
+      </client-only>
+    </div>
     </div>
   </div>
 </template>
@@ -142,10 +151,8 @@
 }
 .right{
     text-align: start;
-
-
-    img{
-        width: 60%;
+    .video{
+        width: 80%;
         top: 10vh;
         bottom: 40vh;
         position: sticky;
@@ -169,7 +176,7 @@
     margin-bottom: 10vh;
 
 
-    img{
+    .video{
         width: 50%;
 
     }

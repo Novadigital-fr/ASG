@@ -1,6 +1,7 @@
 <template>
     <div>
         <HomeHeader />
+        <Cercle />
         <HomeHorizontal/>
         <PresentationServices/>
         <HomeExpertise/>
