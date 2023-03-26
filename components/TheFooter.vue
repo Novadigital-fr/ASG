@@ -13,7 +13,7 @@
 
         <div>
           <img
-            src="../assets/img/Logos/alexander_strategy_group_Logo_iconwhite.svg"
+            src="/img/Logos/alexander_strategy_group_Logo_iconwhite.svg"
             alt=""
           />
         </div>
