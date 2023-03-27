@@ -45,13 +45,15 @@
   gsap.registerPlugin(ScrollTrigger);
   
   const scrollTween = ref(null);
+  const updateProgressBar = ref(null);
+
+  
   
   onMounted(() => {    
     const container = document.querySelector('.container');
   
     // if (window.matchMedia("(min-width: 1024px)").matches) {
       let sections = gsap.utils.toArray(".panel");
-  
       scrollTween.value = gsap.to(sections, {
         xPercent: -100 * (sections.length - 2),
         ease: "none", // <-- IMPORTANT!
@@ -64,20 +66,14 @@
         },
       });
     
-
-
-    window.addEventListener('scroll', function() {
-    // Calcule la progression du défilement de la page horizontale
-    // const container = document.querySelector('.container');
-    const progressBar = document.querySelector('.slider__progress');
-
-    const scrollLeft = window.scrollY;
-    const totalWidth = document.documentElement.scrollWidth - document.documentElement.clientWidth;
-    const progress = scrollLeft / totalWidth;
-
-    // Met à jour la barre de progression
-    progressBar.style.transform = `scaleX(${progress - 0.5})` ;
-  });
+      const updateProgressBar = () => {
+      const progressBar = document.querySelector('.slider__progress');
+      const scrollLeft = window.scrollY;
+      const totalWidth = document.documentElement.scrollWidth - document.documentElement.clientWidth;
+      const progress = scrollLeft / totalWidth;
+      progressBar.style.transform = `scaleX(${progress - 1.5})`;
+      };
+      window.addEventListener('scroll', updateProgressBar);
 
   });
   
@@ -86,6 +82,12 @@
       scrollTween.value.scrollTrigger.kill();
       scrollTween.value = null;
     }
+
+    if (updateProgressBar.value){
+      scrollTween.value = null;
+      window.removeEventListener('scroll', updateProgressBar);
+    }
+  
   });
 
   
@@ -98,19 +100,18 @@
     display: flex;
     flex-wrap: nowrap;
     overscroll-behavior: none;
-    padding-top: 15vh;
+    padding-top: 10vh;
  }
   
   .panel {
     width: 35vw;
     color: var(--color-secondaire);
-    // text-align: center;
     img{
-        width: 70%;
+        width: 75%;
         margin-bottom: 10%;
     }
-    h3,p{
-        width: 70%;
+    h2,p{
+        width: 75%;
     }
   }
   

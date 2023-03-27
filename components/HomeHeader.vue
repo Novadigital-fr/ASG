@@ -60,6 +60,7 @@
       rgba(32, 42, 53, 0.87) 100%
     ),
     url("../assets/img/Img_HP/alexander_strategy_group_homepage.webp");
+    background-color: #202a35;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,9 +110,9 @@
   h4 {
     color: var(--color-orange);
     z-index: 1000;
-    animation: h4 2s;
+    animation: soustitle 4s;
 
-    @keyframes h4 {
+    @keyframes soustitle {
       0% {
         opacity: 0;
       }
@@ -137,7 +138,7 @@
 .bottom {
   width: 100%;
   height: 120vh;
-  margin-top: -20vh;
+  margin-top: -5vh;
   background-color: var(--color-bg-dark);
   display: flex;
   justify-content: center;
@@ -184,7 +185,7 @@
 }
 @media screen and (max-width: 767px) {
   /* mobile */
-  .full {
+  .sticky {
     background: linear-gradient(
         180deg,
         rgba(32, 42, 53, 0) 37.45%,

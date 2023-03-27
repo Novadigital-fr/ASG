@@ -115,8 +115,8 @@
         width: 65vw;
 
 
-        img{
-          width: 60%;
+        .lottie-animation-container{
+          width: 90%;
           margin-right: 4vw;
         }
 
@@ -135,13 +135,14 @@
   flex-direction: column;
   color: var(--color-secondaire);
 
-  .left img {
+  .left {
     width: 100%;
     border-radius: 20px 20px 0 0;
+    height: 35vh;
   }
   .right {
     padding: 2% 5%;
-    
+    width: 100%;
 
     p {
       margin: 4vh 0;
@@ -171,9 +172,10 @@
         margin: 0;
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
 
-       img{
-        width: 30%;
+       .lottie-animation-container{
+        width: 35%;
         margin:0 auto 5vh auto;
 
        }

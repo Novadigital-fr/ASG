@@ -12,20 +12,21 @@ onMounted(() => {
     if (window.matchMedia("(min-width: 1024px)").matches) {
 
 const cercle = document.querySelector('.cercle');
+const back = document.querySelector('.sticky')
 
 window.addEventListener ( "scroll", function(e) {
     // cercle.style.transform="scale(" + window.scrollY / 100 + ")";
     cercle.style.borderWidth =   window.scrollY * 2 + "px";
     cercle.style.width = 9000 - window.scrollY * 10 + "px";
     cercle.style.height =  9000 - window.scrollY * 10 + "px";
-    console.log(window.scrollY);
 
-    if (window.scrollY > 1525) {
+    if (window.scrollY > 700) {
+    }
+    if (window.scrollY > 1305) {
         cercle.style.display = "none";
     }
     else{
         cercle.style.display = "block";
-
     }
 });
     }

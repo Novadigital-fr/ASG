@@ -177,7 +177,8 @@
 
 
     .video{
-        width: 50%;
+      margin: auto;
+        width: 70%;
 
     }
 }
