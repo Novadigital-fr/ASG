@@ -53,6 +53,7 @@ window.addEventListener ( "scroll", function(e) {
     margin: auto -10vw;
     inset: 0;
 }
+
 @media screen and (max-width: 767px) {
 .cercle{
     display: none;

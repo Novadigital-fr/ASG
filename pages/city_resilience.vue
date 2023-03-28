@@ -26,6 +26,8 @@
       logo="/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg"
       text="Alexander Strategy Group understands the importance of developing resiliency in every aspect of urban development."
     />
+
+    <ServKeyServ/>
   </div>
 </template>
 
