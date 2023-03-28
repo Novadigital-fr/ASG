@@ -33,7 +33,7 @@
               </ul>
             </li>
             <li class="link link--metis">
-              <NuxtLink to="/">Expertise</NuxtLink>
+              <NuxtLink to="/expertise">Expertise</NuxtLink>
             </li>
             <li class="link link--metis">
               <NuxtLink to="/contact">Contact</NuxtLink>

@@ -60,7 +60,6 @@
       rgba(32, 42, 53, 0.87) 100%
     ),
     url("../assets/img/Img_HP/alexander_strategy_group_homepage.webp");
-    background-color: #202a35;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,9 +108,8 @@
   }
   h4 {
     color: var(--color-orange);
-    z-index: 1000;
+    z-index: 1000 !important;
     animation: soustitle 4s;
-
     @keyframes soustitle {
       0% {
         opacity: 0;

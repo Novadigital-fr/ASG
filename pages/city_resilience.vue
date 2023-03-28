@@ -27,6 +27,8 @@
       text="Alexander Strategy Group understands the importance of developing resiliency in every aspect of urban development."
     />
 
+    <ServImage/>
+
     <ServKeyServ/>
   </div>
 </template>
