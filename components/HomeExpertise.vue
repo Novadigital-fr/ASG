@@ -80,7 +80,7 @@
     border-radius: 20px;
   }
   .right {
-    padding:2% 5%;
+    padding: 3vh 5%;
     margin: 2% 0;
     width:35vw;
     p {

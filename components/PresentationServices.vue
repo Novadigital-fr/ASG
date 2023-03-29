@@ -98,6 +98,7 @@
     margin-bottom: 5vh;
     display: flex;
     align-items: center;
+    transition: 0.5s;
     // width: max-content;
     .image{
       width: 50px;

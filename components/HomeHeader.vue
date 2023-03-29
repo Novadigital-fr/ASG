@@ -1,17 +1,6 @@
 <template>
   <div class="full">
-    <div class="loader">
-      <client-only>
-        <Vue3Lottie
-          class="video"
-          animationLink="https://lottie.host/f16fecf0-bd2e-4429-a628-a9e108e25576/5HPDh1eRql.json"
-          :height="100"
-          :width="100"
-          :speed="2.5"
-          loop="none"
-        />
-      </client-only>
-    </div>
+    
     <div class="top">
       <div class="sticky">
         <div class="div_logo">
@@ -53,13 +42,15 @@
 .sticky {
   min-height: 100vh;
   width: 100vw;
-  background: linear-gradient(
+  background-image: linear-gradient(
       180deg,
       rgba(32, 42, 53, 0) 37.45%,
       rgba(32, 42, 53, 0.395797) 65.9%,
       rgba(32, 42, 53, 0.87) 100%
     ),
     url("../assets/img/Img_HP/alexander_strategy_group_homepage.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,7 +99,7 @@
   }
   h4 {
     color: var(--color-orange);
-    z-index: 1000 !important;
+    z-index: 1000;
     animation: soustitle 4s;
     @keyframes soustitle {
       0% {
@@ -151,36 +142,8 @@
   }
 }
 
-.video {
-  width: 10vw;
-}
-.loader {
-  background-color: #202a35;
-  width: 100%;
-  height: 100vh;
-  opacity: 0;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  z-index: 12;
-  display: flex;
-  animation: loading 3s linear;
-  transform: scale(0);
 
-  @keyframes loading {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      transform: scale(1);
-    }
-  }
-}
+
 @media screen and (max-width: 767px) {
   /* mobile */
   .sticky {
