@@ -1,5 +1,5 @@
 <template>
-  <div class="full">
+  <div class="full light_mode">
     <div class="top">
       <div class="left">
         <!-- <img
@@ -63,8 +63,7 @@
 
 <style lang="scss" scoped>
 .full {
-  margin: 20vh 0;
-  margin-left: 12vw;
+  padding: 20vh 0 20vh 12vw;
 }
 .top {
   display: flex;

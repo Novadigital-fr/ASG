@@ -1,5 +1,5 @@
 <template>
-    <div class="home7" ref="container">
+    <div class="home7 light_mode" ref="container">
     <div  id="container" class="container" >
     <section class="tel panel"></section>
       <section class="panel">

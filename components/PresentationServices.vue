@@ -1,5 +1,5 @@
 <template>
-  <div class="full">
+  <div class="full light_mode">
     <div class="left">
       <h2>
         We offer a wide array of <span class="orange">strategic consulting services</span> supported by our
@@ -76,7 +76,7 @@
     color: var(--color-secondaire);
     display: flex;
     justify-content: space-around;
-    margin-top: 20vh;
+   padding: 20vh 0;
 }
 .left{
     width: 70%; 

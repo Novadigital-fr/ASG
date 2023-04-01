@@ -2,10 +2,10 @@
   <div>
     <header>
       <div class="menu_ordi">
-        <!-- <img
-          src="/img/logos/alexander_strategy_group_Logo_icon.svg"
+        <img
+          src="../assets/img/logo.svg"
           alt=""
-        /> -->
+        />
         <p class="text_logo">
           alexander <br />
           strategy <br />
@@ -123,6 +123,7 @@
         </div>
       </div>
     </header>
+   
   </div>
 </template>
 
@@ -135,55 +136,47 @@ gsap.registerPlugin(ScrollTrigger);
 const scrollTween = ref(null);
 
 onMounted(() => {
+
+
+
+const header = document.querySelector('header');
+const sections = document.querySelectorAll('.light_mode');
+
+sections.forEach(section => {
+  section.addEventListener('mouseenter', () => {
+      header.classList.add('dark');
+
+  });
+  
+  section.addEventListener('mouseleave', () => {
+    header.classList.remove('dark');
+  });
+});
+
+
   // DOM elements
   const DOM = {
     // For demo purposes, trigger the effect when clicking any link in the menu (.line-link)
     menuLinks: [...document.querySelectorAll(".line-link")],
     // Cover element (wrap, outer and image inner elements)
-    cover: {
-      wrap: document.querySelector(".cover-wrap"),
-      outer: document.querySelector(".cover"),
-      inner: document.querySelector(".cover__inner"),
-    },
+   
     // Some of the main page content elements
     // We'll animate some of the content elements when expanding the menu
-    content: {
-      imgs: [...document.querySelectorAll(".content > .content__img")],
-      titles: [...document.querySelectorAll(".content > .content__title")],
-    },
+  
     // Menu element (.menu)
     menu: document.querySelector(".menu"),
     // Element that slides out
     menuContent: document.querySelector(".menu__content"),
-    menuContent2: document.querySelector(".menu__content2"),
-
-    menuPro: document.querySelector(".pro"),
-    menuEtudiant: document.querySelector(".etudiant"),
-    lienPro: document.querySelector(".lienpro"),
-    lienEtudiant: document.querySelector(".lienetudiant"),
 
     // Close button
     closeCtrl: document.querySelector(".menu__back"),
     // Extra elements that will be animated inside the menu
-    extra: document.querySelectorAll(".menu__tagline, .menu__social-author"),
   };
 
   let menuStatus = {
     isOpen: false,
     isAnimating: false,
   };
-
-  // //choisir le menu à afficher
-  // DOM.lienPro.addEventListener('click', ev => {
-  //     ev.preventDefault();
-  //     DOM.menuPro.classList.remove("hidden");
-  //     DOM.menuEtudiant.classList.add("hidden");
-  // });
-  // DOM.lienEtudiant.addEventListener('click', ev => {
-  //     ev.preventDefault();
-  //     DOM.menuEtudiant.classList.remove("hidden");
-  //     DOM.menuPro.classList.add("hidden");
-  // });
 
   // Animation gsap timeline
   const menuTimeline = gsap
@@ -196,54 +189,7 @@ onMounted(() => {
         ease: "power4.inOut",
       },
     })
-    .addLabel("start", 0)
-    .add(() => {
-      // Add pointer events to auto/none
-      DOM.menu.classList[menuStatus.isOpen ? "add" : "remove"]("menu--open");
-    }, "start")
-    .to(
-      DOM.cover.wrap,
-      {
-        duration: 1.6,
-        startAt: { scale: "1.1" },
-        ease: "power3.inOut",
-        scale: 1,
-      },
-      "start"
-    )
-    .to(
-      DOM.cover.outer,
-      {
-        startAt: { y: "-100%" },
-        y: "0%",
-      },
-      "start"
-    )
-    .to(
-      DOM.cover.inner,
-      {
-        startAt: { y: "100%" },
-        y: "0%",
-      },
-      "start"
-    )
-    .to(
-      DOM.content.imgs,
-      {
-        //ease: 'power3.inOut',
-        y: (position) => `${position % 2 === 0 ? -20 : 20}%`,
-      },
-      "start"
-    )
-    .to(
-      DOM.content.titles,
-      {
-        //ease: 'power3.inOut',
-        y: (position) => `${position % 2 === 0 ? 20 : -20}%`,
-      },
-      "start"
-    )
-    .addLabel("menu", 0.5)
+    
     .to(
       DOM.menuContent,
       {
@@ -253,26 +199,6 @@ onMounted(() => {
       },
       "menu"
     )
-    .addLabel("extra", "menu+=0.6")
-    .set(
-      DOM.extra,
-      {
-        y: "400%",
-        opacity: 0,
-      },
-      "start"
-    )
-    .to(
-      DOM.extra,
-      {
-        duration: 0.5,
-        ease: "power4",
-        startAt: { opacity: 1 },
-        opacity: 1,
-        y: "0%",
-      },
-      "extra"
-    );
 
   // Menu expand
   const expandMenu = () => {
@@ -307,6 +233,11 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+
+.dark{
+  color: var(--color-secondaire);
+  transition: color 0.5s ease-in-out;
+}
 header {
   padding: 2%;
   position: fixed;
@@ -314,7 +245,6 @@ header {
   z-index: 10;
   font-size: 20px;
   font-weight: 700;
-  mix-blend-mode: difference;
 
   .text_logo {
     font-weight: 700;
@@ -335,7 +265,6 @@ header{
     100% {
       margin-left: 0vw;
     }
-
   }
 }
 nav {
@@ -404,7 +333,6 @@ button:hover {
   /* mobile */
 
   header {
-    mix-blend-mode: normal;
   animation: ordi 4s;
 
   @keyframes ordi {
@@ -420,6 +348,7 @@ button:hover {
   .menu_ordi {
     display: none;
   }
+
   .navtel {
     position: absolute;
     top: 1rem;
