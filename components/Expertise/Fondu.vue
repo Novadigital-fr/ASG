@@ -1,6 +1,7 @@
 <template>
-    <div class="degrade">
-    <div class="text">Global <br> sophisticaded <br> Eclusive <br> Bold</div>
+    <div class="fondu">
+    <h2 class="text">We thrive to deliver sophisticated solutions,
+daring to become a proactive and dedicated partner through the whole project.</h2>
     <!-- <div class="top"></div>
     <div class="bottom"></div> -->
     </div>
@@ -14,7 +15,7 @@ onMounted(() => {
     const text = document.querySelector('.text');
     window.addEventListener ( "scroll", function(e) {
 
-    const degrade =  -window.scrollY + 600         
+    const degrade =  -window.scrollY + 300         
             text.style.backgroundPosition = "center " + degrade + "px";
         //     if (window.scrollY < 800) {
         //         text.style.backgroundPosition = "center top";
@@ -32,34 +33,29 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.degrade{
-    background-color: #070B1D ;
-    height: 250vh;
+.fondu{
+    background-image: url(../../assets/img/Img_Expertise/degrade.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 350vh;
 }
 .text{
     position: sticky;
     top: 40vh;
     bottom: 20vh;
     z-index: 2;
-    width: clamp(150px, 100%, 600px);
-    font-size: 70px;
-    font-weight: 900;
+    width: clamp(150px, 100%, 55vw);
     text-align: center;
     margin: auto;
-    background-image: url(../../assets/img/Img_Expertise/degrade.png);
-    background-clip: text;
-    background-repeat: no-repeat;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
-    // transition: background-position 0.2s;
+    color: #070B1D;
 }
-
 @media screen and (max-width: 767px) {
     /* mobile */
     .text{
-    font-size: 45px;
+    width: clamp(150px, 100%, 80vw);
+   
 }
 
 }
-
 </style>

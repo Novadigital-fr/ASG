@@ -11,6 +11,20 @@
               <span class="text_reveal"> Times are changing fast and cities need to adapt. Our urban planning experts</span><span class="text_reveal"> have assisted cities around the world undergo the</span><span class="text_reveal"> transformations they need to thrive in the 21st century.</span>
             </h2>
         </div>
+        <ServLogo
+      logo="/img/Services_Icons/alexander_strategy_group_services_urban_planning.svg"
+    />
+        <ServImage
+    src1="/img/Img_Urban_Planning/alexander_strategy_group_services_urban_planning_vision_planing.webp"
+    src2="/img/Img_Urban_Planning/alexander_strategy_group_services_urban_planning_vision_building.webp"
+    titre="Vision-Planning"
+    description="Alexander Strategy Group ’s experts guide cities as they develop their vision for the future, and then work with them to build it."
+    sousDesc1="Our team takes an integrated approach, focusing on sustainability, livability, environment, resilience, fiscal impact, public health, and growth to guide our urban planning strategies. "
+    sousDesc2="We are a data-first, technology-oriented firm that helps build happy, healthy, and long-standing communities."
+    titrePrime="Vision-Building"
+    descriptionPrime="Our team has a global network of designers, architects, developers, and contractors who we can deploy internationally, bringing our clients the best experts the world has to offer as they work to transform their communities."
+    sousDesc1Prime="We provide bespoke policy recommendations and implementation guidance across urban sectors"
+    />
     </div>
 </template>
 
@@ -61,6 +75,16 @@ animation.scrollTrigger.disable();
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    display: inline;
+
+  }
+}
+@media screen and (max-width: 767px) {
+  /* mobile */
+  .reveal {
+    h2 {
+      width: 80%;
+    }
   }
 }
 </style>

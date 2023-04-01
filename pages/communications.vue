@@ -11,6 +11,11 @@
                 <span class="text_reveal">Trust, validity, support, and success are all built on one thing: </span><span class="text_reveal"> effective communication. Alexander Strategy Group has a</span><span class="text_reveal"> deep experience in corporate and public sector communications.</span>
             </h2>
         </div>
+        <ServLogo
+      logo="/img/Services_Icons/alexander_strategy_group_services_communication.svg"
+    />
+
+<ServKeyServ/>
     </div>
 </template>
 
@@ -62,6 +67,16 @@ animation.scrollTrigger.disable();
     flex-direction: column;
     align-items: flex-start;
     color: #ffffff33;
+    display: inline;
+
+  }
+}
+@media screen and (max-width: 767px) {
+  /* mobile */
+  .reveal {
+    h2 {
+      width: 80%;
+    }
   }
 }
 </style>

@@ -10,7 +10,7 @@ export default {
     props: {
       text: {
         type: String,
-        required: true
+        required: false
       },
       logo:{
         type: String,
@@ -25,16 +25,33 @@ export default {
 .div_logo{
     text-align: center;
     background-color: var(--color-bg-dark);
-    padding: 0 0 20vh 0;
+    padding: 0 0 15vh 0;
 
     .logo{
-        margin-bottom: 20vh;
+        margin-bottom: 0vh;
     }
     h4{
         width: 50%;
-        margin: auto;
+        margin: 10vh auto 0 auto;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    /* tablettte */
+    .div_logo{
+
+      padding: 0 0 10vh 0;
+
+    .logo{
+        margin-bottom: 10vh;
+    }
+    h4{
+        width: 70%;
+
+    }
+}
+}
+
 
 
 </style>

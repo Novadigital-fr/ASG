@@ -3,7 +3,7 @@
     <div class="left">
       <p class="desk_button">National Security</p>
       <h2>Key Services</h2>
-      <Button text="Contact" />
+      <div class="button_ordi"><Button text="Contact" /></div>
     </div>
     <div class="right">
       <details>
@@ -77,6 +77,7 @@
       </p>
       </details>
     </div>
+    <div class="button_tel"><Button text="Contact" /></div>
   </div>
 </template>
 
@@ -131,6 +132,43 @@ onMounted(() => {
       border-bottom: solid 1px var(--color-bg-dark);
     }
    
+  }
+  
+}
+.button_tel{
+    display: none;
+  }
+
+@media screen and (max-width: 767px) {
+  /* mobile */
+
+  .key_service {
+  color: var(--color-bg-dark);
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 0;
+
+  .left {
+    width: 100%;
+    padding: 5vh 0 0 10vw;
+
+    h2 {
+      margin: 2vh 0;
+    }
+  }
+  .right {
+    width: 100%;
+    padding: 0 10vw 0 5vh;
+
+  }
+}
+.button_ordi{
+  display: none;
+}
+.button_tel{
+    display: inline;
+
+    margin-left: 10vw;
   }
 }
 </style>

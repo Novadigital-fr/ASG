@@ -7,27 +7,26 @@
       text="Ready for the unexpected"
     />
     <div class="reveal">
-      <h2>
-        <span class="text_reveal"
-          >Resilient cities can absorb, recover from, and prepare for hazards
-          across the environmental,</span
-        >
-        <span class="text_reveal"
-          >economic, societal, and governance spaces. They come out stronger
-          from crises, and are</span
-        >
-        <span class="text_reveal">
-          constantly adapting to tackle whatever challenge comes next.</span
-        >
-      </h2>
-    </div>
-
+            <h2>
+                <span class="text_reveal">Resilient cities  can absorb, recover from, and prepare </span> <span class="text_reveal">for hazards across the environmental, economic, societal, and governance spaces.</span> <span class="text_reveal"> They come out stronger from crises, and are constantly adapting to tackle whatever challenge comes next.</span>
+            </h2>
+        </div>
     <ServLogo
       logo="/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg"
       text="Alexander Strategy Group understands the importance of developing resiliency in every aspect of urban development."
     />
 
-    <ServImage/>
+    <ServImage
+    src1="/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning_resiliency_assesment.webp"
+    src2="/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning_resiliency_plan.webp"
+    titre="Resiliency Assessments"
+    description="Alexander Strategy Group provides cities comprehensive resiliency assessments for client cities."
+    sousDesc1="Our experts assess the wide range of urban characteristics that determine resilience, including: environmental and climate change related issues,"
+    sousDesc2="economic conditions, public safety and health emergency preparedness; critical infrastructure, city services, governance, crisis response and more."
+    titrePrime="Resiliency Action Plans"
+    descriptionPrime="Following an assessment, Alexander Strategy Group develops tailored resilience action plans for federal, state, and city policymakers and other stakeholders."
+    sousDesc1Prime="We provide bespoke policy recommendations and implementation guidance across urban sectors"
+    />
 
     <ServKeyServ/>
   </div>
@@ -80,6 +79,16 @@ animation.scrollTrigger.disable();
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    display: inline;
+
+  }
+}
+@media screen and (max-width: 767px) {
+  /* mobile */
+  .reveal {
+    h2 {
+      width: 80%;
+    }
   }
 }
 </style>

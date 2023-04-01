@@ -1,53 +1,91 @@
 <template>
-  <div class="contenu-global">
-    <div class="carte carte1">
-      <div class="carte_title">
-      <img class="icone" src="../../assets/img/fleche_fond.svg" alt="">
-        <h2>Resiliency Assessments</h2>
-        <p class="issou content_small">
-          Alexander Strategy Group provides cities comprehensive resiliency
-          assessments for client cities.
-        </p>
+   <div class="tout">
+    <div class="contenu-global" id="contenu-global">
+      <div class="carte carte1" id="popup1" :style="{ backgroundImage: `linear-gradient(180deg, rgba(32, 42, 53, 0) 35.3%, #202A35 100%), url(${src1})` }">
+        <div class="carte_title">
+        <img class="icone" src="../../assets/img/fleche_fond.svg" alt="">
+        <a href="#contenu-global" class="fermer"></a>
+          <h2>{{ titre }}</h2>
+          <p class="issou content_small">
+            {{ description }}
+          </p>
+        </div>
+        <div class="description">
+          <p class="chancla content_small">
+            {{ sousDesc1 }}
+          </p>
+          <p class="chancla content_small">
+            {{ sousDesc2 }}
+          </p>
+        </div>
       </div>
-      <div class="description">
-        <p class="chancla content_small">
-          Our team takes an integrated approach, focusing on sustainability,
-          livability, environment, resilience, fiscal impact, public health, and
-          growth to guide our urban planning strategies.
-        </p>
-        <p class="chancla content_small">
-          We are a data-first, technology-oriented firm that helps build happy,
-          healthy, and long-standing communities.
-        </p>
+      <div class="carte carte2" :style="{ backgroundImage: `linear-gradient(180deg, rgba(32, 42, 53, 0) 35.3%, #202A35 100%), url(${src2})` }">
+        <div class="carte_title2">
+          <img class="icone2" src="../../assets/img/fleche_fond.svg" alt="">
+          <h2>{{ titrePrime }}</h2>
+          <p class="issou content_small">
+            {{ descriptionPrime }}
+          </p>
+        </div>
+        <div class="description2">
+          <p class="chancla2 content_small">
+            {{ sousDesc1Prime }}
+          </p>
+          <p class="chancla2 content_small">
+            {{ sousDesc2Prime }}
+          </p>
+        </div>
       </div>
     </div>
-    <div class="carte carte2">
-      <div class="carte_title2">
-        <img class="icone2" src="../../assets/img/fleche_fond.svg" alt="">
-        <h2>Resiliency Action Plans</h2>
-        <p class="issou content_small">
-          Alexander Strategy Group provides cities comprehensive resiliency
-          assessments for client cities.
-        </p>
-      </div>
-      <div class="description2">
-        <p class="chancla2 content_small">
-          Cracking down on white collar crimes requires both establishing rules
-          and regulations to protect individuals and corporations from financial
-          crimes and injustices and enforcing them.
-        </p>
-        <p class="chancla2 content_small">
-          Alexander Strategy Group equips policymakers with the tools and
-          capabilities necessary to detect, prevent, and respond to white collar
-          crimes.
-        </p>
-      </div>
+    <div class="popup1" id="popup1">
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    src1: {
+      type: String,
+      required: true
+    },
+    src2: {
+      type: String,
+      required: true
+    },
+    titre: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    },
+    sousDesc1: {
+      type: String,
+      required: true
+    },
+    sousDesc2: {
+      type: String,
+      required: false
+    },
+    titrePrime: {
+      type: String,
+      required: true
+    },
+    descriptionPrime: {
+      type: String,
+      required: true
+    },
+    sousDesc1Prime: {
+      type: String,
+      required: true
+    },
+    sousDesc2Prime: {
+      type: String,
+      required: false
+    }
+  },
   mounted() {
     const icone = document.querySelector(".icone");
     const icone2 = document.querySelector(".icone2");
@@ -89,8 +127,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contenu-global,
-.contenu-globa2 {
+.contenu-global {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -163,6 +200,67 @@ export default {
   p {
     width: 26vw;
   }
+}
+
+@media screen and (max-width: 767px) {
+  /* mobile */
+
+  .contenu-global {
+  width: fit-content;
+  justify-content: flex-start;
+}
+  .carte {
+  background-size: cover;
+  background-position: center center;
+  width: 70vw;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  border-radius: 20px;
+  margin: 0 5vw;
+
+  .carte_title, .carte_title2 {
+    width: 60vw;
+    margin: 0 2vw;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 5vh;
+
+    h2{
+        margin: 1vh 0;
+    }
+    .icone, .icone2{
+        transition: 0.5s;
+    }
+    
+  }
+}
+
+
+
+.carte:hover {
+  width: 100vw;
+}
+.carte2:hover {
+  width: 100vw;
+}
+.description,
+.description2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2vw;
+  position: absolute;
+  bottom: -1400px;
+  transition: all 0.5s;
+  border-top: 1px solid white;
+  padding-top: 15px;
+  width: 90vw;
+
+  p {
+    width: 45vw;
+  }
+}
 }
 
 </style>
