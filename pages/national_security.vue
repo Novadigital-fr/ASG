@@ -29,7 +29,16 @@
     sousDesc2Prime="Alexander Strategy Group ’s analysis and consulting services take a holistic approach in’ understanding, and countering terrorist threats."
     />
 
-    <ServKeyServ/>
+    <ServKeyServ
+    title1="Risk Analysis"
+    summary1="To mitigate risk, one must understand where the threats emanate. Our experts provide a 360 degree understanding of the national security risks that companies or communities face. From state actors, to terrorist groups, to cyber risks, Alexander Strategy Group takes a holistic approach to risk analysis to ensure that our clients are able to detect, deter, prevent, and respond to evolving threats."
+    title2="Intelligence"
+    summary2="Security depends on intelligence. Utilizing open and closed source intelligence and deep global relationships, Alexander Strategy Group produces timely intelligence reports on the most pressing threats they face, ranging from those emanating from terrorist groups, cyberattackers, and hostile nation-states. Alexander Strategy Group’s intelligence products enable clients to be aware of threats before they materialize."
+    title3="Policy Evaluation & Development"
+    summary3="Risk analysis and intelligence is only beneficial if organizations and governments have policies and strategies in place to utilize such information. Alexander Strategy Group provides policy evaluation and development to ensure our end users have comprehensive policies to defend against a variety of security threats, including cyberattacks, terrorism, white collar crime, chemical, biological, radiological and nuclear threats, and more. These policies enable policymakers to implement a security-first approach that keeps communities safe."
+    title4="Policy Implementation"
+    summary4="Driven by excellence, our dedicated team offers a proactive approach to help clients implement their national security strategies. From intelligence gathering, to threat monitoring, to helping implement response efforts, our consultants stay with you every step of the way."
+    />
 </template>
 
 <script setup>

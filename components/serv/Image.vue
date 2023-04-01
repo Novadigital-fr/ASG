@@ -202,65 +202,63 @@ export default {
   }
 }
 
-@media screen and (max-width: 767px) {
-  /* mobile */
+// @media screen and (max-width: 767px) {
+//   /* mobile */
 
-  .contenu-global {
-  width: fit-content;
-  justify-content: flex-start;
-}
-  .carte {
-  background-size: cover;
-  background-position: center center;
-  width: 70vw;
-  height: 50vh;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s;
-  border-radius: 20px;
-  margin: 0 5vw;
+//   .contenu-global {
+//   width: fit-content;
+//   justify-content: flex-start;
+// }
+//   .carte {
+//   background-size: cover;
+//   background-position: center center;
+//   width: 70vw;
+//   height: 50vh;
+//   position: relative;
+//   overflow: hidden;
+//   transition: all 0.5s;
+//   border-radius: 20px;
+//   margin: 0 5vw;
 
-  .carte_title, .carte_title2 {
-    width: 60vw;
-    margin: 0 2vw;
-    transition: all 0.5s;
-    position: absolute;
-    bottom: 5vh;
+//   .carte_title, .carte_title2 {
+//     width: 60vw;
+//     margin: 0 2vw;
+//     transition: all 0.5s;
+//     position: absolute;
+//     bottom: 5vh;
 
-    h2{
-        margin: 1vh 0;
-    }
-    .icone, .icone2{
-        transition: 0.5s;
-    }
+//     h2{
+//         margin: 1vh 0;
+//     }
+//     .icone, .icone2{
+//         transition: 0.5s;
+//     }
     
-  }
-}
+//   }
+// }
 
+// .carte:hover {
+//   width: 100vw;
+// }
+// .carte2:hover {
+//   width: 100vw;
+// }
+// .description,
+// .description2 {
+//   display: flex;
+//   justify-content: space-between;
+//   margin: 0 2vw;
+//   position: absolute;
+//   bottom: -1400px;
+//   transition: all 0.5s;
+//   border-top: 1px solid white;
+//   padding-top: 15px;
+//   width: 90vw;
 
-
-.carte:hover {
-  width: 100vw;
-}
-.carte2:hover {
-  width: 100vw;
-}
-.description,
-.description2 {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 2vw;
-  position: absolute;
-  bottom: -1400px;
-  transition: all 0.5s;
-  border-top: 1px solid white;
-  padding-top: 15px;
-  width: 90vw;
-
-  p {
-    width: 45vw;
-  }
-}
-}
+//   p {
+//     width: 45vw;
+//   }
+// }
+// }
 
 </style>

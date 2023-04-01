@@ -10,7 +10,7 @@
               :height="100"
               :width="100"
               :speed="2.5"
-              loop="none"
+              loop=false
             />
           </client-only>
         </div>
@@ -27,14 +27,6 @@
         <div class="cercle"></div>
       </div>
     </div>
-    <!-- <div class="bottom">
-     
-      <h1>
-        Alexander Strategy Group <br />
-        is a leading global <br />
-       <span class="orange"> consulting services firm</span>
-      </h1>
-    </div> -->
   </div>
 </template>
 
@@ -59,7 +51,7 @@ onMounted(() => {
     if (window.scrollY > 330) {
       title.innerHTML =
         "Alexander Strategy Group <br> is a leading global <br> <span class='orange'>consulting services firm</span> ";
-      sousTitle.innerHTML = " ";
+      sousTitle.innerHTML = ". ";
       title.classList = "anim_text";
     }
     if (window.scrollY < 330) {
@@ -142,24 +134,6 @@ onMounted(() => {
     width: 8vw;
   }
 
-  // .div_logo {
-  //   overflow: hidden;
-  //   .logo {
-  //     animation: logo 4s;
-
-  //     @keyframes logo {
-  //       0% {
-  //         transform: translateY(200px);
-  //       }
-  //       60% {
-  //         transform: translateY(200px);
-  //       }
-  //       100% {
-  //       }
-  //     }
-  //   }
-  // }
-
   .title {
     z-index: 4;
     overflow: hidden;
@@ -182,7 +156,6 @@ onMounted(() => {
   }
   h4 {
     color: var(--color-orange);
-    z-index: 100;
     animation: soustitle 4s;
 
     @keyframes soustitle {
@@ -198,9 +171,6 @@ onMounted(() => {
       }
       70% {
         transform: translateY(-150px);
-      }
-      80% {
-        //   transform: translateY(20px);
       }
       100% {
       }
@@ -226,24 +196,6 @@ onMounted(() => {
   inset: 0;
   z-index: 1;
 }
-
-// .bottom {
-//   width: 100%;
-//   height: 120vh;
-//   margin-top: -5vh;
-//   background-color: var(--color-bg-dark);
-//   display: flex;
-//   justify-content: center;
-//   z-index: 10;
-//   align-items: flex-start;
-
-//   h1 {
-//     // position: sticky;
-//     // top: 200px;
-//     z-index: 10;
-//     text-align: center;
-//   }
-// }
 
 @media screen and (max-width: 1024px) {
   .cercle {
@@ -274,11 +226,28 @@ onMounted(() => {
     .video {
       width: 25vw;
     }
-  }
+    h4 {
+    animation: soustitle 4s;
 
-  // .bottom{
-  //   display: none;
-  // }
+    @keyframes soustitle {
+      0% {
+        opacity: 0;
+      }
+      30% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(-100px);
+      }
+      70% {
+        transform: translateY(-100px);
+      }
+      100% {
+      }
+    }
+  }
+  }
 
   .cercle {
     max-width: 260vw;

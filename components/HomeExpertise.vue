@@ -1,5 +1,5 @@
 <template>
-  <div class="full light_mode">
+  <div class="expertise light_mode">
     <div class="top">
       <div class="left">
         <!-- <img
@@ -62,7 +62,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
-.full {
+.expertise {
   padding: 20vh 0 20vh 12vw;
 }
 .top {
@@ -125,9 +125,8 @@
 }
 @media screen and (max-width: 767px) {
     /* mobile */
-    .full {
-  margin: 20vh 0;
-  margin-left: 0;
+    .expertise {
+  padding: 10vh 0 20vh 0vw;
 }
   .top {
   display: flex;

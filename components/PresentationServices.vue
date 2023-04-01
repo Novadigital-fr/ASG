@@ -170,7 +170,8 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-around;
-    margin-top: 20vh;
+    padding: 10vh 0;
+
 }
 .right{
     text-align: center;

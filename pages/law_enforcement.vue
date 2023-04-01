@@ -29,7 +29,19 @@
     sousDesc2Prime="Alexander Strategy Group equips policymakers with the tools and capabilities necessary to detect, prevent, and respond to white collar crimes."
     />
 
-    <ServKeyServ/>
+    <ServKeyServ
+    title1="Assessments"
+    summary1="Every community has different law enforcement capabilities and law enforcement needs. Alexander Strategy Group provides government officials assessments including:
+              Deep understanding of the community’s crime concerns
+              Current law enforcement capabilities
+              Potential areas of improvement
+              These assessments serve as a vital tool in improving law enforcement practices."
+    title2="Policy Development"
+    summary2="One-size-fits-all approaches to law enforcement don’t work. The Alexander Strategy Group team develops bespoke law enforcement strategies that are unique to the community that they serve. These strategies inform personnel, training, equipment, and operational decision making to develop the most effective and community-focused law enforcement agencies."
+    title3="Real-Time Support"
+    summary3="Criminal and emergency situations are ever evolving and strategies are only as effective as the manner in which they are implemented. Alexander Strategy Group provides real-time strategic, operational, and tactical level support and consulting services. Our law enforcement experts are there when our clients need them."
+   
+    />
          
     </div>
 </template>

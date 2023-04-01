@@ -15,7 +15,18 @@
       logo="/img/Services_Icons/alexander_strategy_group_services_communication.svg"
     />
 
-<ServKeyServ/>
+    <ServKeyServ
+    title1="Message Development"
+    summary1="Alexander Strategy Group enables customers across industries to develop their storytelling. We create compelling and persuasive narratives, identify the right audience, and determine the best communication vehicles to utilize to achieve results."
+    title2="Strategic Planning"
+    summary2="Big achievements require vision. Alexander Strategy Group develops long-term strategic communication plans to ensure that communications efforts bolster big-picture goals."
+    title3="Press Relations"
+    summary3="Using Alexander Strategy Group’s deep relationships across international media, we help our clients control their narrative in the press. From front-page stories to drafting and placing compelling op-eds, Alexander Strategy Group empowers our customers to get the coverage they need."
+    title4="Crisis Communications"
+    summary4="Crises happen. Using time-tested strategies, Alexander Strategy Group’s experts guide clients through the most complex crisis scenarios to ensure they are communicating efficiently, effectively, and in a manner that protects their reputation."
+    title5="Creative"
+    summary5="Creativity moves minds. Alexander Strategy Group’s creative department makes compelling graphics, written materials, social media content, and videos to push messages forward."
+    />
     </div>
 </template>
 

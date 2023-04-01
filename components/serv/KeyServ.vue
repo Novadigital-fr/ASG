@@ -1,5 +1,5 @@
 <template>
-  <div class="key_service">
+  <div class="key_service light_mode">
     <div class="left">
       <p class="desk_button">National Security</p>
       <h2>Key Services</h2>
@@ -8,95 +8,138 @@
     <div class="right">
       <details>
         <summary>
-          <h2 class="orange">Message Development</h2>
+          <h2 class="orange">{{ title1 }}</h2>
           <img class="fleche" src="../../assets/img/fleche.svg" alt="" />
         </summary>
         <p class="content_small">
-        To mitigate risk, one must understand where the threats emanate. Our
-        experts provide a 360 degree understanding of the national security
-        risks that companies or communities face. From state actors, to
-        terrorist groups, to cyber risks, Alexander Strategy Group takes a
-        holistic approach to risk analysis to ensure that our clients are able
-        to detect, deter, prevent, and respond to evolving threats.
-      </p>
+          {{ summary1 }}
+        </p>
       </details>
       <details>
         <summary>
-          <h2 class="orange">Strategic Planning</h2>
+          <h2 class="orange">{{ title2 }}</h2>
           <img class="fleche" src="../../assets/img/fleche.svg" alt="" />
         </summary>
         <p class="content_small">
-        To mitigate risk, one must understand where the threats emanate. Our
-        experts provide a 360 degree understanding of the national security
-        risks that companies or communities face. From state actors, to
-        terrorist groups, to cyber risks, Alexander Strategy Group takes a
-        holistic approach to risk analysis to ensure that our clients are able
-        to detect, deter, prevent, and respond to evolving threats.
-      </p>
+          {{ summary2 }}
+        </p>
       </details>
       <details>
         <summary>
-          <h2 class="orange">Press Relations</h2>
+          <h2 class="orange">{{ title3 }}</h2>
           <img class="fleche" src="../../assets/img/fleche.svg" alt="" />
         </summary>
         <p class="content_small">
-        To mitigate risk, one must understand where the threats emanate. Our
-        experts provide a 360 degree understanding of the national security
-        risks that companies or communities face. From state actors, to
-        terrorist groups, to cyber risks, Alexander Strategy Group takes a
-        holistic approach to risk analysis to ensure that our clients are able
-        to detect, deter, prevent, and respond to evolving threats.
-      </p>
+          {{ summary3 }}
+        </p>
       </details>
       <details>
         <summary>
-          <h2 class="orange">Crisis Communications</h2>
+          <h2 class="orange">{{ title4 }}</h2>
           <img class="fleche" src="../../assets/img/fleche.svg" alt="" />
         </summary>
         <p class="content_small">
-        To mitigate risk, one must understand where the threats emanate. Our
-        experts provide a 360 degree understanding of the national security
-        risks that companies or communities face. From state actors, to
-        terrorist groups, to cyber risks, Alexander Strategy Group takes a
-        holistic approach to risk analysis to ensure that our clients are able
-        to detect, deter, prevent, and respond to evolving threats.
-      </p>
+          {{ summary4 }}
+        </p>
       </details>
       <details>
         <summary>
-          <h2 class="orange">Creative</h2>
+          <h2 class="orange">{{ title5 }}</h2>
           <img class="fleche" src="../../assets/img/fleche.svg" alt="" />
         </summary>
         <p class="content_small">
-        To mitigate risk, one must understand where the threats emanate. Our
-        experts provide a 360 degree understanding of the national security
-        risks that companies or communities face. From state actors, to
-        terrorist groups, to cyber risks, Alexander Strategy Group takes a
-        holistic approach to risk analysis to ensure that our clients are able
-        to detect, deter, prevent, and respond to evolving threats.
-      </p>
+          {{ summary5 }}
+        </p>
       </details>
     </div>
     <div class="button_tel"><Button text="Contact" /></div>
   </div>
 </template>
 
-<script setup>
-onMounted(() => {
-  const sums = document.querySelectorAll("summary");
-  sums.forEach((sum) => {
-    sum.addEventListener("click", function (e) {
-      const flech = e.currentTarget.closest("details").querySelector(".fleche");
-      if (flech.style.transform === "rotate(45deg)") {
-        flech.style.transform = "rotate(0deg)";
-        flech.style.transition = "0.3s";
-      } else {
-        flech.style.transform = "rotate(45deg)";
-        flech.style.transition = "0.3s";
+<script>
+export default {
+  props: {
+    title1: {
+      type: String,
+      required: false,
+    },
+    summary1: {
+      type: String,
+      required: false,
+    },
+    title2: {
+      type: String,
+      required: false,
+    },
+    summary2: {
+      type: String,
+      required: false,
+    },
+    title3: {
+      type: String,
+      required: false,
+    },
+    summary3: {
+      type: String,
+      required: false,
+    },
+    title4: {
+      type: String,
+      required: false,
+    },
+    summary4: {
+      type: String,
+      required: false,
+    },
+    title5: {
+      type: String,
+      required: false,
+    },
+    summary5: {
+      type: String,
+      required: false,
+    },
+  },
+  mounted() {
+    const sums = document.querySelectorAll("summary");
+    const details= document.querySelectorAll("details")
+
+    details.forEach((detail) => {
+      const title = detail.querySelector("h2");
+      if (title.innerHTML === "") {
+        detail.style.display = "none";
       }
     });
-  });
-});
+
+
+    sums.forEach((sum) => {
+      sum.addEventListener("mouseenter", function (e) {
+        const flech = e.currentTarget
+          .closest("details")
+          .querySelector(".fleche");
+        if (flech.style.transform === "rotate(45deg)") {
+          flech.style.transform = "rotate(0deg)";
+          flech.style.transition = "0.3s";
+        } else {
+          flech.style.transform = "rotate(45deg)";
+          flech.style.transition = "0.3s";
+        }
+      });
+      sum.addEventListener("mouseleave", function (e) {
+        const flech = e.currentTarget
+          .closest("details")
+          .querySelector(".fleche");
+        if (flech.style.transform === "rotate(45deg)") {
+          flech.style.transform = "rotate(0deg)";
+          flech.style.transition = "0.3s";
+        } else {
+          flech.style.transform = "rotate(45deg)";
+          flech.style.transition = "0.3s";
+        }
+      });
+    });
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -122,7 +165,10 @@ onMounted(() => {
       display: flex;
       justify-content: space-between;
     }
-    p{
+    summary:hover {
+      cursor: pointer;
+    }
+    p {
       margin-top: 2vh;
     }
 
@@ -131,41 +177,38 @@ onMounted(() => {
       padding-bottom: 3vh;
       border-bottom: solid 1px var(--color-bg-dark);
     }
-   
   }
-  
 }
-.button_tel{
-    display: none;
-  }
+.button_tel {
+  display: none;
+}
 
 @media screen and (max-width: 767px) {
   /* mobile */
 
   .key_service {
-  color: var(--color-bg-dark);
-  display: flex;
-  flex-direction: column;
-  margin: 10vh 0;
+    color: var(--color-bg-dark);
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 0;
 
-  .left {
-    width: 100%;
-    padding: 5vh 0 0 10vw;
+    .left {
+      width: 100%;
+      padding: 5vh 0 0 10vw;
 
-    h2 {
-      margin: 2vh 0;
+      h2 {
+        margin: 2vh 0;
+      }
+    }
+    .right {
+      width: 100%;
+      padding: 0 10vw 0 5vh;
     }
   }
-  .right {
-    width: 100%;
-    padding: 0 10vw 0 5vh;
-
+  .button_ordi {
+    display: none;
   }
-}
-.button_ordi{
-  display: none;
-}
-.button_tel{
+  .button_tel {
     display: inline;
 
     margin-left: 10vw;
