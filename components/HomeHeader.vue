@@ -115,6 +115,7 @@ onMounted(() => {
   position: sticky;
   position: -webkit-sticky; /* pour une meilleure compatibilité avec Safari */
   animation: loading 4s linear;
+  overflow: hidden;
   // transform: scale(0);
 
   @keyframes loading {
