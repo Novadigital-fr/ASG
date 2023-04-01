@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="loader">
+    <!-- <div class="loader">
       <client-only>
         <Vue3Lottie
           class="video"
@@ -11,7 +11,8 @@
           loop="none"
         />
       </client-only>
-    </div>
+    </div> -->
+
     <TheHeader />
     <slot />
     <TheFooter />
@@ -19,33 +20,60 @@
 </template>
 
 <style scoped lang="scss">
-.loader {
-  background-color: #202a35;
-  width: 100%;
-  height: 100vh;
-  opacity: 0;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  display: flex;
-  animation: loading 3s linear;
-  transform: scale(0);
+// .loader {
+//   // background-color: #202a35;
+//   width: 100%;
+//   height: 100vh;
+//   opacity: 0;
+//   position: fixed;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   z-index: 3;
+//   display: flex;
+//   animation: loading 3s linear;
+//   transform: scale(0);
 
-  @keyframes loading {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      transform: scale(1);
-    }
-  }
-}
+//   @keyframes loading {
+//     0% {
+//       opacity: 1;
+//       transform: scale(1);
+//     }
+//     90% {
+//       opacity: 1;
+//     }
+//     100% {
+//       opacity: 0;
+//       transform: scale(1);
+//     }
+//   }
+// }
+// h4 {
+//     color: var(--color-orange);
+//     z-index: 10;
+//     animation: soustitle 4s linear;
+//     @keyframes soustitle {
+//       0% {
+//         opacity: 0;
+//       }
+//       30% {
+//         opacity: 0;
+//       }
+//       50% {
+//         opacity: 1;
+//         transform: translateY(-150px);
+//       }
+//       70% {
+//         transform: translateY(-150px);
+//       }
+//       80% {
+//         //   transform: translateY(20px);
+//       }
+//       100% {
+//       }
+//     }
+//   }
 .video {
   width: 10vw;
 }

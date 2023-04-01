@@ -52,6 +52,7 @@ window.addEventListener ( "scroll", function(e) {
     position: fixed;
     margin: auto -10vw;
     inset: 0;
+    z-index: 1;
 }
 
 @media screen and (max-width: 767px) {

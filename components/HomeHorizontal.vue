@@ -94,6 +94,12 @@
   </script>
   
   <style  lang="scss" scoped>
+
+  .home7{
+    z-index: 5;
+    background-color: var(--color-bg);
+    position: relative;
+  }
   .container {
     width: 200vw;
     min-height: 100vh;
