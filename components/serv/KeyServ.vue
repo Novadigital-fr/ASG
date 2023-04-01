@@ -6,7 +6,7 @@
       <div class="button_ordi"><Button text="Contact" /></div>
     </div>
     <div class="right">
-      <details>
+      <details open>
         <summary>
           <h2 class="orange">{{ title1 }}</h2>
           <img class="fleche" src="../../assets/img/fleche.svg" alt="" />

@@ -313,11 +313,12 @@ button:hover {
   width: 40px;
   height: 40px;
   border-radius: 100px;
+
 }
 .button:hover {
   border: solid 1px var(--color-orange);
   transition: 0.3s;
-  scale: 1.2;
+  // scale: 1.2;
   width: 50px;
   height: 50px;
   display: flex;

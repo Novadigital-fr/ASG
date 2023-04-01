@@ -75,6 +75,11 @@ ul {
 	src: local("Nexa"), url(/assets/fonts/Nexa-Bold.ttf) format("truetype");
 	font-weight: 700;
 }
+@font-face {
+	font-family: "Nexa";
+	src: local("Nexa"), url(/assets/fonts/Nexa-Heavy.ttf) format("truetype");
+	font-weight: 900;
+}
 
 h2,
 h3,

@@ -136,14 +136,14 @@
   .left {
     width: 100%;
     border-radius: 20px 20px 0 0;
-    height: 35vh;
+    height: 40vh;
   }
   .right {
-    padding: 2% 5%;
+    padding:  30px;
     width: 100%;
 
     p {
-      margin: 4vh 0;
+      margin: 30px 0;
     }
     
   }
@@ -154,11 +154,14 @@
     color: var(--color-text);
     margin: 5vh 0;
 
+    h2{
+      margin-bottom: 30px;
+    }
 
     .left{
         border-radius: 20px;
         background-color: var(--color-bg-dark);
-        padding: 15% 5%;
+        padding: 60px 30px;
         width: 100%;
         margin-top: 5vh;
 
@@ -166,7 +169,7 @@
     .right{
         background-color: var(--color-orange);
         border-radius: 20px;
-        padding: 15% 5%;
+        padding: 60px 30px;
         margin: 0;
         display: flex;
         flex-direction: column-reverse;

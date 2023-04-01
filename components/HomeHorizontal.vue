@@ -47,8 +47,6 @@
   const scrollTween = ref(null);
   const updateProgressBar = ref(null);
 
-  
-  
   onMounted(() => {    
     const container = document.querySelector('.container');
   
@@ -71,7 +69,7 @@
       const scrollLeft = window.scrollY;
       const totalWidth = document.documentElement.scrollWidth - document.documentElement.clientWidth;
       const progress = scrollLeft / totalWidth;
-      progressBar.style.transform = `scaleX(${progress - 1.5})`;
+      progressBar.style.transform = `scaleX(${progress - 1})`;
       };
       window.addEventListener('scroll', updateProgressBar);
 
@@ -82,11 +80,8 @@
       scrollTween.value.scrollTrigger.kill();
       scrollTween.value = null;
     }
+    window.removeEventListener('scroll', updateProgressBar);
 
-    if (updateProgressBar.value){
-      scrollTween.value = null;
-      window.removeEventListener('scroll', updateProgressBar);
-    }
   
   });
 
@@ -162,12 +157,13 @@
       height: 90vh;
       display: flex;
       flex-wrap: nowrap;
+      padding-left: 10%;
     }
     .panel {
       position: relative;
       z-index: 4;
       width: 100vw;
-      margin: 15vh 5vw 10vh 3vw;
+      margin: 5vh 3vw 10vh 3vw;
       font-weight: 300;
       overflow: hidden;
     }
@@ -177,6 +173,10 @@
     .tel{
       display: none;
     }
+    .slider__progress,
+.slider__progress-wrap {
+    height: 3px;
+}
     
   }
   
@@ -186,7 +186,7 @@
       position: relative;
       z-index: 4;
       width: 100vw;
-      margin: 5vh 5vw 10vh 3vw;
+      margin: 5vh 2vw 10vh 2vw;
       font-weight: 300;
       overflow: hidden;
     }
