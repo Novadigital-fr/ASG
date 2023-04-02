@@ -48,11 +48,10 @@
   /* mobile */
   .expertise {
     background-image: linear-gradient(
-        180deg,
-        rgba(32, 42, 53, 0) 37.45%,
-        rgba(32, 42, 53, 0.395797) 65.9%,
-        rgba(32, 42, 53, 0.87) 100%
-      ),
+      180deg,
+      rgba(3, 12, 34, 0) 53.65%,
+      #070b1d 100%
+    ),
       url("../../assets/img/Img_Expertise/alexander_strategy_group_expertise_mobile.webp");
     background-size: cover;
     justify-content: flex-end;
