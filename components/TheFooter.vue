@@ -4,7 +4,7 @@
       <div class="top">
         <div class="signup">
           <h4>
-            Alexander Strategy Group is carefully <br />
+            Alexander Strategy Group is carefully 
             crafting insights each month
           </h4>
           <input type="email" placeholder="your@email.com" />
@@ -21,6 +21,7 @@
       <div class="bottom">
         <div class="left">
           <div>
+            <NuxtLink to="/national_security">
             <div class="service">
               <img
                 src="/img/Services_Icons/alexander_strategy_group_services_national_security_white.svg"
@@ -28,6 +29,8 @@
               />
               <p>National Security</p>
             </div>
+            </NuxtLink>
+            <NuxtLink to="/urban_planning">
             <div class="service">
               <img
                 src="/img/Services_Icons/alexander_strategy_group_services_urban_planning_white.svg"
@@ -35,8 +38,10 @@
               />
               <p>Urban Planing</p>
             </div>
+            </NuxtLink>
           </div>
           <div>
+            <NuxtLink to="/law_enforcement">
             <div class="service">
               <img
                 src="/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg"
@@ -44,6 +49,8 @@
               />
               <p>Law Enforcement</p>
             </div>
+            </NuxtLink>
+            <NuxtLink to="/city_resilience">
             <div class="service">
               <img
                 src="/img/Services_Icons/alexander_strategy_group_services_city_resilience_white.svg"
@@ -51,7 +58,9 @@
               />
               <p>City Resilience</p>
             </div>
+            </NuxtLink>
           </div>
+          <NuxtLink to="/communications">
           <div class="service">
             <img
               src="/img/Services_Icons/alexander_strategy_group_services_communication_white.svg"
@@ -59,9 +68,12 @@
             />
             <p>Communication</p>
           </div>
+          </NuxtLink>
         </div>
         <div class="right">
-        <p>©2023 All rights reserved alexander strategy group | Privacy Policy</p>
+          <p>
+            ©2023 All rights reserved alexander strategy group | Privacy Policy
+          </p>
         </div>
       </div>
     </footer>
@@ -76,81 +88,105 @@ footer {
   background-image: url("../assets/img/alexander_strategy_group_pattern.webp");
   background-size: cover;
   padding: 10vh 10vw;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 58vh;
+  z-index: -1;
 }
 .top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10vh;
 }
-input{
+input {
   margin: 2vh 0;
   width: 100%;
   border-radius: 100px;
-  padding: 1.5vh 1vw;
+  padding: 2vh 1vw;
   border: none;
   outline: none;
-  background-color: #FFFFFF66;
+  background-color: #ffffff66;
   color: var(--color-text);
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .signup {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: clamp(35%, 40%, 50%);
 }
 
 .bottom {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 
   .left {
     display: flex;
     align-items: flex-end;
-   
+
     .service {
       display: flex;
       align-items: center;
       margin-bottom: 2vh;
     }
-    p{
+    p {
       font-weight: 700;
-
     }
     img {
       width: 10%;
       margin-right: 1vw;
     }
   }
-  .right{
+  .right {
     font-size: 12px;
     margin-bottom: 2vh;
-text-align: end;
+    text-align: end;
   }
 }
 
 @media screen and (max-width: 767px) {
-    /* mobile */
+  /* mobile */
 
-    .top{
-      flex-direction: column-reverse;
+  footer {
+    height: 80vh;
+  }
+  .top {
+    flex-direction: column-reverse;
+    text-align: center;
+ 
+
+    img{
+      width: 15vw;
+    }
+  }
+  .bottom {
+    .left {
+      display: none;
+    }
+    .right {
       text-align: center;
-    }
-    .bottom{
-      .left{
-        display: none;
-      }
-      .right{
-        text-align: center;
-      }
-    }
 
-    .signup{
-
-      h4{
-        margin: 5vh 0;
+      p{
+        font-size: 14px;
       }
     }
   }
+
+  .signup {
+    width: 100%;
+    align-items: center;
+
+    h4 {
+      margin: 5vh 5vw 0 5vw;
+      line-height: 24px;
+
+    }
+    input{
+      margin: 5vh 0;
+    }
+  }
+}
 </style>

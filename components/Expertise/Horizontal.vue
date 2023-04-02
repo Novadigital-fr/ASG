@@ -6,12 +6,16 @@
     <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_nsa.webp" alt=""><p>National Security Agency</p></div>
     <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_security.webp" alt=""><p>Department of Homeland Security</p></div>
     <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_white_house.webp" alt=""><p>The White House</p></div>
+    <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_u-s-department-of-housing-and-urban-development.webp" alt=""><p>Department of Housing and Urban Development</p></div>
+
    </div>
    <div class="txt">
     <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_defense.webp" alt=""><p>Department of Defense</p></div>
     <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_nsa.webp" alt=""><p>National Security Agency</p></div>
     <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_security.webp" alt=""><p>Department of Homeland Security</p></div>
     <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_white_house.webp" alt=""><p>The White House</p></div>
+    <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_u-s-department-of-housing-and-urban-development.webp" alt=""><p>Department of Housing and Urban Development</p></div>
+
    </div>
     </div> 
     <div class="bottom defile">
@@ -21,6 +25,8 @@
         <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_boston.webp" alt=""><p>Boston Police Department</p></div>
         <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_oakland.webp" alt=""><p>Oakland Police Department</p></div>
         <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_marines.webp" alt=""><p>U.S Marine Corps</p></div>
+        <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_ArlingtonPolice.webp" alt=""><p>Arlington county Police Department</p></div>
+
    </div>
    <div class="txt">
         <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_cia.webp" alt=""><p>Central Intelligence Agency</p></div>
@@ -28,6 +34,8 @@
         <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_boston.webp" alt=""><p>Boston Police Department</p></div>
         <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_oakland.webp" alt=""><p>Oakland Police Department</p></div>
         <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_marines.webp" alt=""><p>U.S Marine Corps</p></div>
+        <div><img src="../../assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_ArlingtonPolice.webp" alt=""><p>Arlington county Police Department</p></div>
+
    </div>
 </div> 
 </div>
@@ -40,7 +48,9 @@
 <style lang="scss" scoped>
 
 .logo_defile{
-    margin: 10vh 0 25vh 0;
+    padding: 10vh 0 25vh 0;
+    background-color: var(--color-bg);
+
 }
 .defile{
     overflow-x: hidden;

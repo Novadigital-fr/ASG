@@ -15,11 +15,39 @@
 
     <TheHeader />
     <slot />
+    <div class="reveal"></div>
     <TheFooter />
   </div>
 </template>
 
 <style scoped lang="scss">
+
+
+.reveal{
+  width: 100%;
+  margin-bottom: 57vh;
+  background: none;
+  z-index: 1;
+  pointer-events: none;
+
+}
+
+@media screen and (max-width: 767px) {
+    /* mobile */
+    .reveal{
+  margin-bottom: 79vh;
+}
+}
+
+
+
+
+
+
+
+
+
+
 // .loader {
 //   // background-color: #202a35;
 //   width: 100%;

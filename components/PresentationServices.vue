@@ -78,6 +78,7 @@
   display: flex;
   justify-content: space-around;
   padding: 20vh 0;
+  background-color: var(--color-bg);
 }
 .left {
   width: 70%;

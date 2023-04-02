@@ -36,7 +36,15 @@
     <div class="sous-div"></div>
   </div>
 </template>
-<script setup></script>
+
+<script setup>
+definePageMeta({
+  pageTransition: {
+    name: 'rotate'
+  }
+})
+</script>
+
 <style lang="scss" scoped>
 .contact {
   display: flex;

@@ -15,7 +15,9 @@
           Group provides national security and risk management advisory services
           to clients worldwide.
         </p>
+        <NuxtLink to="/expertise">
         <Button text="Expertise" />
+        </NuxtLink>
       </div>
     </div>
     <div class="bottom">
@@ -29,31 +31,29 @@
         </p>
       </div>
       <div class="right">
-      <div class="textligne">
-        <h2>
-          Strategic guidance, implementation support, and tactical solutions
-        </h2>
-       
-        <p>
-          Alexander Strategy Group provides strategic guidance, implementation
-          support, and tactical solutions in security systems, training, human
-          capital, and technology development. We are with you from planning to
-          execution.
-        </p>
-      </div>  
-      <!-- <img
+        <div class="textligne">
+          <h2>
+            Strategic guidance, implementation support, and tactical solutions
+          </h2>
+
+          <p>
+            Alexander Strategy Group provides strategic guidance, implementation
+            support, and tactical solutions in security systems, training, human
+            capital, and technology development. We are with you from planning
+            to execution.
+          </p>
+        </div>
+        <!-- <img
           src="../assets/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg"
           alt=""
         />      -->
-     
-    <client-only>
-  <Vue3Lottie
-    animationLink="https://lottie.host/70f6fbc0-495d-48e7-90da-3ba359faa8ae/4nxMyA2nn3.json"
-    :height="200"
-    :width="200"
-  />
-</client-only>
-      
+        <client-only>
+          <Vue3Lottie
+            animationLink="https://lottie.host/70f6fbc0-495d-48e7-90da-3ba359faa8ae/4nxMyA2nn3.json"
+            :height="200"
+            :width="200"
+          />
+        </client-only>
       </div>
     </div>
   </div>
@@ -64,12 +64,13 @@
 <style lang="scss" scoped>
 .expertise {
   padding: 20vh 0 20vh 12vw;
+  background-color: var(--color-bg);
 }
 .top {
   display: flex;
   color: var(--color-secondaire);
 
-  .left  {
+  .left {
     width: 65vw;
     height: auto;
     background-image: url(../assets/img/Img_HP/alexander_strategy_group_expertise_governement.webp);
@@ -81,108 +82,97 @@
   .right {
     padding: 3vh 5%;
     margin: 2% 0;
-    width:35vw;
+    width: 35vw;
     p {
       margin: 4vh 0;
     }
   }
 }
 
-.bottom{
-    display: flex;
-    color: var(--color-text);
-    margin: 2% 0;
-    h2{
-          margin-bottom: 2vh;
-            
-        }
-
-    .left{
-        border-radius: 20px;
-        background-color: var(--color-bg-dark);
-        padding: 4%;
-        width: 35vw;
-
-    }
-    .right{
-        background-color: var(--color-orange);
-        border-radius: 20px;
-        padding: 4%;
-        margin: 0 5vw 0 2%;
-        display: flex;
-        flex-direction: row-reverse;
-        width: 65vw;
-
-
-        .lottie-animation-container{
-          width: 90%;
-          margin-right: 4vw;
-        }
-
-        
-
-    }
-}
-@media screen and (max-width: 767px) {
-    /* mobile */
-    .expertise {
-  padding: 10vh 0 20vh 0vw;
-}
-  .top {
+.bottom {
   display: flex;
-  flex-direction: column;
-  color: var(--color-secondaire);
+  color: var(--color-text);
+  margin: 2% 0;
+  h2 {
+    margin-bottom: 2vh;
+  }
 
   .left {
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    height: 40vh;
+    border-radius: 20px;
+    background-color: var(--color-bg-dark);
+    padding: 4%;
+    width: 35vw;
   }
   .right {
-    padding:  30px;
-    width: 100%;
+    background-color: var(--color-orange);
+    border-radius: 20px;
+    padding: 4%;
+    margin: 0 5vw 0 2%;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 65vw;
 
-    p {
-      margin: 30px 0;
+    .lottie-animation-container {
+      width: 90%;
+      margin-right: 4vw;
     }
-    
   }
 }
-.bottom{
+@media screen and (max-width: 767px) {
+  /* mobile */
+  .expertise {
+    padding: 10vh 0 20vh 0vw;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-secondaire);
+
+    .left {
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+      height: 40vh;
+    }
+    .right {
+      padding: 30px;
+      width: 100%;
+
+      p {
+        margin: 30px 0;
+      }
+    }
+  }
+  .bottom {
     display: flex;
     flex-direction: column-reverse;
     color: var(--color-text);
     margin: 5vh 0;
 
-    h2{
+    h2 {
       margin-bottom: 30px;
     }
 
-    .left{
-        border-radius: 20px;
-        background-color: var(--color-bg-dark);
-        padding: 60px 30px;
-        width: 100%;
-        margin-top: 5vh;
-
+    .left {
+      border-radius: 20px;
+      background-color: var(--color-bg-dark);
+      padding: 60px 30px;
+      width: 100%;
+      margin-top: 5vh;
     }
-    .right{
-        background-color: var(--color-orange);
-        border-radius: 20px;
-        padding: 60px 30px;
-        margin: 0;
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
+    .right {
+      background-color: var(--color-orange);
+      border-radius: 20px;
+      padding: 60px 30px;
+      margin: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
 
-       .lottie-animation-container{
+      .lottie-animation-container {
         width: 35%;
-        margin:0 auto 5vh auto;
-
-       }
-
+        margin: 0 auto 5vh auto;
+      }
     }
-}
-
   }
+}
 </style>

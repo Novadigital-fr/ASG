@@ -3,7 +3,9 @@
     <div class="left">
       <p class="desk_button">National Security</p>
       <h2>Key Services</h2>
+      <NuxtLink to="/contact">
       <div class="button_ordi"><Button text="Contact" /></div>
+      </NuxtLink>
     </div>
     <div class="right">
       <details open>
@@ -52,7 +54,9 @@
         </p>
       </details>
     </div>
-    <div class="button_tel"><Button text="Contact" /></div>
+    <NuxtLink to="/contact">
+      <div class="button_tel"><Button text="Contact" /></div>
+    </NuxtLink>
   </div>
 </template>
 
@@ -102,7 +106,7 @@ export default {
   },
   mounted() {
     const sums = document.querySelectorAll("summary");
-    const details= document.querySelectorAll("details")
+    const details = document.querySelectorAll("details");
 
     details.forEach((detail) => {
       const title = detail.querySelector("h2");
@@ -110,7 +114,6 @@ export default {
         detail.style.display = "none";
       }
     });
-
 
     sums.forEach((sum) => {
       sum.addEventListener("mouseenter", function (e) {
@@ -145,8 +148,9 @@ export default {
 <style lang="scss" scoped>
 .key_service {
   color: var(--color-bg-dark);
+  background-color: var(--color-bg);
   display: flex;
-  margin: 10vh 0;
+  padding: 10vh 0;
   .left {
     width: 40%;
     padding: 5vh 0 0 15vw;
@@ -190,7 +194,6 @@ export default {
     color: var(--color-bg-dark);
     display: flex;
     flex-direction: column;
-    margin: 10vh 0;
 
     .left {
       width: 100%;
@@ -209,9 +212,9 @@ export default {
     display: none;
   }
   .button_tel {
-    display: inline;
+    display: block;
+    padding-left: 10vw;
 
-    margin-left: 10vw;
   }
 }
 </style>

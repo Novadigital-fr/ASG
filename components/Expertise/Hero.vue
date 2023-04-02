@@ -7,7 +7,9 @@
         wide array of strategic consulting services supported by our team of
         advisors.
       </p>
+      <NuxtLink to="/contact">
       <Button text="Contact" />
+      </NuxtLink>
     </div>
   </div>
 </template>

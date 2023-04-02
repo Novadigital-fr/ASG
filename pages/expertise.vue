@@ -3,6 +3,7 @@
     <ExpertiseHero />
     <ExpertiseDegrade />
     <ExpertiseFondu />
+    <div class="top_expertise">
     <div class="div_logo">
       <img
         class="logo"
@@ -16,6 +17,7 @@
         leading cities.
       </p>
     </div>
+  </div>
     <ExpertiseHorizontal />
     <PresentationServices />
   </div>
@@ -24,6 +26,11 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+
+.top_expertise{
+  background-color: var(--color-bg);
+
+}
 .div_logo {
   color: var(--color-secondaire);
   text-align: center;
