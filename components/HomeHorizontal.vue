@@ -143,7 +143,6 @@
     transform: scaleX(0);
     transform-origin: left center;
 }
- 
   
   @media screen and (max-width: 1024px) {
     /* tablettte */

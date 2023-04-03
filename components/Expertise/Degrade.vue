@@ -59,6 +59,8 @@ onMounted(() => {
     /* mobile */
     .text{
     font-size: 45px;
+    line-height: 60px;
+
 }
 
 }
