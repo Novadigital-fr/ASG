@@ -45,8 +45,8 @@ onMounted(() => {
     top: 40vh;
     bottom: 20vh;
     z-index: 2;
-    width: clamp(150px, 100%, 55vw);
-    text-align: center;
+    width: clamp(550px, 670px, 760px);
+    // text-align: center;
     margin: auto;
     color: #070B1D;
 }

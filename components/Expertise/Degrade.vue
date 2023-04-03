@@ -1,6 +1,6 @@
 <template>
     <div class="degrade">
-    <div class="text">Global <br> sophisticaded <br> Eclusive <br> Bold</div>
+    <div class="text">Global <br> Sophisticaded <br> Exclusive <br> Bold</div>
     <!-- <div class="top"></div>
     <div class="bottom"></div> -->
     </div>
@@ -38,6 +38,7 @@ onMounted(() => {
 }
 .text{
     position: sticky;
+    line-height: 100px;
     top: 40vh;
     bottom: 20vh;
     z-index: 2;

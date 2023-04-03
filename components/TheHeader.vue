@@ -55,7 +55,7 @@
         <div class="transition_rond" :class="{ 'transition_rond--click': rond }"></div>
       </div>
       <div class="navtel">
-        <!-- <div class="logo_mobile"><img src="/img/Logos/alexander_strategy_group_Logo_horizontal.svg" alt=""></div> -->
+        <NuxtLink to="/"> <div class="logo_mobile"><img src="/img/Logos/alexander_strategy_group_Logo_horizontal.svg" alt=""></div></NuxtLink>
         <div class="menu_top">
           <ul>
             <li class="link line-link">
@@ -154,7 +154,7 @@ const rond = ref(false)
 function openContact() {
   rond.value = true;
   setTimeout (()=>{
-    window.location.href ="http://localhost:3000/contact"
+    window.location.href ="https://phenomenal-pothos-655a2a.netlify.app/contact"
   },"2000") 
 }
 
@@ -166,12 +166,23 @@ const sections = document.querySelectorAll('.light_mode');
 sections.forEach(section => {
   section.addEventListener('mouseenter', () => {
       header.classList.add('dark');
-
   });
-  
   section.addEventListener('mouseleave', () => {
     header.classList.remove('dark');
   });
+});
+
+let logo = document.querySelector(".logo_mobile");
+let lastScrollValue = 0;
+
+document.addEventListener('scroll',() => {
+		let top  = document.documentElement.scrollTop;
+    if(lastScrollValue < top) {
+    	logo.classList.add("hidden");
+    } else {
+    	logo.classList.remove("hidden");
+    }
+    lastScrollValue = top;
 });
 
 
@@ -306,7 +317,8 @@ header {
     display: none;
   }
   .logo_ordi {
-      width: 65%;
+      width: 100px;
+      margin-bottom: 15px;
   }
 }
 header{
@@ -333,14 +345,11 @@ nav a:hover {
 }
 .sous {
   display: none;
-  position: absolute;
+  // position: absolute;
   width: 100%;
   z-index: 1000;
 }
-.top_sous:hover{
-margin-bottom: 260px;
-transition: margin-bottom 0.1s;
-}
+
 nav > ul li:hover .sous {
   display: block;
   padding-top: 2vh;
@@ -348,7 +357,7 @@ nav > ul li:hover .sous {
 }
 
 .sous li {
-  position: relative;
+  // position: relative;
   display: inline-flex;
   float: none;
   width: 100%;
@@ -356,7 +365,7 @@ nav > ul li:hover .sous {
   align-items: center;
   &:hover > .image{
     rotate: 45deg;
-    transition: 1s;
+    transition: 0.5s;
   }
   &:hover > .image1{
         background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security.svg");
@@ -375,48 +384,48 @@ nav > ul li:hover .sous {
       }
 }
 button {
-  background-color: var(--color-orange);
+  background-color: transparent;
   border: none;
   border-radius: 100px;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 41px;
+  position: absolute;
+}
+button:hover {
+  scale: 1.1;
+  transition: 0.5s;
+  border: 1px solid var(--color-orange);
+}
+.button {
+  background-color: var(--color-orange);
   background-image: url(../assets/img/contact.svg);
   background-size: 20px 20px;
   background-position: center;
   background-repeat: no-repeat;
-}
-button:hover {
-  // scale: 1.1;
-  transition: 0.5s;
-}
-.button {
   position: absolute;
   bottom: 5%;
   width: 40px;
   height: 40px;
   border-radius: 100px;
-
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 .button:hover {
-  border: solid 1px var(--color-orange);
+  border: solid -1px var(--color-orange);
   transition: 0.3s;
-  // scale: 1.2;
-  width: 50px;
-  height: 50px;
+  scale: 1.2;
+  //width: 50px;
+  //height: 50px;
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
 }
 
 .image {
-      width: 30px;
-      height: 30px;
-      margin-right: 1vw;
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
       background-repeat: no-repeat;
       background-size: cover;
-
-      
     }
    
     .image1 {
@@ -474,13 +483,20 @@ button:hover {
   color: var(--color-text);
 }
 .logo_mobile{
-  width: 100vw;
-  text-align: center;
-  display: block;
+  width: 90vw; 
+  display: flex;
+  justify-content: center;
+  transition: margin-top 0.5s;
+
   img{
-    width: 35vw;
+    height: 50px;
+    margin-bottom: 20px;
 
   }
+}
+.logo_mobile.hidden {
+  margin-top: -70px;
+  transition: margin-top 0.5s;
 }
 }
   .menu_ordi {

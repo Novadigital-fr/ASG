@@ -159,6 +159,9 @@ export default {
       margin: 2vh 0;
     }
   }
+  details summary::-webkit-details-marker {
+  display: none;
+}
   .right {
     width: 60%;
     padding: 0 20vw 0 5vh;

@@ -96,12 +96,12 @@
     position: relative;
   }
   .container {
-    width: 200vw;
+    width: 150vw;
     min-height: 100vh;
     display: flex;
     flex-wrap: nowrap;
     overscroll-behavior: none;
-    padding-top: 10vh;
+    padding: 10vh 0 0 20vw;
  }
   
   .panel {
@@ -117,9 +117,9 @@
   }
   
   .slider__progress-wrap {
-    left: 15vw;
-    bottom: 3.125vw;
-    width: 70vw;
+    left: 20vw;
+    bottom: 6vh;
+    width: 60vw;
     overflow: hidden;
     background-color: #D5512733;
     transform-origin: left center;
@@ -131,7 +131,7 @@
 .slider__progress-wrap {
     display: block;
     position: fixed;
-    height: 2px;
+    height: 3px;
     will-change: transform;
 }
 
@@ -157,7 +157,9 @@
       height: 90vh;
       display: flex;
       flex-wrap: nowrap;
-      padding-left: 10%;
+      // padding-left: 10%;
+      padding: 10vh 0 0 10vw;
+
     }
     .panel {
       position: relative;

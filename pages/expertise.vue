@@ -35,7 +35,8 @@
   color: var(--color-secondaire);
   text-align: center;
   margin: 0 auto;
-  width: 40vw;
+  width: clamp(500px, 550px, 650px);
+
 
   .logo {
     margin: 20vh 0;

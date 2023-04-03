@@ -45,8 +45,8 @@ onMounted(() => {
     // cercle.style.transform="scale(" + window.scrollY / 100 + ")";
     // console.log(this.scrollY);
     cercle.style.borderWidth = window.scrollY * 2 + "px";
-    cercle.style.width = 9000 - window.scrollY * 10 + "px";
-    cercle.style.height = 9000 - window.scrollY * 10 + "px";
+    cercle.style.width = 11000 - window.scrollY * 10 + "px";
+    cercle.style.height = 11000 - window.scrollY * 10 + "px";
 
     if (window.scrollY > 330) {
       title.innerHTML =

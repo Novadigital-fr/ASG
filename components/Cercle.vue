@@ -42,8 +42,8 @@ window.addEventListener ( "scroll", function(e) {
     border-width: 0;
     border-style: solid;
     border-radius: 100%;
-    max-width: 120vw;
-    max-height: 120vw;
+    max-width: 140vw;
+    max-height: 140vw;
     align-items: center;
     display: flex;
     align-items: center;

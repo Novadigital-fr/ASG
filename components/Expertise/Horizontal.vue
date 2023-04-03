@@ -82,7 +82,9 @@
         }
         p{
             width: 60%;
-            white-space:normal
+            white-space:normal;
+            font-weight: 700;
+
         }
     }
   }

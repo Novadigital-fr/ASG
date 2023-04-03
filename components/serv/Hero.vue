@@ -57,6 +57,7 @@ export default {
   padding-top: 10%;
   background-position: center top;
   background-size: cover;
+  background-color: var(--color-bg-dark);
 
 
   .title {

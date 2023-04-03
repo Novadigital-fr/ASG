@@ -131,6 +131,11 @@ input {
       display: flex;
       align-items: center;
       margin-bottom: 2vh;
+
+      &:hover > img{
+        rotate: 45deg;
+        transition: rotate 0.5s;
+      }
     }
     p {
       font-weight: 700;
@@ -138,6 +143,8 @@ input {
     img {
       width: 10%;
       margin-right: 1vw;
+
+      
     }
   }
   .right {
