@@ -1,18 +1,15 @@
 <template>
   <div>
-
     <header>
       <div class="menu_ordi">
-        <img
-          class="logo_ordi"
-          src="../assets/img/logo.svg"
-          alt=""
-        />
+        <img class="logo_ordi" src="../assets/img/logo.svg" alt="" />
+
         <p class="text_logo">
           alexander <br />
           strategy <br />
           group
         </p>
+
         <nav>
           <ul>
             <li class="link link--metis">
@@ -30,16 +27,16 @@
                   <NuxtLink to="/law_enforcement">Law Enforcement</NuxtLink>
                 </li>
                 <li>
-                <div class="image image3"></div>
-               <NuxtLink to="/urban_planning">Urban Planing</NuxtLink>
-               </li>
+                  <div class="image image3"></div>
+                  <NuxtLink to="/urban_planning">Urban Planing</NuxtLink>
+                </li>
                 <li>
                   <div class="image image4"></div>
                   <NuxtLink to="/city_resilience">City Resilience</NuxtLink>
                 </li>
                 <li>
-                <div class="image image5"></div>
-                <NuxtLink to="/communications">Communication</NuxtLink>
+                  <div class="image image5"></div>
+                  <NuxtLink to="/communications">Communication</NuxtLink>
                 </li>
               </ul>
             </li>
@@ -51,16 +48,26 @@
             </li>
           </ul>
         </nav>
-        <div  class="button"><button @click="openContact()" class="mail"></button></div>
-        <div class="transition_rond" :class="{ 'transition_rond--click': rond }"></div>
+
+        <div class="button">
+          <button @click="openContact()" class="mail"></button>
+        </div>
+        <div
+          class="transition_rond"
+          :class="{ 'transition_rond--click': rond }"
+        ></div>
       </div>
       <div class="navtel">
-        <NuxtLink to="/"> <div class="logo_mobile"><img src="/img/Logos/alexander_strategy_group_Logo_horizontal.svg" alt=""></div></NuxtLink>
+        <NuxtLink to="/">
+          <div class="logo_mobile">
+            <img
+              src="/img/Logos/alexander_strategy_group_Logo_horizontal.svg"
+              alt=""
+            /></div
+        ></NuxtLink>
         <div class="menu_top">
           <ul>
-            <li class="link line-link">
-              Services
-            </li>
+            <li class="link line-link">Services</li>
             <li class="link">
               <NuxtLink to="/expertise">Expertise</NuxtLink>
             </li>
@@ -71,71 +78,78 @@
         </div>
         <div class="menu__content">
           <div class="menu__back unbutton">
-           
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.5 10.3099L2.1654 16.6445C1.92839 16.8815 1.62674 17 1.26046 17C0.89417 17 0.592522 16.8815 0.355513 16.6445C0.118504 16.4075 0 16.1058 0 15.7395C0 15.3733 0.118504 15.0716 0.355513 14.8346L6.69011 8.5L0.355513 2.1654C0.118504 1.92839 0 1.62674 0 1.26046C0 0.89417 0.118504 0.592522 0.355513 0.355513C0.592522 0.118504 0.89417 0 1.26046 0C1.62674 0 1.92839 0.118504 2.1654 0.355513L8.5 6.69011L14.8346 0.355513C15.0716 0.118504 15.3733 0 15.7395 0C16.1058 0 16.4075 0.118504 16.6445 0.355513C16.8815 0.592522 17 0.89417 17 1.26046C17 1.62674 16.8815 1.92839 16.6445 2.1654L10.3099 8.5L16.6445 14.8346C16.8815 15.0716 17 15.3733 17 15.7395C17 16.1058 16.8815 16.4075 16.6445 16.6445C16.4075 16.8815 16.1058 17 15.7395 17C15.3733 17 15.0716 16.8815 14.8346 16.6445L8.5 10.3099Z" fill="white"/>
-</svg>
-
-          
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.5 10.3099L2.1654 16.6445C1.92839 16.8815 1.62674 17 1.26046 17C0.89417 17 0.592522 16.8815 0.355513 16.6445C0.118504 16.4075 0 16.1058 0 15.7395C0 15.3733 0.118504 15.0716 0.355513 14.8346L6.69011 8.5L0.355513 2.1654C0.118504 1.92839 0 1.62674 0 1.26046C0 0.89417 0.118504 0.592522 0.355513 0.355513C0.592522 0.118504 0.89417 0 1.26046 0C1.62674 0 1.92839 0.118504 2.1654 0.355513L8.5 6.69011L14.8346 0.355513C15.0716 0.118504 15.3733 0 15.7395 0C16.1058 0 16.4075 0.118504 16.6445 0.355513C16.8815 0.592522 17 0.89417 17 1.26046C17 1.62674 16.8815 1.92839 16.6445 2.1654L10.3099 8.5L16.6445 14.8346C16.8815 15.0716 17 15.3733 17 15.7395C17 16.1058 16.8815 16.4075 16.6445 16.6445C16.4075 16.8815 16.1058 17 15.7395 17C15.3733 17 15.0716 16.8815 14.8346 16.6445L8.5 10.3099Z"
+                fill="white"
+              />
+            </svg>
           </div>
           <nav class="menu__nav-content">
             <div class="column">
-            <img src="/img/Logos/alexander_strategy_group_Logo_iconwhite.svg" alt="">
-            <h4>Services</h4>
-            <div>
-              <NuxtLink to="/national_security">
-                <div class="service menu__back">
-                  <div class="image image1"></div>
-                  <div>
-                    <h3>National Security</h3>
-                    <p>Create secure environments</p>
+              <img
+                src="/img/Logos/alexander_strategy_group_Logo_iconwhite.svg"
+                alt=""
+              />
+              <h4>Services</h4>
+              <div>
+                <NuxtLink to="/national_security">
+                  <div class="service menu__back">
+                    <div class="image image1"></div>
+                    <div>
+                      <h3>National Security</h3>
+                      <p>Create secure environments</p>
+                    </div>
                   </div>
-                </div>
-              </NuxtLink>
-              <NuxtLink to="/law_enforcement">
-                <div class="service menu__back">
-                  <div class="image image2"></div>
-                  <div>
-                    <h3>Law Enforcement</h3>
-                    <p>Make communities safer</p>
+                </NuxtLink>
+                <NuxtLink to="/law_enforcement">
+                  <div class="service menu__back">
+                    <div class="image image2"></div>
+                    <div>
+                      <h3>Law Enforcement</h3>
+                      <p>Make communities safer</p>
+                    </div>
                   </div>
-                </div>
-              </NuxtLink>
-              <NuxtLink to="/urban_planning">
-                <div class="service menu__back">
-                  <div class="image image3"></div>
-                  <div>
-                    <h3>Urban Planning</h3>
-                    <p>Thrive in the 21st century</p>
+                </NuxtLink>
+                <NuxtLink to="/urban_planning">
+                  <div class="service menu__back">
+                    <div class="image image3"></div>
+                    <div>
+                      <h3>Urban Planning</h3>
+                      <p>Thrive in the 21st century</p>
+                    </div>
                   </div>
-                </div>
-              </NuxtLink>
-              <NuxtLink to="/city_resilience">
-                <div class="service menu__back">
-                  <div class="image image4"></div>
-                  <div>
-                    <h3>City Resilience</h3>
-                    <p>Ready for the unexpected</p>
+                </NuxtLink>
+                <NuxtLink to="/city_resilience">
+                  <div class="service menu__back">
+                    <div class="image image4"></div>
+                    <div>
+                      <h3>City Resilience</h3>
+                      <p>Ready for the unexpected</p>
+                    </div>
                   </div>
-                </div>
-              </NuxtLink>
-              <NuxtLink to="/communications">
-                <div class="service menu__back">
-                  <div class="image image5"></div>
-                  <div>
-                    <h3>Communications</h3>
-                    <p>Get the message across</p>
+                </NuxtLink>
+                <NuxtLink to="/communications">
+                  <div class="service menu__back">
+                    <div class="image image5"></div>
+                    <div>
+                      <h3>Communications</h3>
+                      <p>Get the message across</p>
+                    </div>
                   </div>
-                </div>
-              </NuxtLink>
-            </div>
+                </NuxtLink>
+              </div>
             </div>
           </nav>
-          
         </div>
       </div>
     </header>
-   
   </div>
 </template>
 
@@ -146,46 +160,42 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 const scrollTween = ref(null);
-const rond = ref(false)
+const rond = ref(false);
 
 function openContact() {
   rond.value = true;
-  setTimeout (()=>{
-    window.location.href ="https://phenomenal-pothos-655a2a.netlify.app/contact"
-  },"2000") 
+  setTimeout(() => {
+    window.location.href =
+      "https://phenomenal-pothos-655a2a.netlify.app/contact";
+  }, "2000");
 }
 
-
 onMounted(() => {
-  const header = document.querySelector('header');
-const sections = document.querySelectorAll('.light_mode');
+  const header = document.querySelector("header");
+  const sections = document.querySelectorAll(".light_mode");
 
-sections.forEach(section => {
-  section.addEventListener('mouseenter', () => {
-      header.classList.add('dark');
+  sections.forEach((section) => {
+    section.addEventListener("mouseenter", () => {
+      header.classList.add("dark");
+    });
+    section.addEventListener("mouseleave", () => {
+      header.classList.remove("dark");
+    });
   });
-  section.addEventListener('mouseleave', () => {
-    header.classList.remove('dark');
-  });
-});
 
-let logo = document.querySelector(".logo_mobile");
-let lastScrollValue = 0;
+  let logo = document.querySelector(".logo_mobile");
+  let lastScrollValue = 0;
 
-document.addEventListener('scroll',() => {
-		let top  = document.documentElement.scrollTop;
-    if(lastScrollValue < top) {
-    	logo.classList.add("hidden");
+  document.addEventListener("scroll", () => {
+    let top = document.documentElement.scrollTop;
+    if (lastScrollValue < top) {
+      logo.classList.add("hidden");
     } else {
-    	logo.classList.remove("hidden");
+      logo.classList.remove("hidden");
     }
     lastScrollValue = top;
-});
-
-
+  });
 
   // DOM elements
   const DOM = {
@@ -197,7 +207,7 @@ document.addEventListener('scroll',() => {
     menuContent: document.querySelector(".menu__content"),
     // Close button
     closeCtrl: document.querySelectorAll(".menu__back"),
-    service: document.querySelector(".service")
+    service: document.querySelector(".service"),
     // Extra elements that will be animated inside the menu
   };
 
@@ -217,7 +227,7 @@ document.addEventListener('scroll',() => {
         ease: "power4.inOut",
       },
     })
-    
+
     .to(
       DOM.menuContent,
       {
@@ -226,7 +236,7 @@ document.addEventListener('scroll',() => {
         y: "0%",
       },
       "menu"
-    )
+    );
 
   // Menu expand
   const expandMenu = () => {
@@ -255,49 +265,46 @@ document.addEventListener('scroll',() => {
   // Collapse it when pressing the close button
   DOM.closeCtrl.forEach((close) => {
     close.addEventListener("click", (ev) => {
-    // ev.preventDefault();
-    collapseMenu();
+      // ev.preventDefault();
+      collapseMenu();
+    });
   });
-},)})
+});
 </script>
 
 <style lang="scss" scoped>
-
-.transition_rond{
+.transition_rond {
   position: fixed;
   left: -1000px;
   bottom: -1000px;
   border-radius: 100%;
   background-color: var(--color-bg-dark);
- 
-  &--click{
+
+  &--click {
     // animation: rond 1s;
     animation: rond 2.2s linear;
-  @keyframes rond {
-      0%{
+    @keyframes rond {
+      0% {
         width: 0;
         height: 0;
         // display: block;
         opacity: 0;
       }
-      90%{
+      90% {
         opacity: 1;
         height: 3500px;
         width: 3500px;
       }
-      100%{
+      100% {
         opacity: 1;
         height: 3500px;
         width: 3500px;
-
       }
-           
-    }   
-    
+    }
   }
 }
 
-.dark{
+.dark {
   color: var(--color-secondaire);
   transition: color 0.5s ease-in-out;
 }
@@ -305,23 +312,25 @@ header {
   padding: 2%;
   position: fixed;
   height: 100vh;
-  z-index: 10;
+  z-index: 9;
   font-size: 20px;
   font-weight: 700;
+  mix-blend-mode: difference !important;
+  color: white !important;
 
   .text_logo {
     font-weight: 700;
     line-height: normal;
   }
-  .logo_mobile{
+  .logo_mobile {
     display: none;
   }
   .logo_ordi {
-      width: 100px;
-      margin-bottom: 15px;
+    width: 100px;
+    margin-bottom: 15px;
   }
 }
-header{
+header {
   animation: ordi 4s;
 
   @keyframes ordi {
@@ -363,25 +372,25 @@ nav > ul li:hover .sous {
   width: 100%;
   text-align: left;
   align-items: center;
-  &:hover > .image{
+  &:hover > .image {
     rotate: 45deg;
     transition: 0.5s;
   }
-  &:hover > .image1{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security.svg");
+  &:hover > .image1 {
+    background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security.svg");
   }
-  &:hover > .image2{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement.svg");
-      }
-      &:hover > .image3{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_urban_planning.svg");
-      }
-      &:hover > .image4{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg");
-      }
-      &:hover > .image5{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_communication.svg");
-      }
+  &:hover > .image2 {
+    background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement.svg");
+  }
+  &:hover > .image3 {
+    background-image: url("/img/Services_Icons/alexander_strategy_group_services_urban_planning.svg");
+  }
+  &:hover > .image4 {
+    background-image: url("/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg");
+  }
+  &:hover > .image5 {
+    background-image: url("/img/Services_Icons/alexander_strategy_group_services_communication.svg");
+  }
 }
 button {
   background-color: transparent;
@@ -410,95 +419,93 @@ button:hover {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-}
-.button:hover {
-  border: solid -1px var(--color-orange);
-  transition: 0.3s;
-  scale: 1.2;
-  //width: 50px;
-  //height: 50px;
-  display: flex;
+
+  &:hover {
+    border: solid -1px var(--color-orange);
+    transition: 0.3s;
+    scale: 1.2;
+    //width: 50px;
+    //height: 50px;
+    display: flex;
+  }
 }
 
 .image {
-      width: 25px;
-      height: 25px;
-      margin-right: 10px;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-   
-    .image1 {
-      background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security_white.svg");
-      &:hover{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security.svg");
-      }
-    }
-    .image2 {
-      background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg");
-      &:hover{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement.svg");
-      }
-    }
-    .image3 {
-      background-image: url("/img/Services_Icons/alexander_strategy_group_services_urban_planning_white.svg");
-      &:hover{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_urban_planning.svg");
-      }
-    }
-    .image4 {
-      background-image: url("/img/Services_Icons/alexander_strategy_group_services_city_resilience_white.svg");
-      &:hover{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg");
-      }
-    }
-    .image5 {
-      background-image: url("/img/Services_Icons/alexander_strategy_group_services_communication_white.svg");
-      &:hover{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_communication.svg");
-      }
-    }
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image1 {
+  background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security_white.svg");
+  &:hover {
+    background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security.svg");
+  }
+}
+.image2 {
+  background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg");
+  &:hover {
+    background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement.svg");
+  }
+}
+.image3 {
+  background-image: url("/img/Services_Icons/alexander_strategy_group_services_urban_planning_white.svg");
+  &:hover {
+    background-image: url("/img/Services_Icons/alexander_strategy_group_services_urban_planning.svg");
+  }
+}
+.image4 {
+  background-image: url("/img/Services_Icons/alexander_strategy_group_services_city_resilience_white.svg");
+  &:hover {
+    background-image: url("/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg");
+  }
+}
+.image5 {
+  background-image: url("/img/Services_Icons/alexander_strategy_group_services_communication_white.svg");
+  &:hover {
+    background-image: url("/img/Services_Icons/alexander_strategy_group_services_communication.svg");
+  }
+}
 
 .navtel {
   display: none;
 }
 
-
 @media screen and (max-width: 767px) {
   /* mobile */
 
   header {
-  animation: ordi 4s;
+    animation: ordi 4s;
 
-  @keyframes ordi {
-    50% {
-      margin-top: -40vh;
+    @keyframes ordi {
+      50% {
+        margin-top: -40vh;
+      }
+      100% {
+        margin-top: 0vh;
+      }
     }
-    100% {
-      margin-top: 0vh;
+    nav a:hover {
+      color: var(--color-text);
     }
+    .logo_mobile {
+      width: 90vw;
+      display: flex;
+      justify-content: center;
+      transition: margin-top 0.5s;
 
+      img {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+    .logo_mobile.hidden {
+      margin-top: -70px;
+      transition: margin-top 0.5s;
+    }
   }
-  nav a:hover {
-  color: var(--color-text);
-}
-.logo_mobile{
-  width: 90vw; 
-  display: flex;
-  justify-content: center;
-  transition: margin-top 0.5s;
-
-  img{
-    height: 50px;
-    margin-bottom: 20px;
-
-  }
-}
-.logo_mobile.hidden {
-  margin-top: -70px;
-  transition: margin-top 0.5s;
-}
-}
   .menu_ordi {
     display: none;
   }
@@ -546,16 +553,16 @@ button:hover {
     align-self: start;
     margin-top: 5.5vh;
   }
-  .column{
+  .column {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    img{
+    img {
       width: 18vw;
       margin: 2vh 0 8vh 0;
     }
-    h4{
+    h4 {
       margin-bottom: 4vh;
     }
   }
@@ -588,12 +595,11 @@ button:hover {
     }
   }
   .unbutton {
-	position: absolute;
-	height: 50px;
-  right: 50px;
-	align-self: flex-end;
-	margin-top: calc(5.5vh + 2rem);
-}
-
+    position: absolute;
+    height: 50px;
+    right: 50px;
+    align-self: flex-end;
+    margin-top: calc(5.5vh + 2rem);
+  }
 }
 </style>
