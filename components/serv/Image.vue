@@ -5,14 +5,14 @@
       class="carte"
       id="popup1"
       :style="{
-        backgroundImage: `linear-gradient(180deg, rgba(32, 42, 53, 0) 35.3%, #202A35 100%), url(${src1})`,
+        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 9.25%, rgba(0, 0, 0, 0.8) 100%), url(${src1})`,
       }"
     >
       <div
         class="image"
         id="popup1"
         :style="{
-          backgroundImage: `linear-gradient(180deg, rgba(32, 42, 53, 0) 35.3%, #202A35 100%), url(${src1})`,
+          backgroundImage: ` url(${src1})`,
         }"
       ></div>
 
@@ -37,14 +37,14 @@
     <div
       class="carte"
       :style="{
-        backgroundImage: `linear-gradient(180deg, rgba(32, 42, 53, 0) 35.3%, #202A35 100%), url(${src2})`,
+        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 9.25%, rgba(0, 0, 0, 0.8) 100%), url(${src2})`,
       }"
     >
       <div
         class="image"
         id="popup1"
         :style="{
-          backgroundImage: `linear-gradient(180deg, rgba(32, 42, 53, 0) 35.3%, #202A35 100%), url(${src2})`,
+          backgroundImage: `url(${src2})`,
         }"
       ></div>
 
@@ -177,8 +177,12 @@ cartes.forEach(carte => {
   overflow: scroll;
   gap: 20px;
   background-color: var(--color-bg-dark);
-  padding: 10vh;
+  padding: 10vh 0 10vh 6vw;
+  justify-content: flex-start;
+
   @media (min-width: 767px) {
+    // width: 90%;
+    padding-left: 10vw;
     align-items: center;
     justify-content: center;
   }
@@ -251,8 +255,10 @@ inset: 0;
     // height: 20vh;
     @media (min-width: 767px) {
       flex-direction: row;
+      justify-content: space-between;
       border-top: solid 1px var(--color-text);
-      width: 60vw;
+      width: 54vw;
+      margin: 0 2vw;
       overflow: hidden;
 
       p {
@@ -267,12 +273,12 @@ inset: 0;
   width: 100%;
   background-size: cover;
   border-radius: 20px 20px 0 0;
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 9.25%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    url("/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning_resiliency_assesment.webp");
+  // background-image: linear-gradient(
+  //     180deg,
+  //     rgba(0, 0, 0, 0) 9.25%,
+  //     rgba(0, 0, 0, 0.8) 100%
+  //   ),
+  //   url("/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning_resiliency_assesment.webp");
   @media (min-width: 767px) {
     display: none;
   }

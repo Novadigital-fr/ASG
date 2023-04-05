@@ -76,8 +76,12 @@
     background-image: url(../assets/img/Img_HP/alexander_strategy_group_expertise_governement.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     border-radius: 20px;
+    @media (min-width: 1924px) {
+      min-height: 60vh;
+    }
+
   }
   .right {
     padding: 3vh 5%;

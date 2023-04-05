@@ -52,6 +52,7 @@ definePageMeta({
 }
 .contenu-global {
   height: 100vh;
+  background-color: var(--color-bg-dark);
   background-image: linear-gradient(
       180deg,
       rgba(32, 42, 53, 0) 37.45%,

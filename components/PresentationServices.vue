@@ -73,6 +73,9 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+
+
+
 .full {
   color: var(--color-secondaire);
   display: flex;
@@ -86,6 +89,10 @@
   flex-direction: column;
   align-items: flex-start;
   padding-left: 15vw;
+  @media (min-width: 1924px) {
+    width: 60%;
+
+  }
 
   h2 {
     margin-bottom: 10vh;
@@ -106,7 +113,17 @@
     height: 50px;
     margin-right: 2vw;
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    transform-origin: center center;
+    transition: 1s;
+
+
+
+    @media (min-width: 1924px) {
+      width: 70px;
+    height: 70px;
+  }
   }
   .image1 {
     background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security.svg");
@@ -133,9 +150,17 @@
   .image {
     rotate: 45deg;
     transition: 1s;
+    transform-origin: center center;
+    -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: center center;
+  max-width: none;
+  max-height: none;
+
   }
   .image1 {
     background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security_white.svg");
+    width: 50px;
+    height: 50px;
   }
   .image2 {
     background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg");
@@ -152,13 +177,20 @@
 }
 .right {
   text-align: start;
+  @media (min-width: 1924px) {
+    width: 40%;
+
+  }
   .video {
     width: 80%;
     top: 10vh;
     bottom: 40vh;
     position: sticky;
+
   }
 }
+
+
 
 @media screen and (max-width: 1024px) {
     /* tablettte */

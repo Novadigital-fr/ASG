@@ -69,11 +69,12 @@
       const scrollLeft = window.scrollY;
       const totalWidth = document.documentElement.scrollWidth - document.documentElement.clientWidth;
       const progress = scrollLeft / totalWidth;
-      progressBar.style.transform = `scaleX(${progress - 1})`;
+      progressBar.style.transform = `scaleX(${progress - 1.5})`;
       };
       window.addEventListener('scroll', updateProgressBar);
 
   });
+  
   
   onUnmounted(() => {
     if (scrollTween.value) {
@@ -143,6 +144,9 @@
     transform: scaleX(0);
     transform-origin: left center;
 }
+.tel{
+      display: none;
+}
   
   @media screen and (max-width: 1024px) {
     /* tablettte */
@@ -187,9 +191,17 @@
       position: relative;
       z-index: 4;
       width: 100vw;
-      margin: 5vh 2vw 10vh 2vw;
+      margin: 7vh 2vw 10vh 2vw;
       font-weight: 300;
       overflow: hidden;
+
+      img{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    h2,p{
+        width: 100%;
+    }
     }
    
   }

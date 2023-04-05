@@ -89,7 +89,7 @@ animation.scrollTrigger.disable();
   justify-content: center;
   align-items: center;
   h2 {
-    width: 50%;
+    width: clamp(530px, 50vw, 999px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;

@@ -1,7 +1,7 @@
 <template>
   <div class="expertise">
     <div class="hero_text">
-      <h1>We help solve your toughest challenges</h1>
+      <h1 ref="title" class="title">We help solve your toughest challenges</h1>
       <p>
         Driven by excellence and an established global expertise, we offer a
         wide array of strategic consulting services supported by our team of
@@ -14,7 +14,22 @@
   </div>
 </template>
 
-<script></script>
+<script >
+import gsap from "gsap";
+
+export default {
+
+  mounted() {
+    gsap.from(this.$refs.title, {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      ease: "power4.out",
+      delay: 0.5,
+    });
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .expertise {
@@ -29,6 +44,7 @@
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--color-bg-dark);
   background-image: linear-gradient(
       180deg,
       rgba(3, 12, 34, 0) 53.65%,

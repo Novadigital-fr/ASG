@@ -59,6 +59,20 @@ export default {
   background-size: cover;
   background-color: var(--color-bg-dark);
 
+  // opacity: 1;
+  transform: scale(1.1);
+animation: 2s back;
+
+  @keyframes back {
+    0%{
+      // opacity: 0;
+      transform: scale(1);
+    }
+    100%{
+
+    }
+    
+  }
 
   .title {
     margin: 3% 0 1% 0;

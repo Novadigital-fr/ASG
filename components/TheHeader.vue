@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <header>
+    <div class="header">
       <div class="menu_ordi">
         <img
           class="logo_ordi"
@@ -134,7 +134,7 @@
           
         </div>
       </div>
-    </header>
+    </div>
    
   </div>
 </template>
@@ -155,12 +155,12 @@ function openContact() {
   rond.value = true;
   setTimeout (()=>{
     window.location.href ="https://phenomenal-pothos-655a2a.netlify.app/contact"
-  },"2000") 
+  },"1200") 
 }
 
 
 onMounted(() => {
-  const header = document.querySelector('header');
+const header = document.querySelector('header');
 const sections = document.querySelectorAll('.light_mode');
 
 sections.forEach(section => {
@@ -272,7 +272,7 @@ document.addEventListener('scroll',() => {
  
   &--click{
     // animation: rond 1s;
-    animation: rond 2.2s linear;
+    animation: rond 1.2s linear;
   @keyframes rond {
       0%{
         width: 0;
@@ -301,7 +301,8 @@ document.addEventListener('scroll',() => {
   color: var(--color-secondaire);
   transition: color 0.5s ease-in-out;
 }
-header {
+
+.header {
   padding: 2%;
   position: fixed;
   height: 100vh;
@@ -335,9 +336,16 @@ header{
 }
 nav {
   margin-top: 15vh;
+  mix-blend-mode: difference;
+
 
   li {
+  //   position: absolute;
+  //   top: 50%;
+  // left: 50%;
+  mix-blend-mode: difference;
     margin-bottom: 2vh;
+   
   }
 }
 nav a:hover {
@@ -363,6 +371,7 @@ nav > ul li:hover .sous {
   width: 100%;
   text-align: left;
   align-items: center;
+
   &:hover > .image{
     rotate: 45deg;
     transition: 0.5s;
@@ -426,6 +435,8 @@ button:hover {
       margin-right: 10px;
       background-repeat: no-repeat;
       background-size: cover;
+      transition: 0.5s;
+
     }
    
     .image1 {

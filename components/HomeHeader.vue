@@ -2,6 +2,16 @@
   <div class="full">
     <div class="top">
       <div class="sticky">
+        <!-- <client-only>
+            <Vue3Lottie
+              class="rond"
+              id="firstLottie"
+              animationLink="https://lottie.host/d00219da-570b-46c4-9e43-06ea32081e16/m4JGdRnPmi.json"
+              :height="100"
+              :width="100"
+              :speed=".5"
+            />
+          </client-only> -->
         <div class="div_logo">
           <client-only>
             <Vue3Lottie
@@ -33,8 +43,27 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from "vue";
 
+
 onMounted(() => {
   // if (window.matchMedia("(min-width: 1024px)").matches) {
+
+  //   const options = {
+  //   mode: 'scroll',
+  //   actions: [
+  //     {
+  //       visibility: [0,1],
+  //       type: 'seek',
+  //       frames: [0, 300],
+  //     },
+  //   ],
+  // };
+  
+  // // Utilisation de LottieInteractivity pour contrôler l'animation de Vue3Lottie en fonction du défilement
+  // LottieInteractivity.create({
+  //   player: '#firstLottie',
+  //   ...options,
+  // });
+
 
   const cercle = document.querySelector(".cercle");
   const back = document.querySelector(".sticky");
@@ -131,7 +160,7 @@ onMounted(() => {
   .video {
     position: relative;
     z-index: 4;
-    width: 8vw;
+    width: 125px;
   }
 
   .title {
@@ -224,7 +253,7 @@ onMounted(() => {
     background-size: cover;
 
     .video {
-      width: 25vw;
+      width: 85px;
     }
     h4 {
     animation: soustitle 4s;
