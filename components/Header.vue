@@ -2,6 +2,7 @@
     <div>
     <header>
       <div class="menu_ordi">
+        <NuxtLink to="/">
         <img
           class="logo_ordi"
           src="../assets/img/logo.svg"
@@ -12,13 +13,14 @@
           strategy <br />
           group
         </p>
+        </NuxtLink>
         <nav>
           <ul>
             <li class="link link--metis">
               <NuxtLink to="/">Home</NuxtLink>
             </li>
             <li class="link link--metis top_sous">
-              <NuxtLink to="/">Services</NuxtLink>
+              Services
               <ul class="sous">
                 <li>
                   <div class="image image1"></div>

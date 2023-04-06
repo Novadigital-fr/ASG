@@ -50,26 +50,40 @@
   onMounted(() => {    
     const container = document.querySelector('.container');
   
-    // if (window.matchMedia("(min-width: 1024px)").matches) {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
       let sections = gsap.utils.toArray(".panel");
       scrollTween.value = gsap.to(sections, {
-        xPercent: -100 * (sections.length - 2),
+        xPercent: -100 * (sections.length - 3),
         ease: "none", // <-- IMPORTANT!
         scrollTrigger: {
           trigger: "#container",
           pin: true,
           scrub: 0.1,
           //snap: directionalSnap(1 / (sections.length - 1)),
-          end: "+=2000",
+          end: "+=1000",
         },
       });
+    } else{
+      let sections = gsap.utils.toArray(".panel");
+      scrollTween.value = gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1.5),
+        ease: "none", // <-- IMPORTANT!
+        scrollTrigger: {
+          trigger: "#container",
+          pin: true,
+          scrub: 0.1,
+          //snap: directionalSnap(1 / (sections.length - 1)),
+          end: "+=1000",
+        },
+      });
+    }
     
       const updateProgressBar = () => {
       const progressBar = document.querySelector('.slider__progress');
       const scrollLeft = window.scrollY;
       const totalWidth = document.documentElement.scrollWidth - document.documentElement.clientWidth;
       const progress = scrollLeft / totalWidth;
-      progressBar.style.transform = `scaleX(${progress - 1.5})`;
+      progressBar.style.transform = `scaleX(${progress - 2})`;
       };
       window.addEventListener('scroll', updateProgressBar);
 
@@ -134,6 +148,8 @@
     position: fixed;
     height: 3px;
     will-change: transform;
+    border-radius: 10px;
+
 }
 
 .slider__progress {
@@ -143,6 +159,7 @@
     background-color: var(--color-orange);
     transform: scaleX(0);
     transform-origin: left center;
+
 }
 .tel{
       display: none;

@@ -83,7 +83,7 @@ button {
       @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
       position: absolute;
       top: 0;
-      left: 0;
+      left: -20px;
       right: 0;
       bottom: 0;
       padding: 0.75rem 0;

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header/>
     <ServHero
       image="/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning.webp"
       logo="/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg"
