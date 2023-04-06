@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Header />
         <HomeHeader />
         <HomeHorizontal/>
         <PresentationServices/>
@@ -7,8 +8,7 @@
     </div>
 </template>
 
-<script setup>
-
+<script>
 </script>
 
 <style lang="scss" scoped>

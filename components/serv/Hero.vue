@@ -61,7 +61,7 @@ export default {
 
   // opacity: 1;
   transform: scale(1.1);
-animation: 2s back;
+  animation: 2s back;
 
   @keyframes back {
     0%{
@@ -78,9 +78,11 @@ animation: 2s back;
     margin: 3% 0 1% 0;
     color: var(--color-orange);
     font-size: 70px;
+
   }
   img {
     width: 8%;
+
   }
 }
 @media screen and (max-width: 767px) {
@@ -88,7 +90,7 @@ animation: 2s back;
   .service_hero {
 
       padding-top: 0;
-      padding-bottom: 8vh;
+      padding-bottom: 15vh;
     justify-content: flex-end;
 
     .title {

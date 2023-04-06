@@ -1,9 +1,10 @@
 <template>
   <div>
+    <Header/>
     <ExpertiseHero />
     <ExpertiseDegrade />
     <ExpertiseFondu />
-    <div class="top_expertise">
+    <div class="top_expertise light_mode">
     <div class="div_logo">
       <img
         class="logo"
@@ -23,7 +24,68 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+// import { onMounted, onUnmounted, onUpdated, ref } from "vue";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
+
+// let triggerArray = [];
+
+// onMounted(() => {
+//   const menu = document.querySelector('.menu_ordi');
+//   const lightModeSections = document.querySelectorAll('.light_mode');
+
+//   lightModeSections.forEach(section => {
+//     const trigger = ScrollTrigger.create({
+//       trigger: section,
+//       start: 'top top',
+//       end: 'bottom bottom',
+//       markers: true,
+//       onEnter: () => {
+//         menu.classList.add('dark');
+//       },
+//       onLeaveBack: () => {
+//         menu.classList.remove('dark');
+//       }
+//     });
+//     triggerArray.push(trigger);
+//   });
+// });
+
+// onUpdated(() => {
+//   triggerArray.forEach(trigger => {
+//     trigger.kill();
+//   });
+//   triggerArray = [];
+
+//   const menu = document.querySelector('.menu_ordi');
+//   const lightModeSections = document.querySelectorAll('.light_mode');
+
+//   lightModeSections.forEach(section => {
+//     const trigger = ScrollTrigger.create({
+//       trigger: section,
+//       start: 'top top',
+//       end: 'bottom bottom',
+//       markers: true,
+//       onEnter: () => {
+//         menu.classList.add('dark');
+//       },
+//       onLeaveBack: () => {
+//         menu.classList.remove('dark');
+//       }
+//     });
+//     triggerArray.push(trigger);
+//   });
+// });
+
+// onUnmounted(() => {
+//   triggerArray.forEach(trigger => {
+//     trigger.kill();
+//   });
+//   triggerArray = [];
+// });
+</script>
 
 <style lang="scss" scoped>
 

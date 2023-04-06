@@ -1,4 +1,6 @@
 <template>
+          <Header/>
+
   <div class="contact">
     <div class="contenu-global">
       <div class="formulaire">

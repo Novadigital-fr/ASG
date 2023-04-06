@@ -1,5 +1,5 @@
 <template>
-  <div class="full">
+  <div class="full dark_mode">
     <div class="top">
       <div class="sticky">
         <!-- <client-only>
@@ -42,6 +42,7 @@
 
 <script setup>
 import { onMounted, onUnmounted, ref } from "vue";
+import gsap from "gsap";
 
 
 onMounted(() => {
@@ -64,11 +65,13 @@ onMounted(() => {
   //   ...options,
   // });
 
-
   const cercle = document.querySelector(".cercle");
   const back = document.querySelector(".sticky");
   const title = document.querySelector("h1");
+  const blockTitle =document.querySelector(".title")
   const sousTitle = document.querySelector(".sticky h4");
+
+  let animationJouee = false;
 
   window.addEventListener("scroll", function (e) {
     // cercle.style.transform="scale(" + window.scrollY / 100 + ")";
@@ -77,18 +80,28 @@ onMounted(() => {
     cercle.style.width = 11000 - window.scrollY * 10 + "px";
     cercle.style.height = 11000 - window.scrollY * 10 + "px";
 
-    if (window.scrollY > 330) {
+    if (window.scrollY > 530) {
       title.innerHTML =
         "Alexander Strategy Group <br> is a leading global <br> <span class='orange'>consulting services firm</span> ";
       sousTitle.innerHTML = ". ";
       title.classList = "anim_text";
+      blockTitle.style.zIndex = 20;
+
     }
-    if (window.scrollY < 330) {
+    if (window.scrollY > 530 && !animationJouee) {
+  gsap.fromTo(title, {y: 50, opacity: 0}, {y: 0, opacity: 1, duration: 1});
+  animationJouee = true;
+  console.log("hello")
+}
+    if (window.scrollY < 530) {
       title.innerHTML =
         "We help mitigate risk to keep <br/> communities, companies, <br /> and individuals safe";
       sousTitle.innerHTML = "alexander strategy group";
+      blockTitle.style.zIndex = 4;
+      animationJouee = false;
+
     }
-    if (window.scrollY > 1500) {
+    if (window.scrollY > 1900) {
       cercle.style.display = "none";
     } else {
       cercle.style.display = "block";
@@ -99,11 +112,9 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .top {
-  height: 150vh;
+  height: 200vh;
 }
-.anim_text{
-  animation: opacit 10s;
-  @keyframes opacit {
+@keyframes opacit {
     0% {
      opacity: 1;
     }
@@ -112,7 +123,6 @@ onMounted(() => {
      opacity: 0;
     }
   }
-}
 .sticky {
   min-height: 100vh;
   width: 100vw;
@@ -159,7 +169,7 @@ onMounted(() => {
 
   .video {
     position: relative;
-    z-index: 4;
+    z-index: 6;
     width: 125px;
   }
 
@@ -223,7 +233,7 @@ onMounted(() => {
   position: absolute;
   margin: auto -10vw;
   inset: 0;
-  z-index: 1;
+  z-index: 5;
 }
 
 @media screen and (max-width: 1024px) {
