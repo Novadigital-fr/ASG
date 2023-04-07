@@ -38,7 +38,7 @@ onMounted(() => {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    height: 350vh;
+    height: 390vh;
 }
 .text{
     position: sticky;

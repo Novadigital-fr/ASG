@@ -97,6 +97,11 @@
   h2 {
     margin-bottom: 10vh;
     width: 80%;
+
+    @media (min-width: 1524px) {
+    width: 70%;
+
+  }
   }
 }
 .service {
@@ -221,25 +226,29 @@
   .left {
     width: 100%;
     align-items: center;
-    padding: 0 5vw;
+    padding: 0 2vw;
 
     h2 {
       margin-bottom: 10vh;
       padding: 0 5vw;
       width: 100%;
       text-align: center;
+      line-height: 25px;
     }
   }
   .service {
     padding: 2vh 6vw 2vh 6vw;
     margin-bottom: 5vh;
-    img {
-      margin-right: 5vw;
-      width: 15%;
+
+    .image {
+      margin-right: 20px;
     }
     p{
       font-size: 16px;
     }
+  }
+  .service:hover{
+    pointer-events: none;
   }
 }
 </style>

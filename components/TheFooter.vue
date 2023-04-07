@@ -193,6 +193,8 @@ input {
     }
     input{
       margin: 5vh 0;
+      padding: 2vh 4vw;
+
     }
   }
 }

@@ -78,7 +78,7 @@
         margin-right: 5vw;
 
         img{
-            width: 34%;
+            width: 89px;
         }
         p{
             width: 60%;
@@ -130,7 +130,6 @@
         div{
             width: 80vw;
         }
-       
     }
   }
 </style>

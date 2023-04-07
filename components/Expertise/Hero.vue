@@ -3,9 +3,8 @@
     <div class="hero_text">
       <h1 ref="title" class="title">We help solve your toughest challenges</h1>
       <p>
-        Driven by excellence and an established global expertise, we offer a
-        wide array of strategic consulting services supported by our team of
-        advisors.
+        We thrive to deliver sophisticated solutions,
+daring to become a proactive and dedicated partner through the whole project.
       </p>
       <NuxtLink to="/contact">
       <Button text="Contact" />
@@ -51,10 +50,24 @@ export default {
       #070b1d 100%
     ),
     url("../../assets/img/Img_Expertise/alexander_strategy_group_expertise.webp");
+
+  transform: scale(1.1);
+  animation: 2s back;
+
+  @keyframes back {
+    0%{
+      // opacity: 0;
+      transform: scale(1);
+    }
+    100%{
+
+    }
+    
+  }
 }
 .hero_text {
   margin-top: 10vh;
-  width: clamp(35vw, 45vw, 60vw);
+  width: clamp(520px, 600px, 650px);
   p {
     margin: 2vh 0 5vh 0;
   }
@@ -71,11 +84,14 @@ export default {
       url("../../assets/img/Img_Expertise/alexander_strategy_group_expertise_mobile.webp");
     background-size: cover;
     justify-content: flex-end;
-
+    background-position: center center;
 
     img {
       width: 25%;
     }
+  }
+  h1{
+    font-size: 28px;
   }
   .hero_text {
     margin-top: 0;

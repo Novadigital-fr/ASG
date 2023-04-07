@@ -287,7 +287,9 @@ onMounted(() => {
     }
   }
   }
-
+.div_logo{
+  margin-top: 25vh;
+}
   .cercle {
     max-width: 260vw;
     max-height: 260vw;

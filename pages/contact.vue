@@ -36,6 +36,52 @@
     </div>
     <h2 class="Worldwide">Worldwide offices</h2>
     <div class="sous-div"></div>
+    <div class="offices">
+      <div class="sevices">
+          <div class="service">
+            <div class="image image1"></div>
+            <div>
+              <h3>Washington DC</h3>
+              <p>United States of America</p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="image image2"></div>
+            <div>
+              <h3>Los Angeles</h3>
+              <p>United States of America</p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="image image2"></div>
+            <div>
+              <h3>London</h3>
+              <p>United Kingdom</p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="image image2"></div>
+            <div>
+              <h3>Paris</h3>
+              <p>France</p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="image image2"></div>
+            <div>
+              <h3>Riyadh</h3>
+              <p>Kingdom of Saudi Arabia</p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="image image2"></div>
+            <div>
+              <h3>Tokyo</h3>
+              <p>Japan</p>
+            </div>
+          </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -97,7 +143,9 @@ form input {
   width: 100%;
   border-radius: 10px;
   margin: 1vh 0;
-  font-size: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
   outline: none;
   color: var(--color-text);
 }
@@ -107,10 +155,13 @@ form textarea {
   padding: 20px 30px;
   width: 100%;
   border-radius: 10px;
-  margin: 1vh 0;
+  margin: 1vh 0 4vh 0;
   outline: none;
   color: var(--color-text);
   font-family: "Nexa";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 .sous-div {
   width: 100%;
@@ -123,6 +174,8 @@ form textarea {
   text-align: center;
   padding: 10vh 0;
 }
+
+
 
 @media screen and (max-width: 1024px) {
   /* tablettte */
@@ -142,24 +195,48 @@ form textarea {
 @media screen and (max-width: 766px) {
   .contenu-global {
     height: fit-content;
-    background-image: linear-gradient(
-        180deg,
-        rgba(32, 42, 53, 0) 37.45%,
-        rgba(32, 42, 53, 0.395797) 65.9%,
-        rgba(32, 42, 53, 0.87) 100%
-      ),
+    background-image: linear-gradient(360deg, #202A35 0%, rgba(32, 42, 53, 0) 33.41%),
       url("../assets/img/Img_Contact/alexander_strategy_group_contact_mobile.webp");
     justify-content: center;
   }
 
   .formulaire {
+    display: flex;
     // margin-left: 0;
     margin-right: 0;
-    margin-top: 70vh;
+    margin-top: 60vh;
     width: 100%;
   }
   .sous-div {
     height: 40vh;
   }
+  .offices{
+    background-color: var(--color-bg-dark);
+  }
+  .service {
+  padding: 2.5vh ;
+  margin-bottom: 3vh;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  // width: max-content;
+  .image {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform-origin: center center;
+    transition: 1s;
+
+  }
+  .image1 {
+    background-image: url("../assets/img/local1.svg");
+  }
+  .image2 {
+    background-image: url("../assets/img/local2.svg");
+  }
+}
 }
 </style>

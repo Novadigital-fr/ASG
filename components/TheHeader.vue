@@ -41,7 +41,7 @@
                 src="/img/Logos/alexander_strategy_group_Logo_iconwhite.svg"
                 alt=""
               />
-              <h4>Services</h4>
+              <h2>Services</h2>
               <div>
                 <NuxtLink to="/national_security">
                   <div class="service menu__back">
@@ -93,8 +93,9 @@
           </nav>
         </div>
       </div>
-    
   </header>
+  <div  class="button"><button @click="openContact()" class="mail"></button></div>
+        <div class="transition_rond" :class="{ 'transition_rond--click': rond }"></div>
 </div>
 </template>
 
@@ -105,7 +106,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const scrollTween = ref(null);
+
 const rond = ref(false);
+
+function openContact() {
+  rond.value = true;
+  setTimeout (()=>{
+    window.location.href ="https://phenomenal-pothos-655a2a.netlify.app/contact"
+  },"1500") 
+}
 
 onMounted(() => {
   let logo = document.querySelector(".logo_mobile");
@@ -206,7 +215,7 @@ header {
   position: fixed;
   height: 100vh;
   z-index: 10;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -264,14 +273,82 @@ nav a:hover {
   display: none;
 }
 
+.button {
+display: none;
+}
+
 @media screen and (max-width: 767px) {
   /* mobile */
 
+  button {
+  background-color: transparent;
+  z-index: 15;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  border: none;
+  border-radius: 100px;
+  width: 42px;
+  height: 41px;
+  position: absolute;
+}
+.button {
+  background-color: var(--color-orange);
+  z-index: 15;
+  background-image: url(../assets/img/contact.svg);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.transition_rond{
+  position: fixed;
+  z-index: 15;
+  left: -1000px;
+  bottom: -1000px;
+  border-radius: 100%;
+  background-color: var(--color-bg-dark);
+ 
+  &--click{
+    // animation: rond 1s;
+    animation: rond 1.2s linear;
+  @keyframes rond {
+      0%{
+        width: 0;
+        height: 0;
+        // display: block;
+        opacity: 0;
+      }
+      90%{
+        opacity: 1;
+        height: 3500px;
+        width: 3500px;
+      }
+      100%{
+        opacity: 1;
+        height: 3500px;
+        width: 3500px;
+
+      }
+           
+    }   
+    
+  }
+}
+
   header {
-    animation: ordi 4s;
+    animation: ordi 2s;
 
     @keyframes ordi {
-      50% {
+      0% {
         margin-top: -40vh;
       }
       100% {
@@ -297,6 +374,7 @@ nav a:hover {
       transition: margin-top 0.5s;
     }
   }
+
   .menu_ordi {
     display: none;
   }
@@ -315,7 +393,7 @@ nav a:hover {
   .menu_top ul {
     pointer-events: auto;
     z-index: 3;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -325,7 +403,7 @@ nav a:hover {
     border-radius: 40px;
   }
   .menu__content {
-    margin-top: -2.9rem;
+    margin-top: -3.1rem;
     position: relative;
     z-index: 15;
     overflow: hidden;
@@ -337,10 +415,18 @@ nav a:hover {
     border-radius: 2rem;
     padding-bottom: 1rem;
     will-change: transform;
+
+    p{
+    font-size: 16px;
+  }
+  h3{
+    font-size: 20px;
+  }
   }
   .menu__nav-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-self: start;
     margin-top: 5.5vh;
   }
@@ -353,7 +439,7 @@ nav a:hover {
       width: 18vw;
       margin: 2vh 0 8vh 0;
     }
-    h4 {
+    h2 {
       margin-bottom: 4vh;
     }
   }

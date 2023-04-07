@@ -65,9 +65,20 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+const rond = ref(false);
+
+function openContact() {
+  rond.value = true;
+  setTimeout (()=>{
+    window.location.href ="https://phenomenal-pothos-655a2a.netlify.app/contact"
+  },"1500") 
+}
+
 let triggerArray = [];
 
 onMounted(() => {
+  if (window.matchMedia("(min-width: 900px)").matches) {
+
   const links = document.querySelectorAll('.link');
   const lightModeSections = document.querySelectorAll('.light_mode');
   const text_logo = document.querySelector('.text_logo');
@@ -101,6 +112,8 @@ links.forEach(link => {
         text_logo.classList.remove('dark');
       }
     });
+
+  }
  
 });
 
@@ -178,10 +191,6 @@ onUnmounted(() => {
   }
 }
 
-.dark{
-  color: var(--color-secondaire);
-  transition: color 0.5s ease-in-out;
-}
 
 header {
   padding: 2%;
@@ -202,10 +211,10 @@ header {
   }
 }
 header{
-  animation: ordi 4s;
+  animation: ordi 1s;
 
   @keyframes ordi {
-    50% {
+    0% {
       margin-left: -30vw;
     }
     100% {
@@ -215,7 +224,6 @@ header{
 }
 nav {
   margin-top: 15vh;
-
   li {
   //   position: absolute;
   //   top: 50%;

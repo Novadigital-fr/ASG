@@ -127,5 +127,15 @@
 }
 
 @media screen and (max-width: 767px) {
+
+  .div_logo {  
+
+  h2 {
+    text-align: start;
+  }
+  p{
+    text-align: start;
+  }
+}
 }
 </style>
