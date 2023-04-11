@@ -179,7 +179,7 @@ onMounted(() => {
   }
 
   h1 {
-    margin: 2% 0;
+    margin: 4% 0;
     animation: title 4s;
 
     @keyframes title {
@@ -250,7 +250,7 @@ onMounted(() => {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
   /* mobile */
   .sticky {
     background: linear-gradient(

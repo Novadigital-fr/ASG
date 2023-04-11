@@ -45,12 +45,18 @@ onMounted(() => {
     top: 40vh;
     bottom: 20vh;
     z-index: 2;
-    width: clamp(550px, 670px, 760px);
+    width: clamp(550px, 670px, 860px);
     // text-align: center;
     margin: auto;
     color: #070B1D;
+    @media (min-width: 1924px) {
+        font-size: 50px;
+        line-height: 70px;
+        width: clamp(550px, 770px, 860px);
+
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
     /* mobile */
     .text{
     width: clamp(150px, 100%, 80vw);

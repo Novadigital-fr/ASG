@@ -76,7 +76,11 @@
         background: rgba(32, 42, 53, 0.05);
         border-radius: 100px;
         margin-right: 5vw;
+        @media (min-width: 1924px) {
+          width: 16vw;
 
+
+  }
         img{
             width: 89px;
         }

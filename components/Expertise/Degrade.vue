@@ -42,7 +42,7 @@ onMounted(() => {
     top: 35vh;
     bottom: 20vh;
     z-index: 2;
-    width: clamp(150px, 100%, 600px);
+    width: clamp(450px, 100%, 800px);
     font-size: 70px;
     font-weight: 900;
     text-align: center;
@@ -53,9 +53,13 @@ onMounted(() => {
     -webkit-text-fill-color: transparent;
     background-size: 200%;
     // transition: background-position 0.2s;
+    @media (min-width: 1924px) {
+        font-size: 100px;
+        line-height: 130px;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
     /* mobile */
     .text{
     font-size: 45px;

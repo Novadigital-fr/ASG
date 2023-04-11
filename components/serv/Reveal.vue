@@ -77,7 +77,7 @@ animation.scrollTrigger.disable();
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
     /* mobile */
     .reveal {
  

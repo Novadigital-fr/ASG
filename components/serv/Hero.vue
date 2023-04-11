@@ -1,4 +1,5 @@
 <template>
+  <div class="services">
   <div
     class="service_hero"
     :style="{
@@ -9,6 +10,7 @@
     <h1 class="title" ref="title">{{ title }}</h1>
     <h4>{{ text }}</h4>
   </div>
+</div>
 </template>
 
 <script>
@@ -46,6 +48,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.services{
+  overflow-x: hidden;
+}
 .service_hero {
   height: 100vh;
   width: 100vw;
@@ -57,6 +63,7 @@ export default {
   padding-top: 10%;
   background-position: center top;
   background-size: cover;
+  background-repeat: no-repeat;
   background-color: var(--color-bg-dark);
 
   // opacity: 1;
@@ -85,7 +92,7 @@ export default {
 
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
   /* mobile */
   .service_hero {
 

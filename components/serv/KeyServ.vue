@@ -4,7 +4,7 @@
       <p class="desk_button">National Security</p>
       <h2>Key Services</h2>
       <NuxtLink to="/contact">
-      <div class="button_ordi"><Button text="Contact" /></div>
+        <div class="button_ordi"><Button text="Contact" /></div>
       </NuxtLink>
     </div>
     <div class="right">
@@ -113,34 +113,24 @@ export default {
       if (title.innerHTML === "") {
         detail.style.display = "none";
       }
-    });
+    });// Récupération de tous les éléments <details>
+const detailsElements = document.querySelectorAll('details');
 
-    sums.forEach((sum) => {
-      sum.addEventListener("mouseenter", function (e) {
-        const flech = e.currentTarget
-          .closest("details")
-          .querySelector(".fleche");
-        if (flech.style.transform === "rotate(45deg)") {
-          flech.style.transform = "rotate(0deg)";
-          flech.style.transition = "0.3s";
-        } else {
-          flech.style.transform = "rotate(45deg)";
-          flech.style.transition = "0.3s";
-        }
-      });
-      sum.addEventListener("mouseleave", function (e) {
-        const flech = e.currentTarget
-          .closest("details")
-          .querySelector(".fleche");
-        if (flech.style.transform === "rotate(45deg)") {
-          flech.style.transform = "rotate(0deg)";
-          flech.style.transition = "0.3s";
-        } else {
-          flech.style.transform = "rotate(45deg)";
-          flech.style.transition = "0.3s";
-        }
-      });
-    });
+// Parcours de tous les éléments <details>
+detailsElements.forEach(details => {
+  // Récupération de la flèche correspondante à l'élément <details>
+  const arrow = details.querySelector('.fleche');
+
+  // Ajout d'un écouteur d'événements pour le clic sur l'élément <summary>
+  details.querySelector('summary').addEventListener('click', () => {
+    // Rotation de la flèche de 45 degrés si l'élément <details> est ouvert
+    if (details.open) {
+      arrow.style.transform = 'rotate(0)';
+    } else {
+      arrow.style.transform = 'rotate(45deg)';
+    }
+  });
+});
   },
 };
 </script>
@@ -160,8 +150,8 @@ export default {
     }
   }
   details summary::-webkit-details-marker {
-  display: none;
-}
+    display: none;
+  }
   .right {
     width: 60%;
     padding: 0 20vw 0 5vh;
@@ -171,6 +161,10 @@ export default {
       padding-bottom: 2vh;
       display: flex;
       justify-content: space-between;
+
+      &:hover > .fleche {
+        transform: rotate(45deg);
+      }
     }
     summary:hover {
       cursor: pointer;
@@ -186,11 +180,16 @@ export default {
     }
   }
 }
+
+.fleche {
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
 .button_tel {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
   /* mobile */
 
   .key_service {
@@ -217,7 +216,6 @@ export default {
   .button_tel {
     display: block;
     padding-left: 10vw;
-
   }
 }
 </style>

@@ -204,7 +204,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
   /* mobile */
   .full {
     color: var(--color-secondaire);

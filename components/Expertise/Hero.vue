@@ -1,4 +1,5 @@
 <template>
+  <div class="espertise_parent">
   <div class="expertise">
     <div class="hero_text">
       <h1 ref="title" class="title">We help solve your toughest challenges</h1>
@@ -11,6 +12,7 @@ daring to become a proactive and dedicated partner through the whole project.
       </NuxtLink>
     </div>
   </div>
+</div>
 </template>
 
 <script >
@@ -31,6 +33,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.espertise_parent{
+  overflow-x: hidden;
+}
 .expertise {
   height: 100vh;
   width: 100vw;
@@ -73,7 +79,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
   /* mobile */
   .expertise {
     background-image: linear-gradient(

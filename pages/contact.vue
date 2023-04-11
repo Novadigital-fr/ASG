@@ -126,7 +126,7 @@ margin: 4vh 0;
   background-color: rgba(33, 42, 53, 0.9);
   border-radius: 20px;
   margin: 5vh 10vw 5vh 0;
-  padding: 5%;
+  padding: 0 4% 4% 4%;
   width: 38vw;
   z-index: 1;
   height: fit-content;
@@ -174,7 +174,9 @@ form textarea {
   text-align: center;
   padding: 10vh 0;
 }
-
+.service {
+display: none;
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -192,7 +194,7 @@ form textarea {
   }
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 840px) {
   .contenu-global {
     height: fit-content;
     background-image: linear-gradient(360deg, #202A35 0%, rgba(32, 42, 53, 0) 33.41%),

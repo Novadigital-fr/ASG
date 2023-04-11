@@ -43,19 +43,22 @@ let animation;
 onMounted(() => {
   const elements = document.querySelectorAll(".text_reveal");
 
-  elements.forEach((element) => {
-    gsap.set(element, { color: "#ffffff33" });
-    gsap.to(element, {
-      scrollTrigger: {
-        trigger: element,
-        start: "top 50%",
-        end: "bottom 50%",
-        toggleActions: "restart reverse restart reverse",
-      },
-      duration: 0.3,
-      color: "#FFFFFF",
-    });
+  elements.forEach((element, index) => {
+  const startOffset = index * 90 + 100;
+  const endOffset = index * 90 - 100;
+  
+  gsap.set(element, { color: "#ffffff33" });
+  gsap.to(element, {
+    scrollTrigger: {
+      trigger: element,
+      start: `${endOffset}% 60%`,
+      end: `${startOffset}% 60%`,
+      toggleActions: "restart reverse restart reverse",
+    },
+    duration: 0.3,
+    color: "#FFFFFF",
   });
+});
 });
 onUnmounted(() => {
 // Utiliser la référence pour désactiver les triggers de défilement
@@ -82,7 +85,7 @@ animation.scrollTrigger.disable();
 
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
   /* mobile */
   .reveal {
     h2 {

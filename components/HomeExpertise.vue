@@ -122,7 +122,7 @@
     }
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
   /* mobile */
   .expertise {
     padding: 10vh 0 20vh 0vw;

@@ -29,6 +29,7 @@ export default {
 
     .logo{
         margin-bottom: 0vh;
+        width: 70px;
     }
     h4{
         width: 50%;

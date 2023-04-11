@@ -55,7 +55,7 @@ window.addEventListener ( "scroll", function(e) {
     z-index: 1;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
 .cercle{
     display: none;
 }

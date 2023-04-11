@@ -157,6 +157,7 @@ onUnmounted(() => {
   color: var(--color-secondaire);
   transition: color 0.5s ease-in-out;
 }
+
 .transition_rond{
   position: fixed;
   left: -1000px;
@@ -354,7 +355,7 @@ button:hover {
       }
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 840px) {
       header{
         display: none;
       }

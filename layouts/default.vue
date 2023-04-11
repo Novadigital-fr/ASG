@@ -17,6 +17,7 @@
     <slot />
     <div class="reveal"></div>
     <TheFooter />
+    <div class="light_mode"></div>
   </div>
 </template>
 

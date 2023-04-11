@@ -2,7 +2,7 @@
   <div class="contenu-global" id="contenu-global">
     <!-- <div class="carte"> -->
     <div
-      class="carte"
+      class="carte carte1"
       id="popup1"
       :style="{
         backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 9.25%, rgba(0, 0, 0, 0.8) 100%), url(${src1})`,
@@ -17,7 +17,7 @@
       ></div>
 
       <div class="carte_title">
-        <img class="icone" src="../../assets/img/fleche_fond.svg" alt="" />
+        <img class="icone icone1" src="../../assets/img/fleche_fond.svg" alt="" />
         <h2>{{ titre }}</h2>
         <p class="issou content_small">
           {{ description }}
@@ -35,7 +35,7 @@
     </div>
     <!-- <div class="carte"> -->
     <div
-      class="carte"
+      class="carte carte2"
       :style="{
         backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 9.25%, rgba(0, 0, 0, 0.8) 100%), url(${src2})`,
       }"
@@ -49,7 +49,7 @@
       ></div>
 
       <div class="carte_title">
-        <img class="icone" src="../../assets/img/fleche_fond.svg" alt="" />
+        <img class="icone icone2" src="../../assets/img/fleche_fond.svg" alt="" />
         <h2>{{ titrePrime }}</h2>
         <p class="issou content_small">
           {{ descriptionPrime }}
@@ -113,59 +113,44 @@ export default {
     },
   },
   mounted() {
-    const icone = document.querySelector(".icone");
-    // const icone2 = document.querySelector(".icone2");
+    const icone = document.querySelector(".icone1");
     const carte = document.querySelector(".carte");
-    const description = document.querySelector(".sous_titre");
-    const cartTitle = document.querySelector(".carte_title");
-    // const p = document.querySelector(".carte1 .issou");
+
     carte.addEventListener("mouseover", () => {
-      // description.style.marginBottom = "0px";
-      // cartTitle.style.bottom = "20vh";
       icone.style.transform = "rotate(0deg)";
     });
     carte.addEventListener("mouseout", () => {
-      // description.style.marginBottom = "-200px";
-      // cartTitle.style.bottom = "5vh";
       icone.style.transform = "rotate(-45deg)";
     });
-    /* */
-    //   const carte2 = document.querySelector(".carte2");
-    //   const description2 = document.querySelector(".description2");
-    //   const cartTitle2 = document.querySelector(".carte_title2");
 
-    //   carte2.addEventListener("mouseover", () => {
-    //     description2.style.bottom = "2vh";
-    //     cartTitle2.style.bottom = "20vh";
-    //     icone2.style.transform = "rotate(0deg)";
-    //   });
-    //   carte2.addEventListener("mouseout", () => {
-    //     description2.style.bottom = "-200px";
-    //     cartTitle2.style.bottom = "5vh";
-    //     icone2.style.transform = "rotate(-45deg)";
-    //   });
+    const carte2 = document.querySelector(".carte2");
+    const icone2 = document.querySelector(".icone2");
 
+    carte2.addEventListener("mouseover", () => {
+      icone2.style.transform = "rotate(0deg)";
+    });
+    carte2.addEventListener("mouseout", () => {
+      icone2.style.transform = "rotate(-45deg)";
+    });
+    if (window.matchMedia("(max-width: 840px)").matches) {
 
-const cartes = document.querySelectorAll('.carte');
+    const cartes = document.querySelectorAll(".carte");
 
-cartes.forEach(carte => {
-  carte.addEventListener('click', () => {
-    const descriptionParent = carte.querySelector('.sous_titre');
-    // Ajouter ou supprimer la classe "full-width" pour chaque carte
-    if (carte.classList != 'carte full-width'){
-      carte.classList.add('full-width');
-      console.log(descriptionParent);
-      descriptionParent.style.display = "flex"
-    }
-    else{
-      carte.classList.remove('full-width')
-      descriptionParent.style.display = "none"
-
-    }
-    
-  });
-});
-
+    cartes.forEach((carte) => {
+      carte.addEventListener("click", () => {
+        const descriptionParent = carte.querySelector(".sous_titre");
+        // Ajouter ou supprimer la classe "full-width" pour chaque carte
+        if (carte.classList != "carte full-width") {
+          carte.classList.add("full-width");
+          console.log(descriptionParent);
+          descriptionParent.style.display = "flex";
+        } else {
+          carte.classList.remove("full-width");
+          descriptionParent.style.display = "none";
+        }
+      });
+    });
+  }
   },
 };
 </script>
@@ -187,14 +172,22 @@ cartes.forEach(carte => {
     justify-content: center;
   }
 }
-.full-width{
+.full-width {
   @media (max-width: 767px) {
-
-  width: 100vw;
-  min-height: 100vh;
-  transition: all 1s;
-position: fixed;
-inset: 0;
+    z-index: 17;
+    width: 100vw;
+    min-height: 100vh;
+    transition: all 1s;
+    position: fixed;
+    inset: 0;
+  }
+  .icone_tel {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .sous_titre {
+    margin-top: -30px;
   }
 }
 .carte {
@@ -226,9 +219,8 @@ inset: 0;
 
   &:hover > .sous_titre {
     @media (min-width: 767px) {
-
-    display: flex;
-    transition: all 1s;
+      display: flex;
+      transition: all 1s;
     }
   }
 
@@ -250,7 +242,7 @@ inset: 0;
     gap: 20px;
     flex-direction: column;
     // transition: all 1s;
-    padding: 30px;
+    padding: 30px 0;
 
     // height: 20vh;
     @media (min-width: 767px) {
@@ -290,6 +282,7 @@ inset: 0;
     height: 40px;
     transition: 0.5s;
     display: block;
+    transform: rotate(-45deg);
   }
 }
 .icone_tel {
