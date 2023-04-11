@@ -35,7 +35,7 @@ export default {
 <style lang="scss" scoped>
 
 .espertise_parent{
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .expertise {
   height: 100vh;

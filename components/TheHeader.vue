@@ -363,7 +363,9 @@ display: none;
       display: flex !important;
       justify-content: center;
       transition: margin-top 0.5s;
-
+      @media (min-width: 767px) {
+      width: 60vw;
+      }
       img {
         height: 50px;
         margin-bottom: 20px;
@@ -389,6 +391,9 @@ display: none;
     color: var(--color-text);
     display: flex;
     flex-direction: column;
+    @media (min-width: 767px) {
+      left: 20vw;
+    }
   }
   .menu_top ul {
     pointer-events: auto;
@@ -401,6 +406,9 @@ display: none;
     width: 90vw;
     background: var(--color-orange);
     border-radius: 40px;
+    @media (min-width: 767px) {
+      width: 60vw;
+    }
   }
   .menu__content {
     margin-top: -3.1rem;
@@ -415,6 +423,9 @@ display: none;
     border-radius: 2rem;
     padding-bottom: 1rem;
     will-change: transform;
+    @media (min-width: 767px) {
+left: -16vw;
+      }
 
     p{
     font-size: 16px;
@@ -474,7 +485,7 @@ display: none;
   .unbutton {
     position: absolute;
     height: 50px;
-    right: 50px;
+    left: 50px;
     align-self: flex-end;
     margin-top: calc(5.5vh + 2rem);
   }

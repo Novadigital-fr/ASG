@@ -234,6 +234,9 @@
       width: 100%;
       text-align: center;
       line-height: 25px;
+      @media (min-width: 767px) {
+        line-height: 45px;
+      }
     }
   }
   .service {

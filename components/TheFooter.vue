@@ -189,7 +189,9 @@ input {
     h4 {
       margin: 5vh 5vw 0 5vw;
       line-height: 24px;
-
+      @media (min-width: 767px) {
+        line-height: 40px;
+      }
     }
     input{
       margin: 5vh 0;

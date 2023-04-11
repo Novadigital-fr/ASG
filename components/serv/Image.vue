@@ -36,17 +36,11 @@
     <!-- <div class="carte"> -->
     <div
       class="carte carte2"
-      :style="{
-        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 9.25%, rgba(0, 0, 0, 0.8) 100%), url(${src2})`,
-      }"
-    >
+      :style="{ backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 9.25%, rgba(0, 0, 0, 0.8) 100%), url(${src2})`,}">
       <div
         class="image"
         id="popup1"
-        :style="{
-          backgroundImage: `url(${src2})`,
-        }"
-      ></div>
+        :style="{ backgroundImage: `url(${src2})`,}"></div>
 
       <div class="carte_title">
         <img class="icone icone2" src="../../assets/img/fleche_fond.svg" alt="" />
@@ -140,7 +134,7 @@ export default {
       carte.addEventListener("click", () => {
         const descriptionParent = carte.querySelector(".sous_titre");
         // Ajouter ou supprimer la classe "full-width" pour chaque carte
-        if (carte.classList != "carte full-width") {
+        if (!carte.classList.contains("full-width")) {
           carte.classList.add("full-width");
           console.log(descriptionParent);
           descriptionParent.style.display = "flex";
@@ -242,7 +236,8 @@ export default {
     gap: 20px;
     flex-direction: column;
     // transition: all 1s;
-    padding: 30px 0;
+    padding: 30px;
+
 
     // height: 20vh;
     @media (min-width: 767px) {
@@ -252,6 +247,7 @@ export default {
       width: 54vw;
       margin: 0 2vw;
       overflow: hidden;
+      padding: 30px 0;
 
       p {
         width: 28vw;

@@ -50,7 +50,7 @@ export default {
 <style lang="scss" scoped>
 
 .services{
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .service_hero {
   height: 100vh;
@@ -101,7 +101,7 @@ export default {
     justify-content: flex-end;
 
     .title {
-      font-size: 40px;
+      font-size: 38px;
       margin: 10% 0 4% 0;
     }
     img {

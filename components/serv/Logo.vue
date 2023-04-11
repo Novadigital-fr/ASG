@@ -41,11 +41,8 @@ export default {
     /* tablettte */
     .div_logo{
 
-      padding: 0 0 10vh 0;
+      padding: 0 0 5vh 0;
 
-    .logo{
-        margin-bottom: 10vh;
-    }
     h4{
         width: 70%;
 

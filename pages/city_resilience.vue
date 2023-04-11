@@ -90,6 +90,8 @@ animation.scrollTrigger.disable();
   .reveal {
     h2 {
       width: 80%;
+      font-size: 30px;
+      line-height: 35px;
     }
   }
 }
