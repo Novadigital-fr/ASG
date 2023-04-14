@@ -3,7 +3,7 @@
   <div
     class="service_hero"
     :style="{
-      backgroundImage: `linear-gradient(180deg, rgba(32, 42, 53, 0) 35.3%, #202A35 100%), url(${image})`,
+      backgroundImage: `linear-gradient(180deg, rgba(32, 42, 53, 0) 50.3%, #202A35 91%), url(${image})`,
     }"
   >
     <img class="logo" :src="logo" alt="" />
@@ -88,7 +88,7 @@ export default {
 
   }
   img {
-    width: 8%;
+    width: 125px;
 
   }
 }
@@ -105,7 +105,7 @@ export default {
       margin: 10% 0 4% 0;
     }
     img {
-      width: 20%;
+      width: 80px;
     }
   }
 }

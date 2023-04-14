@@ -72,7 +72,7 @@
         </div>
         <div class="right">
           <p>
-            ©2023 All rights reserved alexander strategy group | Privacy Policy
+            ©2023 All rights reserved alexander strategy group | <NuxtLink to="/privacy"> Privacy Policy</NuxtLink>
           </p>
         </div>
       </div>
@@ -126,6 +126,7 @@ input {
   .left {
     display: flex;
     align-items: flex-end;
+    gap: 20px;
 
     .service {
       display: flex;
@@ -141,9 +142,9 @@ input {
       font-weight: 700;
     }
     img {
-      width: 10%;
+      width: 20px;
       margin-right: 1vw;
-
+      transition: rotate 0.5s;
       
     }
   }

@@ -87,6 +87,10 @@
     padding: 3vh 5%;
     margin: 2% 0;
     width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     p {
       margin: 4vh 0;
     }

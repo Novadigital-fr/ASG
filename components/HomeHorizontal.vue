@@ -86,7 +86,7 @@ onMounted(() => {
 
   const updateProgressBar = () => {
     const progressBar = document.querySelector(".slider__progress");
-    const scrollLeft = window.scrollX;
+    const scrollLeft = window.scrollY;
     const totalWidth =
       document.documentElement.scrollWidth -
       document.documentElement.clientWidth;
@@ -161,6 +161,8 @@ onUnmounted(() => {
   transform: scaleX(0);
   transform-origin: left center;
 }
+
+
 .tel {
   display: none;
 }

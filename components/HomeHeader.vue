@@ -20,13 +20,13 @@
               :height="100"
               :width="100"
               :speed="2.5"
-              loop=false
+              loop="false"
             />
           </client-only>
         </div>
         <div class="title">
           <!-- <div class="div top_title"></div> -->
-          <h1>
+          <h1 class="h1">
             We help mitigate risk to keep <br />
             communities, companies, <br />
             and individuals safe
@@ -34,6 +34,7 @@
           <!-- <div class="div bottom_title"></div> -->
         </div>
         <h4>alexander strategy group</h4>
+
         <div class="cercle"></div>
       </div>
     </div>
@@ -44,31 +45,11 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 
-
 onMounted(() => {
-  // if (window.matchMedia("(min-width: 1024px)").matches) {
-
-  //   const options = {
-  //   mode: 'scroll',
-  //   actions: [
-  //     {
-  //       visibility: [0,1],
-  //       type: 'seek',
-  //       frames: [0, 300],
-  //     },
-  //   ],
-  // };
-  
-  // // Utilisation de LottieInteractivity pour contrôler l'animation de Vue3Lottie en fonction du défilement
-  // LottieInteractivity.create({
-  //   player: '#firstLottie',
-  //   ...options,
-  // });
-
   const cercle = document.querySelector(".cercle");
   const back = document.querySelector(".sticky");
-  const title = document.querySelector("h1");
-  const blockTitle =document.querySelector(".title")
+  const title = document.querySelector(".h1");
+  const blockTitle = document.querySelector(".title");
   const sousTitle = document.querySelector(".sticky h4");
 
   let animationJouee = false;
@@ -86,20 +67,22 @@ onMounted(() => {
       sousTitle.innerHTML = ". ";
       title.classList = "anim_text";
       blockTitle.style.zIndex = 20;
-
     }
     if (window.scrollY > 530 && !animationJouee) {
-  gsap.fromTo(title, {y: 50, opacity: 0}, {y: 0, opacity: 1, duration: 1});
-  animationJouee = true;
-  console.log("hello")
-}
+      gsap.fromTo(
+        title,
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1 }
+      );
+      animationJouee = true;
+      console.log("hello");
+    }
     if (window.scrollY < 530) {
       title.innerHTML =
         "We help mitigate risk to keep <br/> communities, companies, <br /> and individuals safe";
       sousTitle.innerHTML = "alexander strategy group";
       blockTitle.style.zIndex = 4;
       animationJouee = false;
-
     }
     if (window.scrollY > 1900) {
       cercle.style.display = "none";
@@ -115,14 +98,15 @@ onMounted(() => {
   height: 200vh;
 }
 @keyframes opacit {
-    0% {
-     opacity: 1;
-    }
-    
-    100% {
-     opacity: 0;
-    }
+  0% {
+    opacity: 1;
   }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .sticky {
   min-height: 100vh;
   width: 100vw;
@@ -145,27 +129,28 @@ onMounted(() => {
   z-index: 1;
   position: sticky;
   position: -webkit-sticky; /* pour une meilleure compatibilité avec Safari */
-  animation: loading 4s linear;
+  // animation: loading 4s linear;
   overflow: hidden;
+ 
   // transform: scale(0);
 
-  @keyframes loading {
-    0% {
-      background-image: none;
-      background-color: var(--color-bg-dark);
-      // opacity: 1;
-      // transform: scale(1);
-    }
-    80% {
-      // opacity: 1;
-      background-color: var(--color-bg-dark);
-    }
-    100% {
-      background-color: rgba(32, 42, 53, 0) 37.45%;
-      // opacity: 0;
-      // transform: scale(1);
-    }
-  }
+  // @keyframes loading {
+  //   0% {
+  //     background-image: none;
+  //     background-color: var(--color-bg-dark);
+  //     // opacity: 1;
+  //     // transform: scale(1);
+  //   }
+  //   80% {
+  //     // opacity: 1;
+  //     background-color: var(--color-bg-dark);
+  //   }
+  //   100% {
+  //     background-color: rgba(32, 42, 53, 0) 37.45%;
+  //     // opacity: 0;
+  //     // transform: scale(1);
+  //   }
+  // }
 
   .video {
     position: relative;
@@ -266,30 +251,30 @@ onMounted(() => {
       width: 85px;
     }
     h4 {
-    animation: soustitle 4s;
+      animation: soustitle 4s;
 
-    @keyframes soustitle {
-      0% {
-        opacity: 0;
-      }
-      30% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-        transform: translateY(-100px);
-      }
-      70% {
-        transform: translateY(-100px);
-      }
-      100% {
+      @keyframes soustitle {
+        0% {
+          opacity: 0;
+        }
+        30% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(-100px);
+        }
+        70% {
+          transform: translateY(-100px);
+        }
+        100% {
+        }
       }
     }
   }
+  .div_logo {
+    margin-top: 25vh;
   }
-.div_logo{
-  margin-top: 25vh;
-}
   .cercle {
     max-width: 260vw;
     max-height: 260vw;

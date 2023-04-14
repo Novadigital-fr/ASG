@@ -71,7 +71,7 @@ function openContact() {
   rond.value = true;
   setTimeout (()=>{
     window.location.href ="https://phenomenal-pothos-655a2a.netlify.app/contact"
-  },"1500") 
+  },"800") 
 }
 
 let triggerArray = [];
@@ -115,6 +115,7 @@ links.forEach(link => {
 
   }
  
+
 });
 
 // onUpdated(() => {
@@ -155,7 +156,23 @@ onUnmounted(() => {
 <style lang="scss" scoped >
 .dark{
   color: var(--color-secondaire);
-  transition: color 0.5s ease-in-out;
+  // transition: color 0.5s ease-in-out;
+
+  .image1{
+        background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security.svg");
+  }
+ .image2{
+        background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement.svg");
+      }
+  .image3{
+        background-image: url("/img/Services_Icons/alexander_strategy_group_services_urban_planning.svg");
+      }
+  .image4{
+        background-image: url("/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg");
+      }
+  .image5{
+        background-image: url("/img/Services_Icons/alexander_strategy_group_services_communication.svg");
+      }
 }
 
 .transition_rond{
@@ -167,7 +184,7 @@ onUnmounted(() => {
  
   &--click{
     // animation: rond 1s;
-    animation: rond 1.2s linear;
+    animation: rond 2.5s linear;
   @keyframes rond {
       0%{
         width: 0;
@@ -175,7 +192,7 @@ onUnmounted(() => {
         // display: block;
         opacity: 0;
       }
-      90%{
+      50%{
         opacity: 1;
         height: 3500px;
         width: 3500px;
@@ -230,23 +247,47 @@ nav {
   //   top: 50%;
   // left: 50%;
     margin-bottom: 2vh;
-   
+
   }
+}
+.top_sous{
+  transition: color 0.5s;
+
+}
+nav a{
+  transition: color 0.5s;
+
 }
 nav a:hover {
   color: var(--color-orange);
+  transition: color 0.4s;
+  
 }
 .sous {
   display: none;
   // position: absolute;
   width: 100%;
   z-index: 1000;
+  animation: apparition 0.4s ease-in-out;
+
+  @keyframes apparition {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 }
 
 nav > ul li:hover .sous {
   display: block;
   padding-top: 2vh;
   width: max-content;
+  
 }
 
 .sous li {
@@ -259,7 +300,8 @@ nav > ul li:hover .sous {
 
   &:hover > .image{
     rotate: 45deg;
-    transition: 0.5s;
+    transition: 0.5s ;
+
   }
   &:hover > .image1{
         background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security.svg");
@@ -286,14 +328,14 @@ button {
   position: absolute;
 }
 button:hover {
-  scale: 1.1;
-  transition: 0.5s;
+  scale: 1.3;
+  transition: 0.3s;
   border: 1px solid var(--color-orange);
 }
 .button {
   background-color: var(--color-orange);
   background-image: url(../assets/img/contact.svg);
-  background-size: 20px 20px;
+  background-size: 15px 15px;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;

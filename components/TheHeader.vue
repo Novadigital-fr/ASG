@@ -4,10 +4,7 @@
       <div class="navtel">
         <NuxtLink to="/">
           <div class="logo_mobile">
-            <img
-              src="/img/Logos/alexander_strategy_group_Logo_horizontal.svg"
-              alt=""
-            /></div
+            </div
         ></NuxtLink>
         <div class="menu_top">
           <ul>
@@ -117,7 +114,9 @@ function openContact() {
 }
 
 onMounted(() => {
+  const lightModeSections = document.querySelectorAll('.light_mode');
   let logo = document.querySelector(".logo_mobile");
+
   let lastScrollValue = 0;
   document.addEventListener("scroll", () => {
     let top = document.documentElement.scrollTop;
@@ -128,6 +127,19 @@ onMounted(() => {
     }
     lastScrollValue = top;
   });
+
+  const trigger = ScrollTrigger.create({
+      trigger: lightModeSections,
+      start: 'top +150px',
+      end: 'bottom bottom',
+      onEnter: () => {
+        logo.classList.add('white');
+      },
+      onLeaveBack: () => {
+        logo.classList.remove('white');
+      }
+    });
+
 
   // DOM elements
   const DOM = {
@@ -205,9 +217,10 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.dark {
+.white {
   color: var(--color-secondaire);
   transition: color 0.5s ease-in-out;
+  background-image: url("/img/Logos/alexander_strategy_group_Logo_iconwhite.svg") !important;
 }
 
 header {
@@ -296,14 +309,14 @@ display: none;
   background-color: var(--color-orange);
   z-index: 15;
   background-image: url(../assets/img/contact.svg);
-  background-size: 20px 20px;
+  background-size: 15px;
   background-position: center;
   background-repeat: no-repeat;
   position: fixed;
-  bottom: 5%;
-  right: 5%;
-  width: 40px;
-  height: 40px;
+  bottom: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
   border-radius: 100px;
   display: flex;
   justify-content: center;
@@ -359,7 +372,12 @@ display: none;
       color: var(--color-text);
     }
     .logo_mobile {
+      background-image: url("/img/Logos/alexander_strategy_group_Logo_horizontal.svg");
+  background-size: 150px;
+  background-position: top;
+  background-repeat: no-repeat;
       width: 90vw;
+      height: 70px;
       display: flex !important;
       justify-content: center;
       transition: margin-top 0.5s;
@@ -447,11 +465,11 @@ left: -16vw;
     align-items: center;
 
     img {
-      width: 18vw;
-      margin: 2vh 0 8vh 0;
+      width: 85px;
+      margin: 2vh 0 22px 0;
     }
     h2 {
-      margin-bottom: 4vh;
+      margin-bottom: 50px;
     }
   }
   .service {
@@ -460,8 +478,8 @@ left: -16vw;
     display: flex;
     align-items: center;
     .image {
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       margin-right: 4vw;
       background-repeat: no-repeat;
       background-size: cover;
