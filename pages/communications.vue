@@ -3,7 +3,7 @@
       <Header/>
 
         <ServHero
-        image ="/img/Img_Communication/alexander_strategy_group_services_communication.webp"
+        image ="/img/Img_Communication/alexander_strategy_group_services_communication"
         logo ="/img/Services_Icons/alexander_strategy_group_services_communication.svg"
         title ="Communication"
         text ="Get the message across"

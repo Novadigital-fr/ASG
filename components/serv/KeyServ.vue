@@ -11,7 +11,7 @@
       <details open>
         <summary>
           <h2 class="orange">{{ title1 }}</h2>
-          <img class="fleche" src="../../assets/img/fleche.svg" alt="" />
+          <img class="fleche first_fleche" src="../../assets/img/fleche.svg" alt="" />
         </summary>
         <p class="content_small">
           {{ summary1 }}
@@ -163,6 +163,9 @@ detailsElements.forEach(details => {
       justify-content: space-between;
 
       &:hover > .fleche {
+        transform: rotate(45deg);
+      }
+      .first_fleche{
         transform: rotate(45deg);
       }
     }

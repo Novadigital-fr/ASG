@@ -3,7 +3,7 @@
       <Header/>
 
         <ServHero
-        image ="/img/Img_Law_Enforcement/alexander_strategy_group_services_law_enforcement.webp"
+        image ="/img/Img_Law_Enforcement/alexander_strategy_group_services_law_enforcement"
         logo ="/img/Services_Icons/alexander_strategy_group_services_law_enforcement.svg"
         title ="Law Enforcement"
         text ="Make communities safer"

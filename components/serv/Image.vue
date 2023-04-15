@@ -23,6 +23,7 @@
           {{ description }}
         </p>
         <img class="icone_tel" src="../../assets/img/fleche_fond.svg" alt="" />
+        <img class="icone_tel_close" src="../../assets/img/close.svg" alt="" />
       </div>
       <div class="sous_titre">
         <p class="chancla content_small">
@@ -49,6 +50,7 @@
           {{ descriptionPrime }}
         </p>
         <img class="icone_tel" src="../../assets/img/fleche_fond.svg" alt="" />
+        <img class="icone_tel_close" src="../../assets/img/close.svg" alt="" />
       </div>
       <div class="sous_titre">
         <p class="chancla content_small">
@@ -166,6 +168,9 @@ export default {
     justify-content: center;
   }
 }
+.icone_tel_close{
+  display: none;
+}
 .full-width {
   @media (max-width: 767px) {
     z-index: 17;
@@ -174,14 +179,25 @@ export default {
     transition: all 1s;
     position: fixed;
     inset: 0;
+
+    .image{
+      height: 250px;
+    }
+  }
+  .icone_tel_close{
+    display: flex;
+    position: fixed;
+    top: 27px;
+    right: 20px;
   }
   .icone_tel {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+    display: none;
   }
   .sous_titre {
     margin-top: -30px;
+    @media (min-width: 767px) {
+      transform: translateY(-500px);
+      }
   }
 }
 .carte {
@@ -190,6 +206,7 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+
   @media (max-width: 767px) {
     background: #161d25 !important;
   }
@@ -210,11 +227,14 @@ export default {
       transition: width 0.8s;
     }
   }
+  // &:hover > .carte_title{
+  //   transition: all 1s;
+  //   transform: translateY(-10px);
+  // }
 
   &:hover > .sous_titre {
     @media (min-width: 767px) {
       display: flex;
-      transition: all 1s;
     }
   }
 
@@ -224,10 +244,8 @@ export default {
     gap: 20px;
     align-items: flex-end;
     padding: 30px;
-
     @media (min-width: 767px) {
       max-width: 30vw;
-      // transition: all 1s;
       align-items: flex-start;
     }
   }
@@ -255,7 +273,12 @@ export default {
     }
   }
 }
+.carte2{
+  @media (max-width: 767px) {
+    margin-right: 10vw;
+  }
 
+}
 .image {
   height: 200px;
   width: 100%;
@@ -269,6 +292,7 @@ export default {
   //   url("/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning_resiliency_assesment.webp");
   @media (min-width: 767px) {
     display: none;
+
   }
 }
 .icone {

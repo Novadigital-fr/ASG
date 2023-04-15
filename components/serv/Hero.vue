@@ -3,7 +3,7 @@
   <div
     class="service_hero"
     :style="{
-      backgroundImage: `linear-gradient(180deg, rgba(32, 42, 53, 0) 50.3%, #202A35 91%), url(${image})`,
+      backgroundImage: `linear-gradient(180deg, rgba(32, 42, 53, 0) 50.3%, #202A35 91%), url(${image}${imageUrl})`,
     }"
   >
     <img class="logo" :src="logo" alt="" />
@@ -35,7 +35,15 @@ export default {
       required: true,
     },
   },
+  data() {
+    return {
+      imageUrl: "",
+    };
+  },
   mounted() {
+    const isMobile = window.innerWidth < 768;
+    this.imageUrl = isMobile ? `_mobile.webp` : `.webp`;
+
     gsap.from(this.$refs.title, {
       duration: 1,
       opacity: 0,
@@ -44,6 +52,7 @@ export default {
       delay: 0.5,
     });
   },
+  
 };
 </script>
 
@@ -97,7 +106,7 @@ export default {
   .service_hero {
 
       padding-top: 0;
-      padding-bottom: 15vh;
+      padding-bottom: 20vh;
     justify-content: flex-end;
 
     .title {

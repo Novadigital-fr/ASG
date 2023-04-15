@@ -1,10 +1,15 @@
 <template>
           <Header/>
 
-  <div class="privacy">
+  <div class="privacy light_mode">
   <div>
     <h1>Privacy Policy <br> & Terms of Use</h1>
     <p class="updated">Updated on April 23, 2023</p>
+    <ul class="orange">
+    <li>Header 1</li>
+    <li>Header 2</li>
+    <li>Header 3</li>
+    </ul>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
       interdum convallis pellentesque. Integer nec quam nec lectus euismod
@@ -97,6 +102,11 @@
         text-align: center;
         color: gray;
         margin-bottom: 10vh;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5vh;
     }
 }
 
