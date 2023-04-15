@@ -101,17 +101,13 @@ definePageMeta({
 .contenu-global {
   height: 100vh;
   background-color: var(--color-bg-dark);
-  background-image: linear-gradient(
-      180deg,
-      rgba(32, 42, 53, 0) 37.45%,
-      rgba(32, 42, 53, 0.395797) 65.9%,
-      rgba(32, 42, 53, 0.87) 100%
-    ),
+  background-image: linear-gradient(180deg, rgba(32, 42, 53, 0) 50.3%, #202A35 91%),
     url("../assets/img/Img_Contact/alexander_strategy_group_contact.webp");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .texte {
@@ -200,6 +196,9 @@ display: none;
     background-image: linear-gradient(360deg, #202A35 0%, rgba(32, 42, 53, 0) 33.41%),
       url("../assets/img/Img_Contact/alexander_strategy_group_contact_mobile.webp");
     justify-content: center;
+    background-size: 100%;
+    background-position: top center;
+
   }
 
   .formulaire {

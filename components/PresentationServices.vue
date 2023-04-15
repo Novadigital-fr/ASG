@@ -165,8 +165,7 @@
   }
   .image1 {
     background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security_white.png");
-    width: 50px;
-    height: 50px;
+ 
   }
   .image2 {
     background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.png");

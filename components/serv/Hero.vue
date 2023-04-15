@@ -41,7 +41,7 @@ export default {
     };
   },
   mounted() {
-    const isMobile = window.innerWidth < 768;
+    const isMobile = window.innerWidth < 848;
     this.imageUrl = isMobile ? `_mobile.webp` : `.webp`;
 
     gsap.from(this.$refs.title, {

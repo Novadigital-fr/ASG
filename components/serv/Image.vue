@@ -138,7 +138,6 @@ export default {
         // Ajouter ou supprimer la classe "full-width" pour chaque carte
         if (!carte.classList.contains("full-width")) {
           carte.classList.add("full-width");
-          console.log(descriptionParent);
           descriptionParent.style.display = "flex";
         } else {
           carte.classList.remove("full-width");
@@ -177,11 +176,13 @@ export default {
     width: 100vw;
     min-height: 100vh;
     transition: all 1s;
-    position: fixed;
     inset: 0;
-
+    position: fixed;
     .image{
       height: 250px;
+    }
+    .carte_title {
+    height: fit-content !important;
     }
   }
   .icone_tel_close{
@@ -202,6 +203,7 @@ export default {
 }
 .carte {
   // height: fit-content;
+  // position: relative;
   min-width: 300px;
   display: flex;
   flex-direction: column;
@@ -239,6 +241,8 @@ export default {
   }
 
   .carte_title {
+    position: relative;
+    height: 80%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -247,6 +251,8 @@ export default {
     @media (min-width: 767px) {
       max-width: 30vw;
       align-items: flex-start;
+      height: auto;
+
     }
   }
   .sous_titre {
@@ -280,7 +286,7 @@ export default {
 
 }
 .image {
-  height: 200px;
+  height: 250px;
   width: 100%;
   background-size: cover;
   border-radius: 20px 20px 0 0;
@@ -309,6 +315,9 @@ export default {
   width: 30px;
   height: 30px;
   transition: 0.5s;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
   @media (min-width: 767px) {
     display: none;
   }

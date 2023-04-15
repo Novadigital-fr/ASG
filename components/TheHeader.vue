@@ -120,7 +120,7 @@ onMounted(() => {
   let lastScrollValue = 0;
   document.addEventListener("scroll", () => {
     let top = document.documentElement.scrollTop;
-    if (lastScrollValue < top) {
+    if (lastScrollValue < top || menuStatus.isOpen) {
       logo.classList.add("hidden");
     } else {
       logo.classList.remove("hidden");
