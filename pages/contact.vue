@@ -162,8 +162,10 @@ form textarea {
 .sous-div {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/img/Img_Contact/maps.png");
+  background-image: url("../assets/img/Img_Contact/alexander_strategy_group_contact_map_offices.webp");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .Worldwide {
   background-color: var(--color-bg-dark);
@@ -209,14 +211,15 @@ display: none;
     width: 100%;
   }
   .sous-div {
+    background-image: url('../assets/img/Img_Contact/alexander_strategy_group_contact_map_mobile.webp');
     height: 40vh;
   }
   .offices{
     background-color: var(--color-bg-dark);
   }
   .service {
-  padding: 2.5vh ;
-  margin-bottom: 3vh;
+  padding: 0 2.5vh ;
+  margin-bottom: 35px;
   display: flex;
   align-items: center;
   transition: 0.5s;

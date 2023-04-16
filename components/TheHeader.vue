@@ -116,13 +116,15 @@ function openContact() {
 onMounted(() => {
   const lightModeSections = document.querySelectorAll('.light_mode');
   let logo = document.querySelector(".logo_mobile");
+  const button = document.querySelector(".button");
 
   let lastScrollValue = 0;
   document.addEventListener("scroll", () => {
     let top = document.documentElement.scrollTop;
-    if (lastScrollValue < top || menuStatus.isOpen) {
+    if (lastScrollValue < top || menuStatus.isOpen ) {
       logo.classList.add("hidden");
-    } else {
+    }
+    else {
       logo.classList.remove("hidden");
     }
     lastScrollValue = top;
@@ -187,7 +189,10 @@ onMounted(() => {
     if (menuStatus.isAnimating || menuStatus.isOpen) return;
     menuStatus.isAnimating = true;
     menuStatus.isOpen = true;
+    button.style.display= "none";
+    logo.classList.add("hidden");
     menuTimeline.play();
+   
   };
 
   // Menu collapse
@@ -195,6 +200,7 @@ onMounted(() => {
     if (menuStatus.isAnimating || !menuStatus.isOpen) return;
     menuStatus.isAnimating = true;
     menuStatus.isOpen = false;
+    button.style.display= "block";
     menuTimeline.reverse(0);
   };
 
@@ -220,7 +226,7 @@ onMounted(() => {
 .white {
   color: var(--color-secondaire);
   transition: color 0.5s ease-in-out;
-  background-image: url("/img/Logos/alexander_strategy_group_Logo_iconwhite.svg") !important;
+  background-image: url("/img/Logos/alexander_strategy_group_Logo_horizontal.svg") !important;
 }
 
 header {
@@ -372,10 +378,10 @@ display: none;
       color: var(--color-text);
     }
     .logo_mobile {
-      background-image: url("/img/Logos/alexander_strategy_group_Logo_horizontal.svg");
-  background-size: 150px;
-  background-position: top;
-  background-repeat: no-repeat;
+      background-image: url("/img/Logos/alexander_strategy_group_logo_horizontal_white.svg");
+      background-size: 145px;
+      background-position: top;
+      background-repeat: no-repeat;
       width: 90vw;
       height: 70px;
       display: flex !important;

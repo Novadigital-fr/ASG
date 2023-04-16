@@ -101,7 +101,7 @@ export default {
   }
   .hero_text {
     margin-top: 0;
-    padding-bottom: 20vh;
+    padding-bottom: 25vh;
     width: 80vw;
     p {
       margin: 2vh 0 5vh 0;

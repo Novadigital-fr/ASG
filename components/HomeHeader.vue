@@ -164,7 +164,7 @@ onMounted(() => {
   }
 
   h1 {
-    margin: 4% 0;
+    margin: 55px 0 39px 0;
     animation: title 4s;
 
     @keyframes title {
@@ -247,6 +247,10 @@ onMounted(() => {
       url("../assets/img/Img_HP/alexander_strategy_group_homepage_mobile.webp");
     background-size: cover;
 
+    h1{
+      margin: 40px 0 20px 0;
+
+    }
     .video {
       width: 85px;
     }

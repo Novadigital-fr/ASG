@@ -178,6 +178,9 @@ export default {
     transition: all 1s;
     inset: 0;
     position: fixed;
+    height: fit-content;
+    overflow-y: scroll;
+
     .image{
       height: 250px;
     }
@@ -268,8 +271,8 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       border-top: solid 1px var(--color-text);
-      width: 54vw;
-      margin: 0 2vw;
+      width: 56vw;
+      margin: 0 30px;
       overflow: hidden;
       padding: 30px 0;
 

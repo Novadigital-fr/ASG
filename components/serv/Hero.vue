@@ -106,7 +106,7 @@ export default {
   .service_hero {
 
       padding-top: 0;
-      padding-bottom: 20vh;
+      padding-bottom: 25vh;
     justify-content: flex-end;
 
     .title {

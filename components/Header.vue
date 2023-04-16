@@ -159,19 +159,19 @@ onUnmounted(() => {
   // transition: color 0.5s ease-in-out;
 
   .image1{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security.svg");
+        background-image: url("/img/Services_Icons/alexander_strategy_group_services_national_security_black.svg");
   }
  .image2{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement.svg");
+        background-image: url("/img/Services_Icons/alexander_strategy_group_services_law_enforcement_black.svg");
       }
   .image3{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_urban_planning.svg");
+        background-image: url("/img/Services_Icons/alexander_strategy_group_services_urban_planning_black.svg");
       }
   .image4{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg");
+        background-image: url("/img/Services_Icons/alexander_strategy_group_services_city_resilience_black.svg");
       }
   .image5{
-        background-image: url("/img/Services_Icons/alexander_strategy_group_services_communication.svg");
+        background-image: url("/img/Services_Icons/alexander_strategy_group_services_communication_black.svg");
       }
 }
 
@@ -272,11 +272,11 @@ nav a:hover {
 
   @keyframes apparition {
   0% {
-    transform: translateY(-20px);
+    // transform: translateY(-20px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    // transform: translateY(0);
     opacity: 1;
   }
 }

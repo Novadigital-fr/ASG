@@ -65,6 +65,8 @@ onMounted(() => {
     font-size: 45px;
     line-height: 60px;
     width: 100%;
+    top: 35vh;
+
 
 }
 
