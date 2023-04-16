@@ -71,7 +71,7 @@ function openContact() {
   rond.value = true;
   setTimeout (()=>{
     window.location.href ="https://phenomenal-pothos-655a2a.netlify.app/contact"
-  },"800") 
+  },"500") 
 }
 
 let triggerArray = [];
@@ -192,7 +192,7 @@ onUnmounted(() => {
         // display: block;
         opacity: 0;
       }
-      50%{
+      30%{
         opacity: 1;
         height: 3500px;
         width: 3500px;
