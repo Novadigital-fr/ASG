@@ -51,7 +51,7 @@
               <NuxtLink to="/contact">Contact</NuxtLink>
             </li>
           </ul>
-        </nav>
+        </nav> 
         <div  class="button"><button @click="openContact()" class="mail"></button></div>
         <div class="transition_rond" :class="{ 'transition_rond--click': rond }"></div>
       </div>

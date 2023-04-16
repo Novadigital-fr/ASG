@@ -122,7 +122,7 @@ h4 {
   }
 
   h1 {
-    margin: 4% 0;
+    margin: 55px 0 39px 0;
     animation: title 4s;
 
     @keyframes title {

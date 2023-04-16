@@ -39,7 +39,7 @@ onMounted(() => {
 .text{
     position: sticky;
     line-height: 100px;
-    top: 25vh;
+    top: 27vh;
     bottom: 20vh;
     z-index: 2;
     width: clamp(450px, 100%, 800px);

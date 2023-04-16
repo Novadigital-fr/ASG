@@ -183,6 +183,8 @@ onMounted(() => {
       },
       "menu"
     );
+    const body = document.querySelector('body');
+
 
   // Menu expand
   const expandMenu = () => {
@@ -192,7 +194,6 @@ onMounted(() => {
     button.style.display= "none";
     logo.classList.add("hidden");
     menuTimeline.play();
-   
   };
 
   // Menu collapse
