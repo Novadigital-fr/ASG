@@ -52,8 +52,11 @@
             </li>
           </ul>
         </nav> 
-        <div  class="button"><button @click="openContact()" class="mail"></button></div>
-        <div class="transition_rond" :class="{ 'transition_rond--click': rond }"></div>
+        <NuxtLink to="/contact">
+        <div  class="button"><button  class="mail"></button></div>
+        </NuxtLink>
+        <!-- <div  class="button"><button @click="openContact()" class="mail"></button></div>
+        <div class="transition_rond" :class="{ 'transition_rond--click': rond }"></div> -->
       </div>
     </header>
     </div>
@@ -114,7 +117,6 @@ links.forEach(link => {
     });
 
   }
- 
 
 });
 

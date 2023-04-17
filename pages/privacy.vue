@@ -77,7 +77,11 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+definePageMeta({
+  layout: "custome",
+});
+</script>
 
 <style lang="scss" scoped>
 .privacy {

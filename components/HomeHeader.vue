@@ -24,7 +24,7 @@
             />
           </client-only>
         </div>
-        <div class="title">
+        <div class="title" >
           <!-- <div class="div top_title"></div> -->
           <h1 class="h1">
             We help mitigate risk to keep <br />
@@ -33,7 +33,7 @@
           </h1>
           <!-- <div class="div bottom_title"></div> -->
         </div>
-        <h4>alexander strategy group</h4>
+        <h4 class="h4">alexander strategy group</h4>
 
         <div class="cercle"></div>
       </div>
@@ -51,6 +51,9 @@ onMounted(() => {
   const title = document.querySelector(".h1");
   const blockTitle = document.querySelector(".title");
   const sousTitle = document.querySelector(".sticky h4");
+
+
+  
 
   let animationJouee = false;
 
@@ -165,7 +168,7 @@ onMounted(() => {
 
   h1 {
     margin: 55px 0 39px 0;
-    animation: title 4s;
+    animation: title 2s;
 
     @keyframes title {
       0% {
@@ -180,7 +183,7 @@ onMounted(() => {
   }
   h4 {
     color: var(--color-orange);
-    animation: soustitle 4s;
+    animation: soustitle 2s;
 
     @keyframes soustitle {
       0% {
@@ -277,7 +280,7 @@ onMounted(() => {
     }
   }
   .div_logo {
-    margin-top: 25vh;
+    margin-top: 15vh;
   }
   .cercle {
     max-width: 260vw;

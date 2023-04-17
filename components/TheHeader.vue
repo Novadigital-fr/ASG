@@ -123,8 +123,9 @@ onMounted(() => {
     let top = document.documentElement.scrollTop;
     if (lastScrollValue < top || menuStatus.isOpen ) {
       logo.classList.add("hidden");
-    }
-    else {
+    } else if (top === 0) {
+    logo.classList.remove("hidden");
+    }else {
       logo.classList.remove("hidden");
     }
     lastScrollValue = top;
@@ -202,6 +203,7 @@ onMounted(() => {
     menuStatus.isAnimating = true;
     menuStatus.isOpen = false;
     button.style.display= "block";
+    logo.classList.remove("hidden");
     menuTimeline.reverse(0);
   };
 

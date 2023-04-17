@@ -2,6 +2,7 @@
           <Header/>
 
   <div class="contact">
+  <div class="contenu-global-parent">
     <div class="contenu-global">
       <div class="formulaire">
         <div class="texte">
@@ -34,6 +35,7 @@
         </form>
       </div>
     </div>
+  </div>
     <h2 class="Worldwide">Worldwide offices</h2>
     <div class="sous-div"></div>
     <div class="offices">
@@ -87,16 +89,17 @@
 
 <script setup>
 definePageMeta({
-  pageTransition: {
-    name: 'rotate'
-  }
-})
+  layout: "custome",
+});
 </script>
 
 <style lang="scss" scoped>
 .contact {
   display: flex;
   flex-direction: column;
+}
+.contenu-global-parent{
+  overflow: hidden;
 }
 .contenu-global {
   height: 100vh;
@@ -108,6 +111,20 @@ definePageMeta({
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  transform: scale(1.1);
+  animation: 2s back;
+
+  @keyframes back {
+    0%{
+      // opacity: 0;
+      transform: scale(1);
+    }
+    100%{
+
+    }
+    
+  }
 }
 
 .texte {
@@ -126,6 +143,8 @@ margin: 4vh 0;
   width: 38vw;
   z-index: 1;
   height: fit-content;
+  transform: scale(0.9);
+
 }
 
 form {

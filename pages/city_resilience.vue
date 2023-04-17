@@ -36,7 +36,9 @@ import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-
+definePageMeta({
+  layout: "custome",
+});
 // Créer une référence à l'animation en dehors de la fonction onMounted
 let animation;
 

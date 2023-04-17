@@ -8,7 +8,20 @@
     </div>
 </template>
 
-<script>
+<script setup>
+function enableCustomLayout () {
+  setPageLayout('custome')
+}
+definePageMeta({
+  layout: 'default',
+});
+
+onUnmounted(() => {
+enableCustomLayout();
+});
+
+
+
 </script>
 
 <style lang="scss" scoped>
