@@ -26,13 +26,17 @@
     <TheHeader />
     <slot />
     <div class="reveal"></div>
-    <TheFooter />
+    <div v-if="showFooter">
+      <TheFooter />
+    </div>
     <div class="light_mode"></div>
   </div>
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
 
+const showFooter = ref(false);
 onMounted(() => {
 // const header = document.querySelector(".menu_ordi");
 // // Cacher le header avec la méthode CSS "display:none"
@@ -47,6 +51,11 @@ onMounted(() => {
  // 2000 millisecondes = 2 secondes
  // Définir une variable pour stocker l'information de la première visite
 // Sélectionner l'élément titre avec la classe ".h1"
+setTimeout(() => {
+    showFooter.value = true;
+  }, 1000);
+
+
 var titre = document.querySelector('.h1');
 
 // Vérifier si l'élément titre a été trouvé
@@ -73,7 +82,7 @@ setTimeout(function() {
   if(sousTitre !== null) {
     sousTitre.style.opacity = 1;
   }
-}, 2000);
+}, 4000);
 })
 </script>
 

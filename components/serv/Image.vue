@@ -160,6 +160,7 @@ export default {
   padding: 10vh 0 10vh 6vw;
   justify-content: flex-start;
 
+
   @media (min-width: 767px) {
     // width: 90%;
     padding-left: 10vw;
@@ -176,13 +177,16 @@ export default {
 .full-width {
   @media (max-width: 767px) {
    
-    z-index: 17;
+    z-index: 22;
     width: 100vw;
     min-height: 100vh;
     transition: all 1s;
     inset: 0;
     position: fixed;
     overflow-y: scroll;
+    .carte{
+      border-radius: 0 ;
+    }
 
     .image{
       height: 250px;

@@ -93,22 +93,7 @@ footer {
   width: 100%;
   height: 58vh;
   z-index: -1;
-  animation: apparition-footer 0.8s;
- 
 
-  @keyframes apparition-footer {
-    0% {
-      opacity: 0;
-    }
-    90%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-
-    }
-  
-  }
   
 }
 .top {
