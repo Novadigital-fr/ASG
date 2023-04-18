@@ -35,6 +35,8 @@ onMounted(() => {
 .degrade{
     background-color: #070B1D ;
     height: 250vh;
+    z-index: 21;
+    position: relative;
 }
 .text{
     position: sticky;

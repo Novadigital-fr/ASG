@@ -216,7 +216,7 @@ header {
   padding: 2%;
   position: fixed;
   height: 100vh;
-  z-index: 10;
+  z-index: 22;
   font-size: 20px;
   font-weight: 700;
 

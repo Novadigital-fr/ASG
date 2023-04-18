@@ -25,5 +25,10 @@ enableCustomLayout();
 </script>
 
 <style lang="scss" scoped>
-
+header {
+  padding: 2%;
+  position: fixed;
+  height: 100vh;
+  z-index: 2 !important;
+}
 </style>

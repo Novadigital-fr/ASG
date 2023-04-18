@@ -60,6 +60,8 @@ export default {
 
 .services{
   overflow: hidden;
+  position: relative;
+  z-index: 21;
 }
 .service_hero {
   height: 100vh;

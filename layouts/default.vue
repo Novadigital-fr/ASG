@@ -1,5 +1,7 @@
 <template>
   <div> 
+    <Preloader v-if="showPreloader" />
+
     <div class="loader">
       <client-only>
         <Vue3Lottie
@@ -33,43 +35,48 @@
 
 <script setup>
 
-
 onMounted(() => {
 // const header = document.querySelector(".menu_ordi");
-
 // // Cacher le header avec la méthode CSS "display:none"
 // header.style.display = "none";
-
 // Attendre 2 secondes avec la méthode "setTimeout()"
 // setTimeout(() => {
 //   // Afficher à nouveau le header après 2 secondes
 //   header.style.display = "block";
 // }, 2000);
-
 // Attendre 2 secondes avant de montrer les éléments
 // Attendre 2 secondes avant de montrer les éléments
  // 2000 millisecondes = 2 secondes
  // Définir une variable pour stocker l'information de la première visite
+// Sélectionner l'élément titre avec la classe ".h1"
+var titre = document.querySelector('.h1');
 
-  var titre = document.querySelector('.h1');
-  var sousTitre = document.querySelector('.h4');
+// Vérifier si l'élément titre a été trouvé
+if(titre !== null) {
+  // Si l'élément titre a été trouvé, cacher le titre
   titre.style.opacity = 0;
+}
+
+// Sélectionner l'élément sous-titre avec la classe ".h4"
+var sousTitre = document.querySelector('.h4');
+
+// Vérifier si l'élément sous-titre a été trouvé
+if(sousTitre !== null) {
+  // Si l'élément sous-titre a été trouvé, cacher le sous-titre
   sousTitre.style.opacity = 0;
+}
 
-  setTimeout(function() {
-  // Sélectionner les éléments à montrer
-  var titre = document.querySelector('.h1');
-  var sousTitre = document.querySelector('.h4');
-  
-  // Changer la propriété "display" pour les montrer
-  titre.style.opacity = 1;
-  sousTitre.style.opacity = 1;
-
-}, 2000); 
-
-
+// Attendre 2 secondes avant de montrer les éléments
+setTimeout(function() {
+  // Montrer les éléments titre et sous-titre
+  if(titre !== null) {
+    titre.style.opacity = 1;
+  }
+  if(sousTitre !== null) {
+    sousTitre.style.opacity = 1;
+  }
+}, 2000);
 })
-
 </script>
 
 <style scoped lang="scss">
@@ -99,7 +106,7 @@ onMounted(() => {
   z-index: 20;
   display: flex;
   padding-top: 10%;
-  animation: loading 5s linear;
+  animation: loading 4s linear;
   transform: scale(0);
 
   @keyframes loading {

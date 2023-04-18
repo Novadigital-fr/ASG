@@ -35,6 +35,8 @@ export default {
 <style lang="scss" scoped>
 
 .espertise_parent{
+  z-index: 20;
+  position: relative;
   overflow: hidden;
 }
 .expertise {

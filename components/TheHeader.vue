@@ -91,8 +91,10 @@
         </div>
       </div>
   </header>
-  <div  class="button"><button @click="openContact()" class="mail"></button></div>
-        <div class="transition_rond" :class="{ 'transition_rond--click': rond }"></div>
+  <NuxtLink to="/contact">  <div  class="button"><button class="mail"></button></div>
+ </NuxtLink>
+  <!-- <div  class="button"><button @click="openContact()" class="mail"></button></div>
+        <div class="transition_rond" :class="{ 'transition_rond--click': rond }"></div> -->
 </div>
 </template>
 
@@ -236,7 +238,7 @@ header {
   padding: 2%;
   position: fixed;
   height: 100vh;
-  z-index: 10;
+  z-index: 22;
   font-size: 18px;
   font-weight: 700;
 }

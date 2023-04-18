@@ -25,9 +25,9 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "custome",
-});
+// definePageMeta({
+//   layout: "custome",
+// });
 // import { onMounted, onUnmounted, onUpdated, ref } from "vue";
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";

@@ -172,6 +172,7 @@ export default {
 }
 .full-width {
   @media (max-width: 767px) {
+    
     z-index: 17;
     width: 100vw;
     min-height: 100vh;

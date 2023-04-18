@@ -88,13 +88,14 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "custome",
-});
+
+
 </script>
 
 <style lang="scss" scoped>
 .contact {
+  position: relative;
+  z-index: 21;
   display: flex;
   flex-direction: column;
 }

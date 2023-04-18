@@ -9,6 +9,7 @@
 <script>
 import Lenis from "@studio-freight/lenis";
 
+
 export default {
   mounted() {
     const lenis = new Lenis()
@@ -21,6 +22,7 @@ function raf(time) {
 requestAnimationFrame(raf)
   }
 };
+
 </script>
 
 <style>
