@@ -81,7 +81,7 @@ setTimeout(function() {
   if(sousTitre !== null) {
     sousTitre.style.opacity = 1;
   }
-}, 4000);
+}, 2600);
 })
 </script>
 

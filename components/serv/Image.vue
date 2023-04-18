@@ -161,7 +161,7 @@ export default {
   justify-content: flex-start;
 
 
-  @media (min-width: 767px) {
+  @media (min-width: 840px) {
     // width: 90%;
     padding-left: 10vw;
     align-items: center;
@@ -175,7 +175,7 @@ export default {
   height: fit-content;
 }
 .full-width {
-  @media (max-width: 767px) {
+  @media (max-width: 840px) {
    
     z-index: 22;
     width: 100vw;
@@ -206,7 +206,7 @@ export default {
   }
   .sous_titre {
     margin-top: -30px;
-    @media (min-width: 767px) {
+    @media (min-width: 840px) {
       transform: translateY(-500px);
       }
   }
@@ -219,11 +219,11 @@ export default {
   flex-direction: column;
   border-radius: 20px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 840px) {
     background: #161d25 !important;
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 840px) {
     background-size: cover;
     background-repeat: no-repeat;
     height: 65vh;
@@ -234,7 +234,7 @@ export default {
   }
 
   &:hover {
-    @media (min-width: 767px) {
+    @media (min-width: 840px) {
       width: 60vw;
       transition: width 0.8s;
     }
@@ -245,7 +245,7 @@ export default {
   // }
 
   &:hover > .sous_titre {
-    @media (min-width: 767px) {
+    @media (min-width: 840px) {
       display: flex;
     }
   }
@@ -258,7 +258,7 @@ export default {
     gap: 20px;
     align-items: flex-end;
     padding: 30px;
-    @media (min-width: 767px) {
+    @media (min-width: 840px) {
       max-width: 30vw;
       align-items: flex-start;
       height: auto;
@@ -274,7 +274,7 @@ export default {
 
 
     // height: 20vh;
-    @media (min-width: 767px) {
+    @media (min-width: 840px) {
       flex-direction: row;
       justify-content: space-between;
       border-top: solid 1px var(--color-text);
@@ -290,7 +290,7 @@ export default {
   }
 }
 .carte2{
-  @media (max-width: 767px) {
+  @media (max-width: 840px) {
     margin-right: 10vw;
   }
 
@@ -306,14 +306,14 @@ export default {
   //     rgba(0, 0, 0, 0.8) 100%
   //   ),
   //   url("/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning_resiliency_assesment.webp");
-  @media (min-width: 767px) {
+  @media (min-width: 840px) {
     display: none;
 
   }
 }
 .icone {
   display: none;
-  @media (min-width: 767px) {
+  @media (min-width: 840px) {
     width: 40px;
     height: 40px;
     transition: 0.5s;
@@ -328,7 +328,7 @@ export default {
   position: absolute;
   bottom: 12px;
   right: 12px;
-  @media (min-width: 767px) {
+  @media (min-width: 840px) {
     display: none;
   }
 }

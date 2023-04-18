@@ -52,7 +52,13 @@ onMounted(() => {
   const blockTitle = document.querySelector(".title");
   const sousTitle = document.querySelector(".sticky h4");
 
-
+  gsap.from(blockTitle, {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      ease: "power4.out",
+      delay: 0.5,
+    });
   
 
   let animationJouee = false;
@@ -168,40 +174,40 @@ onMounted(() => {
 
   h1 {
     margin: 55px 0 39px 0;
-    animation: title 2s;
+    // animation: title 2s;
 
-    @keyframes title {
-      0% {
-        transform: translateY(-250px);
-      }
-      70% {
-        transform: translateY(-250px);
-      }
-      100% {
-      }
-    }
+    // @keyframes title {
+    //   0% {
+    //     transform: translateY(-250px);
+    //   }
+    //   70% {
+    //     transform: translateY(-250px);
+    //   }
+    //   100% {
+    //   }
+    // }
   }
   h4 {
     color: var(--color-orange);
-    animation: soustitle 2s;
+    // animation: soustitle 2s;
 
-    @keyframes soustitle {
-      0% {
-        opacity: 0;
-      }
-      30% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-        transform: translateY(-150px);
-      }
-      70% {
-        transform: translateY(-150px);
-      }
-      100% {
-      }
-    }
+    // @keyframes soustitle {
+    //   0% {
+    //     opacity: 0;
+    //   }
+    //   30% {
+    //     opacity: 0;
+    //   }
+    //   50% {
+    //     opacity: 1;
+    //     transform: translateY(-150px);
+    //   }
+    //   70% {
+    //     transform: translateY(-150px);
+    //   }
+    //   100% {
+    //   }
+    // }
   }
 }
 
@@ -257,27 +263,27 @@ onMounted(() => {
     .video {
       width: 85px;
     }
-    h4 {
-      animation: soustitle 2s;
+    // h4 {
+    //   animation: soustitle 2s;
 
-      @keyframes soustitle {
-        0% {
-          opacity: 0;
-        }
-        30% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 1;
-          transform: translateY(-100px);
-        }
-        70% {
-          transform: translateY(-100px);
-        }
-        100% {
-        }
-      }
-    }
+    //   @keyframes soustitle {
+    //     0% {
+    //       opacity: 0;
+    //     }
+    //     30% {
+    //       opacity: 0;
+    //     }
+    //     50% {
+    //       opacity: 1;
+    //       transform: translateY(-100px);
+    //     }
+    //     70% {
+    //       transform: translateY(-100px);
+    //     }
+    //     100% {
+    //     }
+    //   }
+    // }
   }
   .div_logo {
     margin-top: 15vh;
