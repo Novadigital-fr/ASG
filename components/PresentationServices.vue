@@ -113,6 +113,13 @@
   align-items: center;
   transition: 0.5s;
   // width: max-content;
+
+  &:active{
+    outline: none;
+  border: none;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  }
   .image {
     width: 50px;
     height: 50px;

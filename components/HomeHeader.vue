@@ -13,16 +13,8 @@
             />
           </client-only> -->
         <div class="div_logo">
-          <client-only>
-            <Vue3Lottie
-              class="video"
-              animationLink="https://lottie.host/f16fecf0-bd2e-4429-a628-a9e108e25576/5HPDh1eRql.json"
-              :height="100"
-              :width="100"
-              :speed="2.5"
-              loop="false"
-            />
-          </client-only>
+        <img class="video" src="/img/Logos/alexander_strategy_group_Logo_icon.svg" alt="">
+          
         </div>
         <div class="title" >
           <!-- <div class="div top_title"></div> -->
@@ -100,6 +92,8 @@ onMounted(() => {
     }
   });
 });
+
+
 </script>
 
 <style lang="scss" scoped>

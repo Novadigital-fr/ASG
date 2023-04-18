@@ -80,10 +80,12 @@ function openContact() {
 let triggerArray = [];
 
 onMounted(() => {
+  const lightModeSections = document.querySelectorAll('.light_mode');
+  let logo = document.querySelector(".logo_mobile");
+
   if (window.matchMedia("(min-width: 900px)").matches) {
 
   const links = document.querySelectorAll('.link');
-  const lightModeSections = document.querySelectorAll('.light_mode');
   const text_logo = document.querySelector('.text_logo');
   let startOffset = 150; // initialisation de la variable à 0
 
@@ -115,8 +117,19 @@ links.forEach(link => {
         text_logo.classList.remove('dark');
       }
     });
-
+    triggerArray.push(trigger);
   }
+  const trigger = ScrollTrigger.create({
+      trigger: lightModeSections,
+      start: 'top +150px',
+      end: 'bottom bottom',
+      onEnter: () => {
+        logo.classList.add('white');
+      },
+      onLeaveBack: () => {
+        logo.classList.remove('white');
+      }
+    });triggerArray.push(trigger);
 
 });
 
@@ -152,6 +165,7 @@ onUnmounted(() => {
     trigger.kill();
   });
   triggerArray = [];
+
 });
 </script>
 

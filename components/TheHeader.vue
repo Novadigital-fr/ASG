@@ -132,18 +132,7 @@ onMounted(() => {
     }
     lastScrollValue = top;
   });
-
-  const trigger = ScrollTrigger.create({
-      trigger: lightModeSections,
-      start: 'top +150px',
-      end: 'bottom bottom',
-      onEnter: () => {
-        logo.classList.add('white');
-      },
-      onLeaveBack: () => {
-        logo.classList.remove('white');
-      }
-    });
+  
 
 
   // DOM elements
@@ -224,6 +213,9 @@ onMounted(() => {
       collapseMenu();
     });
   });
+});
+onUnmounted(() => {
+ScrollTrigger.kill();
 });
 </script>
 
