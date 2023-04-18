@@ -82,6 +82,7 @@ let triggerArray = [];
 onMounted(() => {
   const lightModeSections = document.querySelectorAll('.light_mode');
   let logo = document.querySelector(".logo_mobile");
+  logo.classList.remove('white');
 
   if (window.matchMedia("(min-width: 900px)").matches) {
 

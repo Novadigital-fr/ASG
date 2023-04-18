@@ -196,6 +196,7 @@ onMounted(() => {
     button.style.display= "block";
     logo.classList.remove("hidden");
     menuTimeline.reverse(0);
+    
   };
 
   // Expand the menu when pressing any of the menu top links...
@@ -214,9 +215,7 @@ onMounted(() => {
     });
   });
 });
-onUnmounted(() => {
-ScrollTrigger.kill();
-});
+
 </script>
 
 <style lang="scss" scoped>
