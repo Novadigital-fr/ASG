@@ -5,6 +5,8 @@
         <HomeHorizontal/>
         <PresentationServices/>
         <HomeExpertise/>
+        <TheFooter />
+
     </div>
 </template>
 

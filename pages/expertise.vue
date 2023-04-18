@@ -21,6 +21,8 @@
   </div>
     <ExpertiseHorizontal />
     <PresentationServices />
+    <TheFooter />
+
   </div>
 </template>
 

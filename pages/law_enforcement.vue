@@ -44,7 +44,7 @@
     summary3="Criminal and emergency situations are ever evolving and strategies are only as effective as the manner in which they are implemented. Alexander Strategy Group provides real-time strategic, operational, and tactical level support and consulting services. Our law enforcement experts are there when our clients need them."
    
     />
-         
+    <TheFooter />   
     </div>
 </template>
 

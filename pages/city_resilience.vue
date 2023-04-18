@@ -28,6 +28,8 @@
     descriptionPrime="Following an assessment, Alexander Strategy Group develops tailored resilience action plans for federal, state, and city policymakers and other stakeholders."
     sousDesc1Prime="We provide bespoke policy recommendations and implementation guidance across urban sectors"
     />
+    <TheFooter />
+
   </div>
 </template>
 

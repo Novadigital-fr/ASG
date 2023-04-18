@@ -80,10 +80,28 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+onMounted(() => {
+
+  // Sélectionner le footer
+const footer = document.querySelector('footer');
+
+// Fonction pour faire apparaître le footer
+function afficherFooter() {
+   footer.style.display = 'block';
+}
+
+// Attendre 1 seconde avant d'appeler la fonction afficherFooter
+setTimeout(afficherFooter, 1000);
+
+
+})
+
+</script>
 
 <style lang="scss" scoped>
 footer {
+  display: none;
   background-color: var(--color-orange);
   background-image: url("../assets/img/alexander_strategy_group_pattern.webp");
   background-size: cover;
@@ -93,7 +111,22 @@ footer {
   width: 100%;
   height: 58vh;
   z-index: -1;
+  animation: apparition-footer 0.8s;
+ 
 
+  @keyframes apparition-footer {
+    0% {
+      opacity: 0;
+    }
+    90%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+
+    }
+  
+  }
   
 }
 .top {

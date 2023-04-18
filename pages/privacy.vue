@@ -74,6 +74,8 @@
         Mauris at ornare nisi, ut blandit lectus.
       </p>
     </div>
+    <TheFooter />
+
   </div>
 </template>
 

@@ -29,6 +29,7 @@
     title5="Creative"
     summary5="Creativity moves minds. Alexander Strategy Group’s creative department makes compelling graphics, written materials, social media content, and videos to push messages forward."
     />
+    <TheFooter />
     </div>
 </template>
 

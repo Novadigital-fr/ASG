@@ -26,9 +26,8 @@
     <TheHeader />
     <slot />
     <div class="reveal"></div>
-    <div v-if="showFooter">
-      <TheFooter />
-    </div>
+    <!-- <div v-if="showFooter"> -->
+    <!-- </div> -->
     <div class="light_mode"></div>
   </div>
 </template>
@@ -51,9 +50,9 @@ onMounted(() => {
  // 2000 millisecondes = 2 secondes
  // Définir une variable pour stocker l'information de la première visite
 // Sélectionner l'élément titre avec la classe ".h1"
-setTimeout(() => {
-    showFooter.value = true;
-  }, 1000);
+// setTimeout(() => {
+//     showFooter.value = true;
+//   }, 1000);
 
 
 var titre = document.querySelector('.h1');

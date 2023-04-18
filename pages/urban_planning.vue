@@ -26,6 +26,8 @@
     descriptionPrime="Our team has a global network of designers, architects, developers, and contractors who we can deploy internationally, bringing our clients the best experts the world has to offer as they work to transform their communities."
     sousDesc1Prime="We provide bespoke policy recommendations and implementation guidance across urban sectors"
     />
+    <TheFooter />
+
     </div>
 </template>
 

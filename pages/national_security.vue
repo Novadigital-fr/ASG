@@ -12,7 +12,6 @@
          <div class="reveal">
            <h2> <span class="text_reveal"> Having worked at the highest level of national security and law enforcement, the Alexander</span><span class="text_reveal"> Strategy Group team provides cutting edge risk analysis, threat assessments, policy evaluation </span><span class="text_reveal">  and development to help create secure environments.</span></h2>
         </div>
-    </div>
 
     <ServLogo
       logo="/img/Services_Icons/alexander_strategy_group_services_national_security.svg"
@@ -40,6 +39,8 @@
     title4="Policy Implementation"
     summary4="Driven by excellence, our dedicated team offers a proactive approach to help clients implement their national security strategies. From intelligence gathering, to threat monitoring, to helping implement response efforts, our consultants stay with you every step of the way."
     />
+    <TheFooter />
+  </div>
 </template>
 
 <script setup>

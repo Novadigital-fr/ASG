@@ -85,6 +85,8 @@
       </div>
     </div>
   </div>
+  <TheFooter />
+
 </template>
 
 <script setup>
