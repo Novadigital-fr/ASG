@@ -1,7 +1,5 @@
 <template>
   <div> 
-    <Preloader v-if="showPreloader" />
-
     <div class="loader">
       <client-only>
         <Vue3Lottie
