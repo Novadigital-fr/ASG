@@ -170,16 +170,18 @@ export default {
 .icone_tel_close{
   display: none;
 }
+.content{
+  height: fit-content;
+}
 .full-width {
   @media (max-width: 767px) {
-    
+   
     z-index: 17;
     width: 100vw;
     min-height: 100vh;
     transition: all 1s;
     inset: 0;
     position: fixed;
-    height: fit-content;
     overflow-y: scroll;
 
     .image{

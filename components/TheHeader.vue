@@ -306,7 +306,7 @@ display: none;
 
   button {
   background-color: transparent;
-  z-index: 15;
+  z-index: 22;
   position: fixed;
   bottom: 5%;
   right: 5%;
@@ -318,7 +318,7 @@ display: none;
 }
 .button {
   background-color: var(--color-orange);
-  z-index: 15;
+  z-index: 22;
   background-image: url(../assets/img/contact.svg);
   background-size: 15px;
   background-position: center;

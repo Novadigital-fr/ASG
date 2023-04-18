@@ -258,7 +258,7 @@ onMounted(() => {
       width: 85px;
     }
     h4 {
-      animation: soustitle 4s;
+      animation: soustitle 2s;
 
       @keyframes soustitle {
         0% {
