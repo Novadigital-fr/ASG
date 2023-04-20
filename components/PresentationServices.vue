@@ -8,6 +8,7 @@
       </h2>
 
       <div class="sevices">
+      <div>
         <NuxtLink to="/national_security">
           <div class="service">
             <div class="image image1"></div>
@@ -17,6 +18,7 @@
             </div>
           </div>
         </NuxtLink>
+      </div>
         <NuxtLink to="/law_enforcement">
           <div class="service">
             <div class="image image2"></div>
