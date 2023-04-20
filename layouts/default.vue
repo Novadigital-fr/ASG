@@ -81,7 +81,7 @@ setTimeout(function() {
   if(sousTitre !== null) {
     sousTitre.style.opacity = 1;
   }
-}, 2600);
+}, 2800);
 })
 </script>
 
@@ -90,10 +90,16 @@ setTimeout(function() {
 
 .reveal{
   width: 100%;
-  margin-bottom: 57vh;
+  margin-bottom: 54vh;
   background: none;
   z-index: 1;
   pointer-events: none;
+  @media (min-width: 1924px) {
+    margin-bottom: 50vh;
+  }
+  @media (max-width: 1281px) {
+    margin-bottom: 59vh;
+  }
 
 }
 

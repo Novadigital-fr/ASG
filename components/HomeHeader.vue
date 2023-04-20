@@ -57,6 +57,8 @@ onMounted(() => {
 
   window.addEventListener("scroll", function (e) {
     // cercle.style.transform="scale(" + window.scrollY / 100 + ")";
+    const title = document.querySelector(".h1");
+
     // console.log(this.scrollY);
     cercle.style.borderWidth = window.scrollY * 2 + "px";
     cercle.style.width = 11000 - window.scrollY * 10 + "px";
@@ -76,7 +78,6 @@ onMounted(() => {
         { y: 0, opacity: 1, duration: 1 }
       );
       animationJouee = true;
-      console.log("hello");
     }
     if (window.scrollY < 530) {
       title.innerHTML =

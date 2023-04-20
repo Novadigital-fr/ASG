@@ -11,18 +11,6 @@
 </template>
 
 <script setup>
-function enableCustomLayout () {
-  setPageLayout('custome')
-}
-definePageMeta({
-  layout: 'default',
-});
-
-onUnmounted(() => {
-enableCustomLayout();
-});
-
-
 
 </script>
 

@@ -204,7 +204,7 @@
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1281px) {
     /* tablettte */
     .video {
     margin-left: 10%;

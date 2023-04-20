@@ -105,7 +105,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 58vh;
+  height: 55vh;
   z-index: -1;
   animation: apparition-footer 0.8s;
 
@@ -119,6 +119,13 @@ footer {
     100% {
       opacity: 1;
     }
+  }
+
+  @media (min-width: 1924px) {
+    height: 50vh;
+  }
+  @media (max-width: 1281px) {
+    height: 62vh;
   }
 }
 .top {

@@ -147,7 +147,9 @@ margin: 4vh 0;
   z-index: 1;
   height: fit-content;
   transform: scale(0.9);
-
+  @media (max-width: 1281px) {
+    margin: 15vh 10vw 5vh 0;
+  }
 }
 
 form {

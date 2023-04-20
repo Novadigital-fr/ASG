@@ -167,6 +167,10 @@ export default {
     align-items: center;
     justify-content: center;
   }
+  @media (max-width: 1281px) {
+    padding-left: 0vw;
+
+    }
 }
 .icone_tel_close{
   display: none;
@@ -232,12 +236,16 @@ export default {
     width: 30vw;
     overflow: hidden;
   }
+  @media (max-width: 1281px) {
+    min-width: 35vw;
+  }
 
   &:hover {
     @media (min-width: 840px) {
       width: 60vw;
       transition: width 0.8s;
     }
+   
   }
   // &:hover > .carte_title{
   //   transition: all 1s;
@@ -264,6 +272,10 @@ export default {
       height: auto;
 
     }
+    @media (max-width: 1281px) {
+      max-width: 35vw;
+  }
+    
   }
   .sous_titre {
     display: none;
