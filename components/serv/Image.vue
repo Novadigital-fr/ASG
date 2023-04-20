@@ -1,6 +1,7 @@
 <template>
   <div class="contenu-global" id="contenu-global">
     <!-- <div class="carte"> -->
+    
     <div
       class="carte carte1"
       id="popup1"
@@ -35,6 +36,8 @@
       </div>
     </div>
     <!-- <div class="carte"> -->
+      <!-- <NuxtLink to="/details/cybersecurity"> -->
+
     <div
       class="carte carte2"
       :style="{ backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 9.25%, rgba(0, 0, 0, 0.8) 100%), url(${src2})`,}">
@@ -61,11 +64,18 @@
         </p>
       </div>
     </div>
+  <!-- </NuxtLink> -->
+
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      isMobile: false
+    }
+  },
   props: {
     src1: {
       type: String,
@@ -108,7 +118,15 @@ export default {
       required: false,
     },
   },
+  computed: {
+    checkMobile() {
+      const mobileWidth = 768 // largeur en pixels pour mobile
+      return window.innerWidth < mobileWidth
+    }
+  },
   mounted() {
+    this.isMobile = this.checkMobile
+
     const icone = document.querySelector(".icone1");
     const carte = document.querySelector(".carte");
 
@@ -187,6 +205,10 @@ export default {
     inset: 0;
     position: fixed;
     overflow-y: scroll;
+    // max-height: 120vh;
+    display: block !important;
+  overflow-y: auto;
+ 
     .carte{
       border-radius: 0 ;
     }
@@ -221,6 +243,8 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+  height: 65vh;
+
 
   @media (max-width: 840px) {
     background: #161d25 !important;
@@ -319,7 +343,6 @@ export default {
   //   url("/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning_resiliency_assesment.webp");
   @media (min-width: 840px) {
     display: none;
-
   }
 }
 .icone {

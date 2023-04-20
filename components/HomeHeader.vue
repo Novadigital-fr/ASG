@@ -37,6 +37,8 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 
+let scrollListener = null; // Déclarer une variable pour stocker la référence de l'événement de défilement
+
 onMounted(() => {
   const cercle = document.querySelector(".cercle");
   const back = document.querySelector(".sticky");
@@ -53,9 +55,9 @@ onMounted(() => {
     });
   
 
-  let animationJouee = false;
+    let animationJouee = false;
 
-  window.addEventListener("scroll", function (e) {
+scrollListener = function (e) {
     // cercle.style.transform="scale(" + window.scrollY / 100 + ")";
     const title = document.querySelector(".h1");
 
@@ -91,7 +93,15 @@ onMounted(() => {
     } else {
       cercle.style.display = "block";
     }
-  });
+  };
+  window.addEventListener("scroll", scrollListener);
+
+});
+
+
+onUnmounted(() => {
+  // Supprimer l'événement de défilement lors du démontage du composant
+  window.removeEventListener("scroll", scrollListener);
 });
 
 

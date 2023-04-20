@@ -166,6 +166,20 @@ onUnmounted(() => {
 .tel {
   display: none;
 }
+@media screen and (max-width: 1281px) {
+  .container {
+
+  padding: 7vh 0 0 20vw;
+}
+.panel {
+  width: 40vw;
+  h2,
+  p {
+    width: 92%;
+  }
+}
+
+}
 
 @media screen and (max-width: 1024px) {
   /* tablettte */
