@@ -167,9 +167,8 @@ export default {
     align-items: center;
     justify-content: center;
   }
-  @media (max-width: 1281px) {
-    padding-left: 0vw;
-
+  @media (min-width: 840px) and (max-width: 1281px){
+        padding-left: 0vw;
     }
 }
 .icone_tel_close{
@@ -236,7 +235,7 @@ export default {
     width: 30vw;
     overflow: hidden;
   }
-  @media (max-width: 1281px) {
+  @media (min-width: 840px) and (max-width: 1281px){
     min-width: 35vw;
   }
 
@@ -272,7 +271,7 @@ export default {
       height: auto;
 
     }
-    @media (max-width: 1281px) {
+    @media (min-width: 840px) and (max-width: 1281px){
       max-width: 35vw;
   }
     
