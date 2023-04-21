@@ -200,15 +200,15 @@ export default {
    
     z-index: 22;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 120vh;
     transition: all 1s;
     inset: 0;
     position: fixed;
     overflow-y: scroll;
-    // max-height: 120vh;
+    border-radius: 0px !important;
     display: block !important;
-  overflow-y: auto;
- 
+    overflow-y: auto;
+    padding-bottom: 30vh;
     .carte{
       border-radius: 0 ;
     }
