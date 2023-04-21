@@ -59,6 +59,10 @@ onMounted(() => {
         font-size: 100px;
         line-height: 130px;
   }
+  @media screen and (max-width: 1381px) {
+    top: 21vh;
+
+  }
 }
 
 @media screen and (max-width: 740px) {

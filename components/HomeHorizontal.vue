@@ -166,17 +166,22 @@ onUnmounted(() => {
 .tel {
   display: none;
 }
-@media screen and (max-width: 1281px) {
-  .container {
-
+@media screen and (max-width: 1381px) {
+.container {
   padding: 7vh 0 0 20vw;
 }
 .panel {
   width: 40vw;
+
+  img {
+    margin-bottom: 5%;
+  }
+
   h2,
   p {
-    width: 92%;
+    width: 92% !important;
   }
+ 
 }
 
 }

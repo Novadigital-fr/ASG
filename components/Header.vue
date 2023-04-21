@@ -235,6 +235,10 @@ header {
   font-size: 20px;
   font-weight: 700;
 
+  @media screen and (max-width: 1381px) {
+    font-size: 1em;
+
+  }
   .text_logo {
     font-weight: 700;
     line-height: normal;

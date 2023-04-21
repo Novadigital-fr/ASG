@@ -124,8 +124,12 @@ footer {
   @media (min-width: 1924px) {
     height: 50vh;
   }
-  @media (max-width: 1281px) {
+  @media (max-width: 1381px) {
     height: 62vh;
+
+    h4{
+      font-size: 1em;
+    }
   }
 }
 .top {
