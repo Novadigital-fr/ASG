@@ -4,6 +4,7 @@ export default defineNuxtConfig({
       transpile: ['gsap'],
     },
     app: {
+
       head: {
         htmlAttrs: {
           lang: 'en'
