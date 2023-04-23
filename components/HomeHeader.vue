@@ -179,6 +179,9 @@ onUnmounted(() => {
 
   h1 {
     margin: 55px 0 39px 0;
+    @media (max-width: 1381px) {
+      margin: 25px 0 15px 0;
+    }
     // animation: title 2s;
 
     // @keyframes title {

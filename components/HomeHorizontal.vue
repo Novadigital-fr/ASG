@@ -186,7 +186,7 @@ onUnmounted(() => {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 920px) {
   /* tablettte */
 
   .home7 {

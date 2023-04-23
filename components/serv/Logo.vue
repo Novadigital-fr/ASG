@@ -26,6 +26,8 @@ export default {
     text-align: center;
     background-color: var(--color-bg-dark);
     padding: 0 0 15vh 0;
+    position: relative;
+  z-index: 21;
 
     .logo{
         margin-bottom: 0vh;

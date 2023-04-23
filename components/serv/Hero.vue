@@ -96,11 +96,16 @@ export default {
     margin: 3% 0 1% 0;
     color: var(--color-orange);
     font-size: 70px;
-
+   
+    @media (max-width: 1381px) {
+      font-size: 60px;
+    }
   }
   img {
     width: 125px;
-
+    @media (max-width: 1381px) {
+      width: 100px;
+    }
   }
 }
 @media screen and (max-width: 840px) {

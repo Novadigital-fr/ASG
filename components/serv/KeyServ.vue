@@ -141,6 +141,8 @@ detailsElements.forEach(details => {
   background-color: var(--color-bg);
   display: flex;
   padding: 10vh 0;
+  position: relative;
+  z-index: 21;
   .left {
     width: 40%;
     padding: 5vh 0 0 15vw;

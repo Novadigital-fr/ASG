@@ -179,6 +179,7 @@ export default {
   justify-content: flex-start;
 
 
+
   @media (min-width: 840px) {
     // width: 90%;
     padding-left: 10vw;
@@ -259,8 +260,10 @@ export default {
     width: 30vw;
     overflow: hidden;
   }
-  @media (min-width: 840px) and (max-width: 1281px){
+  @media (min-width: 840px) and (max-width: 1381px){
     min-width: 35vw;
+    height: 85vh;
+
   }
 
   &:hover {
