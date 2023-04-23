@@ -59,9 +59,7 @@ onMounted(() => {
 
 scrollListener = function (e) {
     // cercle.style.transform="scale(" + window.scrollY / 100 + ")";
-    const title = document.querySelector(".h1");
 
-    // console.log(this.scrollY);
     cercle.style.borderWidth = window.scrollY * 2 + "px";
     cercle.style.width = 11000 - window.scrollY * 10 + "px";
     cercle.style.height = 11000 - window.scrollY * 10 + "px";
@@ -70,7 +68,7 @@ scrollListener = function (e) {
       title.innerHTML =
         "Alexander Strategy Group <br> is a leading global <br> <span class='orange'>consulting services firm</span> ";
       sousTitle.innerHTML = ". ";
-      title.classList = "anim_text";
+      title.classList = "h1 anim_text";
       blockTitle.style.zIndex = 20;
     }
     if (window.scrollY > 530 && !animationJouee) {

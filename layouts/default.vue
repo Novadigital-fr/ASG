@@ -183,6 +183,9 @@ h4 {
       100% {
       }
     }
+    @media (max-width: 1381px) {
+      margin: 25px 0 15px 0;
+    }
   }
   .video {
     position: relative;
