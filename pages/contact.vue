@@ -107,14 +107,12 @@
 .contenu-global {
   height: 100vh;
   background-color: var(--color-bg-dark);
-  background-image: linear-gradient(180deg, rgba(32, 42, 53, 0) 50.3%, #202A35 91%),
-    url("../assets/img/Img_Contact/alexander_strategy_group_contact.webp");
+  background-image: linear-gradient(180deg, rgba(32, 42, 53, 0) 50.3%, #202A35 91%), url("../assets/img/Img_Contact/alexander_strategy_group_contact.webp");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   transform: scale(1.1);
   animation: 2s back;
 
@@ -131,10 +129,6 @@
   @media (max-width: 1381px) {
     min-height: 100vh;
     height: auto;
-    background-position: -100px center;
-
-
-
   }
 }
 
@@ -149,17 +143,20 @@ margin: 4vh 0;
   flex-direction: column;
   background-color: rgba(33, 42, 53, 0.9);
   border-radius: 20px;
-  margin: 5vh 10vw 5vh 0;
+  margin: 7vh 10vw 5vh 0;
   padding: 0 4% 4% 4%;
   width: 38vw;
   z-index: 1;
   height: fit-content;
   transform: scale(0.9);
-  @media (max-width: 1381px) {
-    margin: 5vh 10vw 5vh 0;
+  @media (min-width: 1000px) and (max-width: 1381px) {
+    margin: -14vh 10vw 0vh 0;
     width: 44vw;
+    transform: scale(0.6);
+
 
   }
+
 }
 
 form {
@@ -217,11 +214,9 @@ display: none;
     background-position: center center;
   }
   .formulaire {
-    margin: 10vh 5vw 5vh 0;
     width: 48vw;
   }
   .sous-div {
-    height: 50vh;
     background-position: center center;
   }
 }

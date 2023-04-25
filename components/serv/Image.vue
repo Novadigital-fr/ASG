@@ -357,6 +357,10 @@ export default {
     display: block;
     transform: rotate(-45deg);
   }
+  @media (min-width: 1000px) and (max-width: 1241px) {
+    display: none;
+
+  }
 }
 .icone_tel {
   width: 30px;

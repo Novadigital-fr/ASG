@@ -183,6 +183,10 @@ onUnmounted(() => {
   }
  
 }
+.slider__progress-wrap {
+  bottom: 3vh;
+  
+}
 
 }
 

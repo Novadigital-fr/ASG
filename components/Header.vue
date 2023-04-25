@@ -235,8 +235,8 @@ header {
   font-size: 20px;
   font-weight: 700;
 
-  @media screen and (max-width: 1381px) {
-    font-size: 1em;
+  @media (max-width: 1381px) {
+    font-size: 16px;
 
   }
   .text_logo {
@@ -247,6 +247,10 @@ header {
   .logo_ordi {
       width: 100px;
       margin-bottom: 15px;
+      @media (max-width: 1381px) {
+        width: 80px;
+        margin-bottom: 10px;
+  }
   }
 }
 header{
@@ -263,12 +267,20 @@ header{
 }
 nav {
   margin-top: 15vh;
+  @media (max-width: 1381px) {
+    margin-top: 10vh;
+
+  }
+  
   li {
   //   position: absolute;
   //   top: 50%;
   // left: 50%;
     margin-bottom: 2vh;
+    @media (max-width: 1381px) {
+      margin-bottom: 1vh;
 
+  }
   }
 }
 .top_sous{
