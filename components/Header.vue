@@ -396,7 +396,10 @@ button:hover {
       background-repeat: no-repeat;
       background-size: cover;
       transition: 0.5s;
-
+      @media (max-width: 1381px) {
+        width: 18px;
+      height: 18px;
+  }
     }
    
     .image1 {
