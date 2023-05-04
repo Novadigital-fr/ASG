@@ -431,16 +431,16 @@ display: none;
     }
   }
   .menu__content {
-    margin-top: -3.1rem;
+    margin-top: -6.1rem;
     position: relative;
     z-index: 15;
     overflow: hidden;
     transform: translateY(-120%);
     padding: 0 1rem;
     left: -1rem;
-    top:-1rem;
+    top:2rem;
     bottom:-1rem;
-    height: 100%;
+    height: 105vh;
     width: 100vw;
     background: var(--color-orange);
     // border-radius: 2rem;
