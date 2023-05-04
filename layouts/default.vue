@@ -117,7 +117,7 @@ setTimeout(function() {
   text-align: center;
   z-index: 20;
   display: flex;
-  padding-top: 10%;
+  padding-top: 15%;
   animation: loading 4s linear;
   transform: scale(0);
 
@@ -142,15 +142,15 @@ setTimeout(function() {
 h4 {
     color: var(--color-orange);
     z-index: 10;
-    animation: soustitle 3s linear;
+    animation: soustitle 3s ease-in-out;
     @keyframes soustitle {
       0% {
         opacity: 0;
       }
-      30% {
+      45% {
         opacity: 0;
       }
-      50% {
+      65% {
         opacity: 1;
         transform: translateY(-150px);
       }
@@ -171,7 +171,7 @@ h4 {
 
   h1 {
     margin: 55px 0 39px 0;
-    animation: title 3s;
+    animation: title 3s ease-in-out;
 
     @keyframes title {
       0% {
@@ -190,6 +190,7 @@ h4 {
   .video {
     position: relative;
     z-index: 6;
+    margin: -2px 0 2px 0;
     width: 125px;
     @media (max-width: 1024px) {
       width: 15vw;
@@ -207,7 +208,7 @@ h4 {
   margin-bottom: 79vh;
 }
 h4 {
-    animation: soustitle 2.5s;
+    animation: soustitle 3s ease-in-out;
 
     @keyframes soustitle {
       0% {
@@ -218,10 +219,10 @@ h4 {
       }
       45% {
         opacity: 1;
-        transform: translateY(-100px);
+        transform: translateY(-120px);
       }
-      75% {
-        transform: translateY(-100px);
+      70% {
+        transform: translateY(-120px);
       }
       100% {
       }

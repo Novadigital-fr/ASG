@@ -147,6 +147,8 @@ input {
   background-color: #ffffff66;
   color: var(--color-text);
   font-size: 16px;
+  font-family: "Nexa";
+
 }
 
 .signup {

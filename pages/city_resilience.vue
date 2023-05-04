@@ -9,7 +9,7 @@
     />
     <div class="reveal">
             <h2>
-                <span class="text_reveal">Resilient cities  can absorb, recover from, and prepare </span> <span class="text_reveal">for hazards across the environmental, economic, societal, and governance spaces.</span> <span class="text_reveal"> They come out stronger from crises, and are constantly adapting to tackle whatever challenge comes next.</span>
+                <span class="text_reveal">Resilient cities  can absorb, recover from, and prepare for hazards </span> <span class="text_reveal">across the environmental, economic, societal, and governance spaces.</span> <span class="text_reveal"> They come out stronger from crises, and are constantly adapting to tackle whatever challenge comes next.</span>
             </h2>
         </div>
     <ServLogo

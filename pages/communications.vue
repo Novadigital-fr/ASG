@@ -10,7 +10,7 @@
          />
          <div class="reveal">
             <h2>
-                <span class="text_reveal">Trust, validity, support, and success are all built on one thing: </span><span class="text_reveal"> effective communication. Alexander Strategy Group has a</span><span class="text_reveal"> deep experience in corporate and public sector communications.</span>
+                <span class="text_reveal">Trust, validity, support, and success are all built on one thing: effective communication. </span><span class="text_reveal"> Alexander Strategy Group has a deep experience in corporate and public sector communications.</span>
             </h2>
         </div>
         <ServLogo

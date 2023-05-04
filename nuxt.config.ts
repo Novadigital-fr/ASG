@@ -9,10 +9,10 @@ export default defineNuxtConfig({
         htmlAttrs: {
           lang: 'en'
         },
-        title: 'Agence web | Novadigital ',
+        title: 'alexander strategy group',
         meta: [
           // <meta name="description" content="My amazing site">
-          { name: 'description', content: 'Agence web lyon Novadigital' }
+          { name: 'description', content: 'alexander strategy group' }
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' }],
        

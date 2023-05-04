@@ -175,6 +175,7 @@ form input {
   line-height: 22px;
   outline: none;
   color: var(--color-text);
+  font-family: "Nexa";
 }
 form textarea {
   border: none;
@@ -192,7 +193,7 @@ form textarea {
 }
 .sous-div {
   width: 100%;
-  height: 100vh;
+  height: 900px;
   background-image: url("../assets/img/Img_Contact/alexander_strategy_group_contact_map_offices.webp");
   background-size: cover;
   background-position: center;

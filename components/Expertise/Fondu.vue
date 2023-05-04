@@ -34,7 +34,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .fondu{
-    background-image: url(../../assets/img/Img_Expertise/degrade.png);
+    background-image: url(../../assets/img/Img_Expertise/alexander_strategy_group_expertise_degrade.png);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;

@@ -136,7 +136,7 @@ onUnmounted(() => {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 15%;
   top: 0;
   z-index: 1;
   position: sticky;

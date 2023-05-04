@@ -9,7 +9,7 @@
          />
          <div class="reveal">
             <h2>
-              <span class="text_reveal"> Times are changing fast and cities need to adapt. Our urban planning experts</span><span class="text_reveal"> have assisted cities around the world undergo the</span><span class="text_reveal"> transformations they need to thrive in the 21st century.</span>
+              <span class="text_reveal"> Times are changing fast and cities need to adapt.</span><span class="text_reveal"> Our urban planning experts have assisted cities around the world</span><span class="text_reveal"> undergo the transformations they need to thrive in the 21st century.</span>
             </h2>
         </div>
         <ServLogo

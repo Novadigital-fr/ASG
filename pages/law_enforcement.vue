@@ -12,7 +12,7 @@
          <div class="reveal">
             <h2>
                 <span class="text_reveal">
-                With extensive experience in the nation’s most elite law enforcement </span><span class="text_reveal">organisations, we provides clients with comprehensive, transformational, and </span><span class="text_reveal">bespoke law enforcement strategies and tactics.</span>
+                With extensive experience in the nation’s most elite law enforcement organisations,</span><span class="text_reveal"> we provides clients with comprehensive, transformational, </span><span class="text_reveal">and bespoke law enforcement strategies and tactics.</span>
             </h2>
         </div>
         <ServLogo
