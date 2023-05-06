@@ -261,9 +261,8 @@ export default {
     overflow: hidden;
   }
   @media (min-width: 840px) and (max-width: 1381px){
-    min-width: 35vw;
+    width: 30vw;
     height: 85vh;
-
   }
 
   &:hover {

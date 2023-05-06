@@ -146,7 +146,6 @@ detailsElements.forEach(details => {
   .left {
     width: 40%;
     padding: 5vh 0 0 15vw;
-
     h2 {
       margin: 2vh 0;
     }

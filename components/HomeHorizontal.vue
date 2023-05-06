@@ -2,7 +2,7 @@
   <div class="home7 light_mode" ref="container">
     <div id="container" class="container">
       <section class="tel panel"></section>
-      <section class="panel">
+      <section class="panel animationh1">
         <div>
           <img
             src="../assets/img/Img_HP/alexander_strategy_group_world_interconnected.webp"
@@ -14,7 +14,7 @@
           </p>
         </div>
       </section>
-      <section class="panel">
+      <section class="panel animationh2">
         <div>
           <img
             src="../assets/img/Img_HP/alexander_strategy_group_front_lines.webp"
@@ -27,7 +27,7 @@
           </p>
         </div>
       </section>
-      <section class="panel">
+      <section class="panel animationh3">
         <div>
           <img
             src="../assets/img/Img_HP/alexander_strategy_group_horizon.webp"

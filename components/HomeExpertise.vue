@@ -1,13 +1,13 @@
 <template>
   <div class="expertise light_mode">
     <div class="top">
-      <div class="left">
+      <div class="left animation1">
         <!-- <img
           src="../assets/img/Img_HP/alexander_strategy_group_expertise_governement.webp"
           alt=""
         /> -->
       </div>
-      <div class="right">
+      <div class="right animation">
         <h2>Expertise at the highest-levels of government</h2>
         <p>
           Drawing on decades of military, law enforcement, and intelligence
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="bottom">
-      <div class="left">
+      <div class="left animation1">
         <h2>Integrated cross-sector strategies</h2>
         <p>
           Alexander Strategy Group provides integrated cross-sector strategies
@@ -30,7 +30,7 @@
           solutions to the most complex challenges.
         </p>
       </div>
-      <div class="right">
+      <div class="right animation">
         <div class="textligne">
           <h2>
             Strategic guidance, implementation support, and tactical solutions

@@ -6,6 +6,8 @@
         <PresentationServices/>
         <HomeExpertise/>
         <TheFooter />
+        <AnimationText />
+
 
     </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="full light_mode">
     <div class="left">
-      <h2>
+      <h2 class="animation">
         We offer a wide array of
         <span class="orange">strategic consulting services</span> supported by
         our team of advisors
@@ -162,10 +162,10 @@
   color: var(--color-text);
 
   .image {
-  rotate: 45deg;
+  rotate: 22deg;
   transition: 1s;
   transform-origin: center center;
-  -webkit-transform: rotate(45deg);
+  -webkit-transform: rotate(22deg);
   -webkit-transform-origin: center;
   transform-style: preserve-3d;
   max-width: none;
