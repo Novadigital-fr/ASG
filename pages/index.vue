@@ -6,7 +6,7 @@
         <PresentationServices/>
         <HomeExpertise/>
         <TheFooter />
-        <AnimationText />
+        <!-- <AnimationText /> -->
 
 
     </div>

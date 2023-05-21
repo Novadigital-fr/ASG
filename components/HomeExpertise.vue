@@ -49,7 +49,7 @@
         />      -->
         <client-only>
           <Vue3Lottie
-            animationLink="https://lottie.host/70f6fbc0-495d-48e7-90da-3ba359faa8ae/4nxMyA2nn3.json"
+            animationLink="https://assets3.lottiefiles.com/packages/lf20_nNsl3QFaqM.json"
             :height="200"
             :width="200"
           />

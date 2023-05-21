@@ -62,7 +62,7 @@
         <client-only>
           <Vue3Lottie
             class="video"
-            animationLink="https://lottie.host/685ab8ec-13b5-45af-a9d3-17ab62db421b/tHboDR8bB8.json"
+            animationLink="https://assets9.lottiefiles.com/packages/lf20_5B0BbDeBuI.json"
             :height="100"
             :width="100"
           />

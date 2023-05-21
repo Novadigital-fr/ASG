@@ -4,7 +4,7 @@
       <client-only>
         <Vue3Lottie
           class="video"
-          animationLink="https://lottie.host/f16fecf0-bd2e-4429-a628-a9e108e25576/5HPDh1eRql.json"
+          animationLink="https://assets7.lottiefiles.com/packages/lf20_i8H5xPhhcQ.json"
           :height="100"
           :width="100"
           :speed="2.5"
