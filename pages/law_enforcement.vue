@@ -49,6 +49,15 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: 'Law enforcement - We help make communities safer | ASG',
+  ogTitle: 'Law enforcement - We help make communities safer | ASG',
+  description: 'With extensive experience in the nation’s most elite law enforcement organisations, we provides clients with comprehensive law enforcement strategies',
+  ogDescription: 'With extensive experience in the nation’s most elite law enforcement organisations, we provides clients with comprehensive law enforcement strategies',
+  ogImage: 'img/Social_image/alexanderstrategygroup_consulting_firm__law-enforcement-consultant.png',
+  twitterCard: 'summary_large_image',
+})
+
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

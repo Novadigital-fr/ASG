@@ -32,6 +32,15 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: 'Urban planning - Times are changing fast and cities need to adapt | ASG',
+  ogTitle: 'Urban planning - Times are changing fast and cities need to adapt | ASG',
+  description: 'Our urban planning experts have assisted cities around the world undergo the transformations they need to thrive in the 21st century. Vision planning & building',
+  ogDescription: 'Our urban planning experts have assisted cities around the world undergo the transformations they need to thrive in the 21st century. Vision planning & building',
+  ogImage: 'img/Social_image/alexanderstrategygroup_consulting_firm__urban_planning_consultant.png',
+  twitterCard: 'summary_large_image',
+})
+
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

@@ -34,6 +34,15 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: 'Communication - Get the message across, trust, validity, support, and success | ASG',
+  ogTitle: 'Communication - Get the message across, trust, validity, support, and success | ASG',
+  description: 'Alexander Strategy Group has a deep experience in corporate and public sector communications. Trust and success are all built on one thing: effective communication',
+  ogDescription: 'Alexander Strategy Group has a deep experience in corporate and public sector communications. Trust and success are all built on one thing: effective communication',
+  ogImage: 'img/Social_image/alexanderstrategygroup_consulting_firm__stategic_communication.png',
+  twitterCard: 'summary_large_image',
+})
+
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

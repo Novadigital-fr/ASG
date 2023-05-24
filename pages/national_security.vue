@@ -44,6 +44,15 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: 'National security - We help create secure environments | ASG',
+  ogTitle: 'National security - We help create secure environments | ASG',
+  description: 'Having worked at the highest level of national security and law enforcement, Alexander Strategy Group provides cutting edge risk analysis and policy development',
+  ogDescription: 'Having worked at the highest level of national security and law enforcement, Alexander Strategy Group provides cutting edge risk analysis and policy development',
+  ogImage: 'img/Social_image/alexanderstrategygroup_consulting_firm__national_security_strategy.png',
+  twitterCard: 'summary_large_image',
+})
+
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

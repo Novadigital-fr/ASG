@@ -34,6 +34,15 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: 'Resilient cities - Ready for the unexpected in every aspect of urban development | ASG',
+  ogTitle: 'Resilient cities - Ready for the unexpected in every aspect of urban development | ASG',
+  description: 'Resilient cities can absorb, recover from, and prepare for hazards. They come out stronger from crises and are adapting to tackle whatever challenge comes next',
+  ogDescription: 'Resilient cities can absorb, recover from, and prepare for hazards. They come out stronger from crises and are adapting to tackle whatever challenge comes next',
+  ogImage: 'img/Social_image/alexanderstrategygroup_consulting_firm__service_resilient_cities.png',
+  twitterCard: 'summary_large_image',
+})
+
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
