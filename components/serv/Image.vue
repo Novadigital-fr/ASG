@@ -169,6 +169,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
 .contenu-global {
   display: flex;
   width: 100vw;

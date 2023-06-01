@@ -1,7 +1,7 @@
 <template>
   <div class="key_service light_mode">
     <div class="left">
-      <p class="desk_button">National Security</p>
+      <p class="desk_button">{{ domaine }}</p>
       <h2>Key Services</h2>
       <NuxtLink to="/contact">
         <div class="button_ordi"><Button text="Contact" /></div>
@@ -63,6 +63,10 @@
 <script>
 export default {
   props: {
+    domaine:{
+      type: String,
+      required: false,
+    },
     title1: {
       type: String,
       required: false,

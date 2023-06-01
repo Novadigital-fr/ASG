@@ -30,6 +30,7 @@
     />
 
     <ServKeyServ
+    domaine="National security"
     title1="Risk Analysis"
     summary1="To mitigate risk, one must understand where the threats emanate. Our experts provide a 360 degree understanding of the national security risks that companies or communities face. From state actors, to terrorist groups, to cyber risks, Alexander Strategy Group takes a holistic approach to risk analysis to ensure that our clients are able to detect, deter, prevent, and respond to evolving threats."
     title2="Intelligence"
@@ -49,7 +50,7 @@ useSeoMeta({
   ogTitle: 'National security - We help create secure environments | ASG',
   description: 'Having worked at the highest level of national security and law enforcement, Alexander Strategy Group provides cutting edge risk analysis and policy development',
   ogDescription: 'Having worked at the highest level of national security and law enforcement, Alexander Strategy Group provides cutting edge risk analysis and policy development',
-  ogImage: 'img/Social_image/alexanderstrategygroup_consulting_firm__national_security_strategy.png',
+  ogImage: '/img/Social_image/alexanderstrategygroup_consulting_firm__national_security_strategy.png',
   twitterCard: 'summary_large_image',
 })
 

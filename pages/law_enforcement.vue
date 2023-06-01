@@ -32,6 +32,7 @@
     />
 
     <ServKeyServ
+    domaine="Law enfoncement"
     title1="Assessments"
     summary1="Every community has different law enforcement capabilities and law enforcement needs. Alexander Strategy Group provides government officials assessments including:
               Deep understanding of the community’s crime concerns
@@ -54,7 +55,7 @@ useSeoMeta({
   ogTitle: 'Law enforcement - We help make communities safer | ASG',
   description: 'With extensive experience in the nation’s most elite law enforcement organisations, we provides clients with comprehensive law enforcement strategies',
   ogDescription: 'With extensive experience in the nation’s most elite law enforcement organisations, we provides clients with comprehensive law enforcement strategies',
-  ogImage: 'img/Social_image/alexanderstrategygroup_consulting_firm__law-enforcement-consultant.png',
+  ogImage: '/img/Social_image/alexanderstrategygroup_consulting_firm__law-enforcement-consultant.png',
   twitterCard: 'summary_large_image',
 })
 

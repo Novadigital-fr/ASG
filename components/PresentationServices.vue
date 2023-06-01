@@ -76,8 +76,6 @@
 
 <style lang="scss" scoped>
 
-
-
 .full {
   color: var(--color-secondaire);
   display: flex;
@@ -242,7 +240,7 @@
       padding: 0 5vw;
       width: 100%;
       text-align: center;
-      line-height: 25px;
+      line-height: 30px;
       @media (min-width: 767px) {
         line-height: 45px;
       }

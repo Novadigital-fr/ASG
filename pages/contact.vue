@@ -95,7 +95,7 @@ useSeoMeta({
   ogTitle: 'Alexander Strategy Group - Worldwide offices | ASG',
   description: 'Get in touch. Washington DC, Riyadh, Tokyo, Paris, London, Los Angeles.',
   ogDescription: 'Get in touch. Washington DC, Riyadh, Tokyo, Paris, London, Los Angeles.',
-  ogImage: 'img/Social_image/alexanderstrategygroup_contact.png',
+  ogImage: '/img/Social_image/alexanderstrategygroup_contact.png',
   twitterCard: 'summary_large_image',
 })
 

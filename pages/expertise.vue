@@ -32,7 +32,7 @@ useSeoMeta({
   ogTitle: 'We help solve your toughest challenges - Strategic consulting services | ASG',
   description: 'Driven by excellence and a global expertise, we offer a wide array of strategic consulting services supported by our team of experts at the highest levels',
   ogDescription: 'Driven by excellence and a global expertise, we offer a wide array of strategic consulting services supported by our team of experts at the highest levels',
-  ogImage: 'img/Social_image/alexanderstrategygroup_expertise.png',
+  ogImage: '/img/Social_image/alexanderstrategygroup_expertise.png',
   twitterCard: 'summary_large_image',
 })
 // definePageMeta({

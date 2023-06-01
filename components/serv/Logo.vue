@@ -47,6 +47,7 @@ export default {
 
     h4{
         width: 70%;
+        line-height: 24px;
 
     }
 }

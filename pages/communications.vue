@@ -18,6 +18,7 @@
     />
 
     <ServKeyServ
+    domaine="Communication"
     title1="Message Development"
     summary1="Alexander Strategy Group enables customers across industries to develop their storytelling. We create compelling and persuasive narratives, identify the right audience, and determine the best communication vehicles to utilize to achieve results."
     title2="Strategic Planning"
@@ -39,7 +40,7 @@ useSeoMeta({
   ogTitle: 'Communication - Get the message across, trust, validity, support, and success | ASG',
   description: 'Alexander Strategy Group has a deep experience in corporate and public sector communications. Trust and success are all built on one thing: effective communication',
   ogDescription: 'Alexander Strategy Group has a deep experience in corporate and public sector communications. Trust and success are all built on one thing: effective communication',
-  ogImage: 'img/Social_image/alexanderstrategygroup_consulting_firm__stategic_communication.png',
+  ogImage: '/img/Social_image/alexanderstrategygroup_consulting_firm__stategic_communication.png',
   twitterCard: 'summary_large_image',
 })
 
