@@ -2,10 +2,9 @@
   <div class="espertise_parent">
   <div class="expertise">
     <div class="hero_text">
-      <h1 ref="title" class="title">We help solve your toughest challenges</h1>
+      <h1 ref="title" class="title">Solving the toughest challenges</h1>
       <p>
-        We thrive to deliver sophisticated solutions,
-daring to become a proactive and dedicated partner through the whole project.
+        We help leaders resolve complex challenges and overcome crises, giving clients a competitive edge in a highly complex world.
       </p>
       <NuxtLink to="/contact">
       <Button text="Contact" />

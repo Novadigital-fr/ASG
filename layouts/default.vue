@@ -14,9 +14,10 @@
       <div class="title2">
           <!-- <div class="div top_title"></div> -->
           <h1>
-            We help mitigate risk to keep <br />
-            communities, companies, <br />
-            and individuals safe
+            ASG is a global advisory firm <br />
+            helping clients solve complex <br />
+            challenges and redefine the future.
+
           </h1>
           <!-- <div class="div bottom_title"></div> -->
         </div>

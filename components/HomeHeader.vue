@@ -19,9 +19,11 @@
         <div class="title" >
           <!-- <div class="div top_title"></div> -->
           <h1 class="h1">
-            We help mitigate risk to keep <br />
-            communities, companies, <br />
-            and individuals safe
+            ASG is a global advisory firm <br />
+            helping clients solve complex <br />
+            challenges and redefine the future.
+
+              
           </h1>
           <!-- <div class="div bottom_title"></div> -->
         </div>
@@ -66,7 +68,7 @@ scrollListener = function (e) {
 
     if (window.scrollY > 530) {
       title.innerHTML =
-        "Alexander Strategy Group <br> is a leading global <br> <span class='orange'>consulting services firm</span> ";
+        "We help leaders overcome <br/>business obstacles and scrutiny,<br/> mitigate risk, and enable them to<br/> play their prominent role in society.";
       sousTitle.innerHTML = ". ";
       title.classList = "h1 anim_text";
       blockTitle.style.zIndex = 20;
@@ -81,7 +83,7 @@ scrollListener = function (e) {
     }
     if (window.scrollY < 530) {
       title.innerHTML =
-        "We help mitigate risk to keep <br/> communities, companies, <br /> and individuals safe";
+        "ASG is a global advisory firm <br/> helping clients solve complex <br /> challenges and redefine the future.";
       sousTitle.innerHTML = "alexander strategy group";
       blockTitle.style.zIndex = 4;
       animationJouee = false;

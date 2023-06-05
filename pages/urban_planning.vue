@@ -5,7 +5,7 @@
         image ="/img/Img_Urban_Planning/alexander_strategy_group_services_urban_planning"
         logo ="/img/Services_Icons/alexander_strategy_group_services_urban_planning.svg"
         title ="Urban Planning"
-        text ="Thrive in the 21st century"
+        text ="Trendsetting in the 21st century"
          />
          <div class="reveal">
             <h2>
@@ -24,7 +24,7 @@
     sousDesc2="We are a data-first, technology-oriented firm that helps build happy, healthy, and long-standing communities."
     titrePrime="Vision-Building"
     descriptionPrime="Our team has a global network of designers, architects, developers, and contractors who we can deploy internationally, bringing our clients the best experts the world has to offer as they work to transform their communities."
-    sousDesc1Prime="We provide bespoke policy recommendations and implementation guidance across urban sectors"
+    sousDesc1Prime="We provide bespoke policy recommendations and implementation guidance across urban sectors."
     />
     <TheFooter />
 

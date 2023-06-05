@@ -10,10 +10,7 @@
       <div class="right animation">
         <h2>Expertise at the highest-levels of government</h2>
         <p>
-          Drawing on decades of military, law enforcement, and intelligence
-          expertise at the highest-levels of government, Alexander Strategy
-          Group provides national security and risk management advisory services
-          to clients worldwide.
+          Drawing on decades of corporate, media and intelligence expertise at the highest-levels of government, ASG provides advisory services to clients worldwide.
         </p>
         <NuxtLink to="/expertise">
         <Button text="Expertise" />
@@ -24,10 +21,7 @@
       <div class="left animation1">
         <h2>Integrated cross-sector strategies</h2>
         <p>
-          Alexander Strategy Group provides integrated cross-sector strategies
-          across law enforcement, intelligence, emergency planning, and urban
-          resilience & infrastructure verticals to provide customers with
-          solutions to the most complex challenges.
+          ASG provides integrated cross-sector strategies across law enforcement, intelligence, emergency planning, and urban resilience & infrastructure verticals to provide customers with solutions to the most complex challenges.
         </p>
       </div>
       <div class="right animation">
@@ -37,10 +31,7 @@
           </h2>
 
           <p>
-            Alexander Strategy Group provides strategic guidance, implementation
-            support, and tactical solutions in security systems, training, human
-            capital, and technology development. We are with you from planning
-            to execution.
+            ASG provides strategic counsel to leaders seeking a global partner from planning to execution.
           </p>
         </div>
         <!-- <img

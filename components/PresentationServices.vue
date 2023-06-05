@@ -2,29 +2,34 @@
   <div class="full light_mode">
     <div class="left">
       <h2 class="animation">
-        We offer a wide array of
-        <span class="orange">strategic consulting services</span> supported by
-        our team of advisors
+        Alexander Strategy Group’s world class<span class="orange"> advisory services</span> encompass diverse disciplines: 
       </h2>
 
       <div class="sevices">
-      <div>
+        <NuxtLink to="/communications">
+          <div class="service">
+            <div class="image image5"></div>
+            <div>
+              <h3>Communications</h3>
+              <p>Narrative Matters</p>
+            </div>
+          </div>
+        </NuxtLink>
         <NuxtLink to="/national_security">
           <div class="service">
             <div class="image image1"></div>
             <div>
               <h3>National Security</h3>
-              <p>Create secure environments</p>
+              <p>Making  communities safer</p>
             </div>
           </div>
         </NuxtLink>
-      </div>
         <NuxtLink to="/law_enforcement">
           <div class="service">
             <div class="image image2"></div>
             <div>
               <h3>Law Enforcement</h3>
-              <p>Make communities safer</p>
+              <p>Creating secure environments</p>
             </div>
           </div>
         </NuxtLink>
@@ -33,7 +38,7 @@
             <div class="image image3"></div>
             <div>
               <h3>Urban Planning</h3>
-              <p>Thrive in the 21st century</p>
+              <p>Trendsetting in the 21st century</p>
             </div>
           </div>
         </NuxtLink>
@@ -42,16 +47,7 @@
             <div class="image image4"></div>
             <div>
               <h3>City Resilience</h3>
-              <p>Ready for the unexpected</p>
-            </div>
-          </div>
-        </NuxtLink>
-        <NuxtLink to="/communications">
-          <div class="service">
-            <div class="image image5"></div>
-            <div>
-              <h3>Communications</h3>
-              <p>Get the message across</p>
+              <p>Preparing for the unexpected</p>
             </div>
           </div>
         </NuxtLink>

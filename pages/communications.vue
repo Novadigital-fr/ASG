@@ -5,12 +5,12 @@
         <ServHero
         image ="/img/Img_Communication/alexander_strategy_group_services_communication"
         logo ="/img/Services_Icons/alexander_strategy_group_services_communication.svg"
-        title ="Communication"
-        text ="Get the message across"
+        title ="Strategic Communications"
+        text ="Narrative Matters "
          />
          <div class="reveal">
             <h2>
-                <span class="text_reveal">Trust, validity, support, and success are all built on one thing: effective communication. </span><span class="text_reveal"> Alexander Strategy Group has a deep experience in corporate and public sector communications.</span>
+                <span class="text_reveal">Trust, credibility, and influence require clear and persuasive communication. </span><span class="text_reveal">Alexander Strategy Group has deep experience in corporate affairs, issue management,  and public affairs.</span>
             </h2>
         </div>
         <ServLogo
@@ -18,7 +18,7 @@
     />
 
     <ServKeyServ
-    domaine="Communication"
+    domaine="Strategic Communications"
     title1="Message Development"
     summary1="Alexander Strategy Group enables customers across industries to develop their storytelling. We create compelling and persuasive narratives, identify the right audience, and determine the best communication vehicles to utilize to achieve results."
     title2="Strategic Planning"

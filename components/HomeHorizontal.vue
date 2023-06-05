@@ -10,7 +10,7 @@
           />
           <h2>Our world is increasingly interconnected.</h2>
           <p>
-            Provide customers with solutions to the most complex challenges.
+            We help clients navigate the most complex challenges.
           </p>
         </div>
       </section>
@@ -20,10 +20,9 @@
             src="../assets/img/Img_HP/alexander_strategy_group_front_lines.webp"
             alt=""
           />
-          <h2>We live on the front lines</h2>
+          <h2>Living on the front lines</h2>
           <p>
-            National security and risk management advisory services to clients
-            worldwide.
+            We provide national security and risk management advisory services to clients worldwide.
           </p>
         </div>
       </section>
@@ -33,8 +32,8 @@
             src="../assets/img/Img_HP/alexander_strategy_group_horizon.webp"
             alt=""
           />
-          <h2>We are on the ground and over-the-horizon</h2>
-          <p>We are with you from planning to execution.</p>
+          <h2>On the ground and over-the-horizon</h2>
+          <p>We ally with clients – from planning to execution –to design sophisticated programs to redefine the future.</p>
         </div>
       </section>
       <div class="slider__progress-wrap js-progress-wrap">

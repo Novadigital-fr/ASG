@@ -4,7 +4,7 @@
       <div class="top">
         <div class="signup">
           <h4>
-            Alexander Strategy Group is carefully crafting insights each month
+            ASG is carefully crafting insights each month
           </h4>
           <input type="email" placeholder="your@email.com" />
           <ButtonWhite text="Sign up" />
@@ -20,6 +20,15 @@
       <div class="bottom">
         <div class="left">
           <div>
+            <NuxtLink to="/communications">
+            <div class="service">
+              <img
+                src="/img/Services_Icons/alexander_strategy_group_services_communication_white.svg"
+                alt=""
+              />
+              <p>Communication</p>
+            </div>
+          </NuxtLink>
             <NuxtLink to="/national_security">
               <div class="service">
                 <img
@@ -29,6 +38,9 @@
                 <p>National Security</p>
               </div>
             </NuxtLink>
+            
+          </div>
+          <div>
             <NuxtLink to="/urban_planning">
               <div class="service">
                 <img
@@ -38,8 +50,6 @@
                 <p>Urban Planing</p>
               </div>
             </NuxtLink>
-          </div>
-          <div>
             <NuxtLink to="/law_enforcement">
               <div class="service">
                 <img
@@ -49,7 +59,9 @@
                 <p>Law Enforcement</p>
               </div>
             </NuxtLink>
-            <NuxtLink to="/city_resilience">
+           
+          </div>
+          <NuxtLink to="/city_resilience">
               <div class="service">
                 <img
                   src="/img/Services_Icons/alexander_strategy_group_services_city_resilience_white.svg"
@@ -58,16 +70,6 @@
                 <p>City Resilience</p>
               </div>
             </NuxtLink>
-          </div>
-          <NuxtLink to="/communications">
-            <div class="service">
-              <img
-                src="/img/Services_Icons/alexander_strategy_group_services_communication_white.svg"
-                alt=""
-              />
-              <p>Communication</p>
-            </div>
-          </NuxtLink>
         </div>
         <div class="right">
           <p>
@@ -155,7 +157,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: clamp(35%, 40%, 50%);
+  width: clamp(35%, 45%, 50%);
 }
 
 .bottom {

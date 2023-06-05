@@ -1,7 +1,6 @@
 <template>
     <div class="fondu">
-    <h2 class="text">We thrive to deliver sophisticated solutions,
-daring to become a proactive and dedicated partner through the whole project.</h2>
+    <h2 class="text">We deliver sophisticated solutions to global challenges, a trusted advisor to clients worldwide.</h2>
     <!-- <div class="top"></div>
     <div class="bottom"></div> -->
     </div>

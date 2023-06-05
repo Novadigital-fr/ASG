@@ -6,21 +6,19 @@
     <div class="contenu-global">
       <div class="formulaire">
         <div class="texte">
-          <h1>Get in touch</h1>
+          <h1>Engage</h1>
           <br />
           <p>Use the contact form or direct mail to:</p>
           <p class="orange">contact@alexanderstrategygroup.co</p>
           <br />
-          <p>Support (WhatsApp):</p>
-          <p class="orange">+1 (443) 440-5984</p>
         </div>
         <form>
           <input type="text" name="name" placeholder="Name" class="name" />
           <input type="text" name="email" placeholder="Email" class="email" />
           <input
             type="text"
-            name="support"
-            placeholder="Support"
+            name="Subject"
+            placeholder="Subject"
             class="support"
           />
           <textarea
@@ -248,8 +246,10 @@ display: none;
     width: 100%;
   }
   .sous-div {
-    background-image: url('../assets/img/Img_Contact/alexander_strategy_group_contact_map_mobile.webp');
-    height: 40vh;
+    background-image: none;
+    height: 10vh;
+    background-color: var(--color-bg-dark);
+
   }
   .offices{
     background-color: var(--color-bg-dark);

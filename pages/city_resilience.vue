@@ -5,7 +5,7 @@
       image="/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning"
       logo="/img/Services_Icons/alexander_strategy_group_services_city_resilience.svg"
       title="City Resilience"
-      text="Ready for the unexpected"
+      text="Preparing for the unexpected"
     />
     <div class="reveal">
             <h2>
@@ -20,13 +20,13 @@
     <ServImage
     src1="/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning_resiliency_assesment.webp"
     src2="/img/Img_City_Resilience/alexander_strategy_group_services_urban_planning_resiliency_plan.webp"
-    titre="Resiliency Assessments"
-    description="Alexander Strategy Group provides cities comprehensive resiliency assessments for client cities."
+    titre="Resiliency Assessment"
+    description="ASG provides cities comprehensive resiliency assessments."
     sousDesc1="Our experts assess the wide range of urban characteristics that determine resilience, including: environmental and climate change related issues,"
     sousDesc2="economic conditions, public safety and health emergency preparedness; critical infrastructure, city services, governance, crisis response and more."
     titrePrime="Resiliency Action Plans"
-    descriptionPrime="Following an assessment, Alexander Strategy Group develops tailored resilience action plans for federal, state, and city policymakers and other stakeholders."
-    sousDesc1Prime="We provide bespoke policy recommendations and implementation guidance across urban sectors"
+    descriptionPrime="Following an assessment, ASG  develops tailored resilience action plans for federal, state, and city policymakers and other stakeholders."
+    sousDesc1Prime="We provide bespoke policy recommendations and implementation guidance across urban sectors."
     />
     <TheFooter />
 
