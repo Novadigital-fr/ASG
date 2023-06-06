@@ -185,6 +185,7 @@ onUnmounted(() => {
     }
     @media (max-width: 850px) {
       width: 100%;
+      padding: 0 5%;
 
     }
     // animation: title 2s;
