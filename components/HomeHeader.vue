@@ -19,8 +19,8 @@
         <div class="title" >
           <!-- <div class="div top_title"></div> -->
           <h1 class="h1">
-            ASG is a global advisory firm <br />
-            helping clients solve complex <br />
+            ASG is a global advisory firm
+            helping clients solve complex
             challenges and redefine the future.
 
               
@@ -68,7 +68,7 @@ scrollListener = function (e) {
 
     if (window.scrollY > 530) {
       title.innerHTML =
-        "We help leaders overcome <br/>business obstacles and scrutiny,<br/> mitigate risk, and enable them to<br/> play their prominent role in society.";
+        "We help leaders overcome business obstacles and scrutiny, mitigate risk, and enable them to play their prominent role in society.";
       sousTitle.innerHTML = ". ";
       title.classList = "h1 anim_text";
       blockTitle.style.zIndex = 20;
@@ -83,7 +83,7 @@ scrollListener = function (e) {
     }
     if (window.scrollY < 530) {
       title.innerHTML =
-        "ASG is a global advisory firm <br/> helping clients solve complex <br /> challenges and redefine the future.";
+        "ASG is a global advisory firm helping clients solve complex challenges and redefine the future.";
       sousTitle.innerHTML = "alexander strategy group";
       blockTitle.style.zIndex = 4;
       animationJouee = false;
@@ -178,9 +178,14 @@ onUnmounted(() => {
   }
 
   h1 {
-    margin: 55px 0 39px 0;
+    width: 55%;
+    margin: 55px auto 39px auto;
     @media (max-width: 1381px) {
-      margin: 25px 0 15px 0;
+      margin: 25px auto 15px auto;
+    }
+    @media (max-width: 850px) {
+      width: 100%;
+
     }
     // animation: title 2s;
 

@@ -38,7 +38,7 @@
             <div class="image image3"></div>
             <div>
               <h3>Urban Planning</h3>
-              <p>Trendsetting in the 21st century</p>
+              <p>Trendsetting in the 21<sup>st</sup> century</p>
             </div>
           </div>
         </NuxtLink>

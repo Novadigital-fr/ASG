@@ -14,8 +14,8 @@
       <div class="title2">
           <!-- <div class="div top_title"></div> -->
           <h1>
-            ASG is a global advisory firm <br />
-            helping clients solve complex <br />
+            ASG is a global advisory firm
+            helping clients solve complex
             challenges and redefine the future.
 
           </h1>
@@ -171,7 +171,8 @@ h4 {
   }
 
   h1 {
-    margin: 55px 0 39px 0;
+    width: 55%;
+    margin: 55px auto 39px auto;
     animation: title 3s ease-in-out;
 
     @keyframes title {
@@ -185,7 +186,10 @@ h4 {
       }
     }
     @media (max-width: 1381px) {
-      margin: 25px 0 15px 0;
+      margin: 25px auto 15px auto;
+    }
+    @media (max-width: 850px) {
+      width: 100%;
     }
   }
   .video {
