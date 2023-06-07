@@ -16,20 +16,32 @@
         <ServLogo
       logo="/img/Services_Icons/alexander_strategy_group_services_communication.svg"
     />
+      <div class="key_service">
+      
+    <div class="left">
+      <p class="desk_button">Communication</p>
+      <h2>Key Services</h2>
+      <NuxtLink to="/contact">
+        <div class="button_ordi"><Button text="Contact" /></div>
+      </NuxtLink>
+    </div>
+    <div class="right">
+      <h2 class="orange">Corporate Strategy</h2>
+      <h2 class="orange">Issue Management</h2>
+      <h2 class="orange">Reputation and Brand Management </h2>
+      <h2 class="orange">Product Strategy</h2>
+      <h2 class="orange">Executive Engagement and Positioning</h2>
+      <h2 class="orange">Messaging and Communications</h2>
+      <h2 class="orange">Media Relations and Crisis Management</h2>
+      <h2 class="orange">Advertising and Digital Strategy</h2>
 
-    <ServKeyServ
-    domaine="Strategic Communications"
-    title1="Message Development"
-    summary1="Alexander Strategy Group enables customers across industries to develop their storytelling. We create compelling and persuasive narratives, identify the right audience, and determine the best communication vehicles to utilize to achieve results."
-    title2="Strategic Planning"
-    summary2="Big achievements require vision. Alexander Strategy Group develops long-term strategic communication plans to ensure that communications efforts bolster big-picture goals."
-    title3="Press Relations"
-    summary3="Using Alexander Strategy Group’s deep relationships across international media, we help our clients control their narrative in the press. From front-page stories to drafting and placing compelling op-eds, Alexander Strategy Group empowers our customers to get the coverage they need."
-    title4="Crisis Communications"
-    summary4="Crises happen. Using time-tested strategies, Alexander Strategy Group’s experts guide clients through the most complex crisis scenarios to ensure they are communicating efficiently, effectively, and in a manner that protects their reputation."
-    title5="Creative"
-    summary5="Creativity moves minds. Alexander Strategy Group’s creative department makes compelling graphics, written materials, social media content, and videos to push messages forward."
-    />
+
+
+
+    </div>
+
+  </div>
+
     <TheFooter />
     </div>
 </template>
@@ -100,6 +112,30 @@ animation.scrollTrigger.disable();
 
   }
 }
+.key_service {
+  color: var(--color-bg-dark);
+  background-color: var(--color-bg);
+  display: flex;
+  padding: 10vh 0;
+  position: relative;
+  z-index: 21;
+  .left {
+    width: 40%;
+    padding: 5vh 0 0 15vw;
+    h2 {
+      margin: 2vh 0;
+    }
+  }
+  .right {
+    width: 60%;
+    padding: 0 20vw 0 5vh;
+
+    h2{
+      margin-bottom: 35px;
+    }
+  }
+
+}
 @media screen and (max-width: 840px) {
   /* mobile */
   .reveal {
@@ -107,6 +143,20 @@ animation.scrollTrigger.disable();
       width: 80%;
       font-size: 30px;
       line-height: 35px;
+    }
+  }
+  .key_service {
+    color: var(--color-bg-dark);
+    display: flex;
+    flex-direction: column;
+
+    .left {
+      width: 100%;
+      padding: 5vh 0 0 10vw;
+    }
+    .right{
+      width: 100%;
+      padding: 5vh 0 0 10vw;
     }
   }
 }
