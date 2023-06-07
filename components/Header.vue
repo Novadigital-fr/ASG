@@ -23,6 +23,10 @@
               Services
               <ul class="sous">
                 <li>
+                <div class="image image5"></div>
+                <NuxtLink to="/communications">Communication</NuxtLink>
+                </li>
+                <li>
                   <div class="image image1"></div>
                   <NuxtLink to="/national_security">National Security</NuxtLink>
                 </li>
@@ -38,10 +42,7 @@
                   <div class="image image4"></div>
                   <NuxtLink to="/city_resilience">City Resilience</NuxtLink>
                 </li>
-                <li>
-                <div class="image image5"></div>
-                <NuxtLink to="/communications">Communication</NuxtLink>
-                </li>
+                
               </ul>
             </li>
             <li class="link link--metis">
