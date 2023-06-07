@@ -16,7 +16,7 @@
         <ServLogo
       logo="/img/Services_Icons/alexander_strategy_group_services_communication.svg"
     />
-      <div class="key_service">
+      <div class="key_service light_mode">
       
     <div class="left">
       <p class="desk_button">Communication</p>

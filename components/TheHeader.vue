@@ -40,12 +40,21 @@
               />
               <h2>Services</h2>
               <div>
+                <NuxtLink to="/communications">
+                  <div class="service menu__back">
+                    <div class="image image5"></div>
+                    <div>
+                      <h3>Communications</h3>
+                      <p>Narrative Matters</p>
+                    </div>
+                  </div>
+                </NuxtLink>
                 <NuxtLink to="/national_security">
                   <div class="service menu__back">
                     <div class="image image1"></div>
                     <div>
                       <h3>National Security</h3>
-                      <p>Create secure environments</p>
+                      <p>Creating secure environments</p>
                     </div>
                   </div>
                 </NuxtLink>
@@ -54,7 +63,7 @@
                     <div class="image image2"></div>
                     <div>
                       <h3>Law Enforcement</h3>
-                      <p>Make communities safer</p>
+                      <p>Making  communities safer</p>
                     </div>
                   </div>
                 </NuxtLink>
@@ -63,7 +72,7 @@
                     <div class="image image3"></div>
                     <div>
                       <h3>Urban Planning</h3>
-                      <p>Thrive in the 21st century</p>
+                      <p>Trendsetting in the 21<sup>st</sup> century</p>
                     </div>
                   </div>
                 </NuxtLink>
@@ -72,16 +81,7 @@
                     <div class="image image4"></div>
                     <div>
                       <h3>City Resilience</h3>
-                      <p>Ready for the unexpected</p>
-                    </div>
-                  </div>
-                </NuxtLink>
-                <NuxtLink to="/communications">
-                  <div class="service menu__back">
-                    <div class="image image5"></div>
-                    <div>
-                      <h3>Communications</h3>
-                      <p>Get the message across</p>
+                      <p>Preparing for the unexpected</p>
                     </div>
                   </div>
                 </NuxtLink>
