@@ -128,7 +128,7 @@ animation.scrollTrigger.disable();
   }
   .right {
     width: 60%;
-    padding: 0 20vw 0 5vh;
+    padding: 5vh 20vw 0 5vh;
 
     h2{
       margin-bottom: 35px;

@@ -187,6 +187,8 @@ h4 {
     }
     @media (max-width: 1381px) {
       margin: 25px auto 15px auto;
+      width: 65%;
+
     }
     @media (max-width: 850px) {
       width: 100%;
