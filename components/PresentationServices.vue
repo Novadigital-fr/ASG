@@ -78,6 +78,8 @@
   justify-content: space-around;
   padding: 20vh 0;
   background-color: var(--color-bg);
+  position: relative;
+  z-index:20;
 }
 .left {
   width: 70%;

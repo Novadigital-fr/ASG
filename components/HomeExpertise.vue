@@ -56,6 +56,8 @@
 .expertise {
   padding: 20vh 0 20vh 12vw;
   background-color: var(--color-bg);
+  position: relative;
+  z-index:20;
 }
 .top {
   display: flex;

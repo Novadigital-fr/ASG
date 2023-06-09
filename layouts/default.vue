@@ -1,5 +1,6 @@
 <template>
   <div> 
+
     <div class="loader">
       <client-only>
         <Vue3Lottie
@@ -37,24 +38,9 @@
 import { ref, onMounted } from 'vue';
 
 const showFooter = ref(false);
-onMounted(() => {
-// const header = document.querySelector(".menu_ordi");
-// // Cacher le header avec la méthode CSS "display:none"
-// header.style.display = "none";
-// Attendre 2 secondes avec la méthode "setTimeout()"
-// setTimeout(() => {
-//   // Afficher à nouveau le header après 2 secondes
-//   header.style.display = "block";
-// }, 2000);
-// Attendre 2 secondes avant de montrer les éléments
-// Attendre 2 secondes avant de montrer les éléments
- // 2000 millisecondes = 2 secondes
- // Définir une variable pour stocker l'information de la première visite
-// Sélectionner l'élément titre avec la classe ".h1"
-// setTimeout(() => {
-//     showFooter.value = true;
-//   }, 1000);
 
+onMounted(() => {
+  
 
 var titre = document.querySelector('.h1');
 
@@ -87,7 +73,6 @@ setTimeout(function() {
 </script>
 
 <style scoped lang="scss">
-
 
 .reveal{
   width: 100%;
@@ -171,7 +156,7 @@ h4 {
   }
 
   h1 {
-    width: 55%;
+    width: 60%;
     margin: 55px auto 39px auto;
     animation: title 3s ease-in-out;
 

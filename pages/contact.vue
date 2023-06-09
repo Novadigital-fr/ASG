@@ -12,7 +12,8 @@
           <p class="orange">contact@alexanderstrategygroup.co</p>
           <br />
         </div>
-        <form>
+        <Formulaire/>
+        <!-- <form>
           <input type="text" name="name" placeholder="Name" class="name" />
           <input type="text" name="email" placeholder="Email" class="email" />
           <input
@@ -30,7 +31,7 @@
           <div class="bouton">
             <Button text="Send" />
           </div>
-        </form>
+        </form> -->
       </div>
     </div>
   </div>
@@ -158,44 +159,11 @@ margin: 4vh 0;
     margin: -14vh 10vw 0vh 0;
     width: 44vw;
     transform: scale(0.6);
-
-
   }
 
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-form input {
-  border: none;
-  background-color: rgba(82, 93, 103, 0.427);
-  padding: 20px 30px;
-  width: 100%;
-  border-radius: 10px;
-  margin: 1vh 0;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  outline: none;
-  color: var(--color-text);
-  font-family: "Nexa";
-}
-form textarea {
-  border: none;
-  background-color: rgba(82, 93, 103, 0.427);
-  padding: 20px 30px;
-  width: 100%;
-  border-radius: 10px;
-  margin: 1vh 0 4vh 0;
-  outline: none;
-  color: var(--color-text);
-  font-family: "Nexa";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-}
+
 .sous-div {
   width: 100%;
   height: 900px;

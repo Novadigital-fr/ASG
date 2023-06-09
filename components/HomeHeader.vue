@@ -178,7 +178,7 @@ onUnmounted(() => {
   }
 
   h1 {
-    width: 55%;
+    width: 60%;
     margin: 55px auto 39px auto;
     @media (max-width: 1381px) {
       margin: 25px auto 15px auto;

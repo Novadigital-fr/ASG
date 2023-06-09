@@ -10,7 +10,7 @@
          />
 
          <div class="reveal">
-           <h2> <span class="text_reveal">Having worked at the highest level of national security and law enforcement,</span><span class="text_reveal">Alexander Strategy Group team provides cutting edge risk analysis, threat assessments, </span><span class="text_reveal">policy evaluation and development to help create secure environments.</span></h2>
+           <h2> <span class="text_reveal">Having worked at the highest level of national security and law enforcement,</span><span class="text_reveal"> Alexander Strategy Group team provides cutting edge risk analysis, threat assessments, </span><span class="text_reveal">policy evaluation and development to help create secure environments.</span></h2>
         </div>
           
     <ServLogo

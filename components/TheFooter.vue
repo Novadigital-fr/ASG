@@ -47,7 +47,7 @@
                   src="/img/Services_Icons/alexander_strategy_group_services_urban_planning_white.svg"
                   alt=""
                 />
-                <p>Urban Planing</p>
+                <p>Urban Planning</p>
               </div>
             </NuxtLink>
             <NuxtLink to="/law_enforcement">

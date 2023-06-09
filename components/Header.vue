@@ -36,7 +36,7 @@
                 </li>
                 <li>
                 <div class="image image3"></div>
-               <NuxtLink to="/urban_planning">Urban Planing</NuxtLink>
+               <NuxtLink to="/urban_planning">Urban Planning</NuxtLink>
                </li>
                 <li>
                   <div class="image image4"></div>
