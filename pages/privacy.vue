@@ -11,7 +11,6 @@
       <ul class="orange">
         <li>Header 1</li>
         <li>Header 2</li>
-        <li>Header 3</li>
       </ul>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
