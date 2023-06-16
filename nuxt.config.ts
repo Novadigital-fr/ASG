@@ -21,6 +21,7 @@ export default defineNuxtConfig({
           href: 'https://assets7.lottiefiles.com/packages/lf20_i8H5xPhhcQ.json',
           crossorigin: 'anonymous',
         },
+        
         // {
         //   rel: 'preload',
         //   as: 'image',
@@ -48,6 +49,21 @@ export default defineNuxtConfig({
         // }
       
       ], 
+      script: [
+        {
+          async: true,
+          src: "https://www.googletagmanager.com/gtag/js?id=G-T3TH6MB697"
+        },
+        {
+          hid: "gtm",
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-T3TH6MB697');
+          `
+        }
+      ]
       }
     },
   })

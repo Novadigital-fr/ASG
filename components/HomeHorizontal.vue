@@ -106,7 +106,7 @@ onUnmounted(() => {
 
 <style lang="scss" scoped>
 .home7 {
-  z-index: 5;
+  z-index: 20;
   background-color: var(--color-bg);
   position: relative;
 }
