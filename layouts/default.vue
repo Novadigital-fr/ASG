@@ -2,8 +2,9 @@
   <div> 
 
     <div class="loader">
+    <div class="contain-video">
       <div id="lottie-animation" class="video" />
-
+    </div>
       <!-- <client-only>
         <Vue3Lottie
           class="video"
@@ -86,19 +87,19 @@ setTimeout(function() {
 @font-face {
 	font-display: swap;
 	font-family: "Nexa";
-	src: local("Nexa"), url(/assets/fonts/Nexa-Book.ttf) format("truetype");
+	src: local("Nexa"), url(/assets/fonts/Nexa-Book.woff2) format("woff2");
 	font-weight: 500;
 }
 @font-face {
 	font-display: swap;
 	font-family: "Nexa";
-	src: local("Nexa"), url(/assets/fonts/Nexa-Bold.ttf) format("truetype");
+	src: local("Nexa"), url(/assets/fonts/Nexa-Bold.woff2) format("woff2");
 	font-weight: 700;
 }
 @font-face {
 	font-display: swap;
 	font-family: "Nexa";
-	src: local("Nexa"), url(/assets/fonts/Nexa-Heavy.ttf) format("truetype");
+	src: local("Nexa"), url(/assets/fonts/Nexa-Heavy.woff2) format("woff2");
 	font-weight: 900;
 }
 .reveal{
@@ -207,6 +208,9 @@ h4 {
       padding: 0 5%;
 
     }
+  }
+  .contain-video{
+    min-height: 130px;
   }
   .video {
     position: relative;

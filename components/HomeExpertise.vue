@@ -45,7 +45,7 @@
             :width="200"
           />
         </client-only> -->
-        <div id="lottie-logo-white" class="video" />
+        <div id="lottie-logo-white" />
 
       </div>
     </div>
@@ -54,9 +54,10 @@
 
 <script setup>
 import lottie from 'lottie-web';
+let animation = ref(null);
 
 onMounted(() => {
-  lottie.loadAnimation({
+  animation.value = lottie.loadAnimation({
     container: document.getElementById('lottie-logo-white'), // ID du conteneur défini dans le template
     renderer: 'svg',
     loop: true,
@@ -64,7 +65,9 @@ onMounted(() => {
     path: '/img/Anim/asg_services_wheel_white.json' // Chemin vers votre fichier d'animation JSON
   });
 })
-
+onUnmounted(() => {
+  animation.value.destroy();
+})
 </script>
 
 <style lang="scss" scoped>
