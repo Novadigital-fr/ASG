@@ -55,20 +55,35 @@
     </div>
     <div class="right">
       <div class="video">
-        <client-only>
+        <!-- <client-only>
           <Vue3Lottie
             class="video"
             animationLink="https://assets9.lottiefiles.com/packages/lf20_5B0BbDeBuI.json"
             :height="100"
             :width="100"
           />
-        </client-only>
+        </client-only> -->
+        <div id="lottie-logo" class="video" />
+
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import lottie from 'lottie-web';
+
+onMounted(() => {
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-logo'), // ID du conteneur défini dans le template
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '/img/Anim/asg_services_wheel.json' // Chemin vers votre fichier d'animation JSON
+  });
+})
+
+</script>
 
 <style lang="scss" scoped>
 

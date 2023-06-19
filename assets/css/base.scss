@@ -69,16 +69,20 @@ svg {
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Nexa";
 	src: local("Nexa"), url(/assets/fonts/Nexa-Book.ttf) format("truetype");
 	font-weight: 500;
 }
+
 @font-face {
+	font-display: swap;
 	font-family: "Nexa";
 	src: local("Nexa"), url(/assets/fonts/Nexa-Bold.ttf) format("truetype");
 	font-weight: 700;
 }
 @font-face {
+	font-display: swap;
 	font-family: "Nexa";
 	src: local("Nexa"), url(/assets/fonts/Nexa-Heavy.ttf) format("truetype");
 	font-weight: 900;

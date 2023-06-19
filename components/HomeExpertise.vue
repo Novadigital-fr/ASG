@@ -38,21 +38,38 @@
           src="../assets/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg"
           alt=""
         />      -->
-        <client-only>
+        <!-- <client-only>
           <Vue3Lottie
             animationLink="https://assets3.lottiefiles.com/packages/lf20_nNsl3QFaqM.json"
             :height="200"
             :width="200"
           />
-        </client-only>
+        </client-only> -->
+        <div id="lottie-logo-white" class="video" />
+
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import lottie from 'lottie-web';
+
+onMounted(() => {
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-logo-white'), // ID du conteneur défini dans le template
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '/img/Anim/asg_services_wheel_white.json' // Chemin vers votre fichier d'animation JSON
+  });
+})
+
+</script>
 
 <style lang="scss" scoped>
+
+
 .expertise {
   padding: 20vh 0 20vh 12vw;
   background-color: var(--color-bg);
@@ -113,10 +130,11 @@
     flex-direction: row-reverse;
     width: 65vw;
 
-    .lottie-animation-container {
-      width: 90%;
+    #lottie-logo-white{
+  // height: 200px;
+  width: 90%;
       margin-right: 4vw;
-    }
+}
   }
 }
 @media screen and (max-width: 840px) {
@@ -169,7 +187,7 @@
       flex-direction: column-reverse;
       width: 100%;
 
-      .lottie-animation-container {
+      #lottie-logo-white {
         width: 35%;
         margin: 0 auto 5vh auto;
       }

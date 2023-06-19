@@ -28,7 +28,6 @@ requestAnimationFrame(raf)
 </script>
 
 <style>
-@import url("./assets/css/base.scss");
 
 
 

@@ -3,6 +3,14 @@ export default defineNuxtConfig({
     build: {
       transpile: ['gsap'],
     },
+    css: [
+      '@/assets/css/base.scss'
+    ],
+    render: {
+      preload: {
+        style: '@/assets/base.css'
+      }
+    },
     app: {
 
       head: {
@@ -15,12 +23,7 @@ export default defineNuxtConfig({
           { name: 'description', content: 'alexander strategy group' }
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' },
-        {
-          rel: 'preload',
-          as: 'fetch',
-          href: 'https://assets7.lottiefiles.com/packages/lf20_i8H5xPhhcQ.json',
-          crossorigin: 'anonymous',
-        },
+       
         
         // {
         //   rel: 'preload',

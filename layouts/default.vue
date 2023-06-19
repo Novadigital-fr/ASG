@@ -2,16 +2,18 @@
   <div> 
 
     <div class="loader">
-      <client-only>
+      <div id="lottie-animation" class="video" />
+
+      <!-- <client-only>
         <Vue3Lottie
           class="video"
-          animationLink="https://assets7.lottiefiles.com/packages/lf20_i8H5xPhhcQ.json"
+          animationLink="https://assets8.lottiefiles.com/packages/lf20_i8H5xPhhcQ.json"
           :height="100"
           :width="100"
           :speed="2.5"
           loop="none"
         />
-      </client-only>
+      </client-only> -->
       <div class="title2">
           <!-- <div class="div top_title"></div> -->
           <h1>
@@ -36,14 +38,23 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-
+import lottie from 'lottie-web';
 const showFooter = ref(false);
+let animation = ref(null);
 
 onMounted(() => {
-  
+
+  animation.value = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'), // ID du conteneur défini dans le template
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    path: '/img/Anim/asg_logo.json' // Chemin vers votre fichier d'animation JSON
+  });
+  animation.value.setSpeed(2);
+
 
 var titre = document.querySelector('.h1');
-
 // Vérifier si l'élément titre a été trouvé
 if(titre !== null) {
   // Si l'élément titre a été trouvé, cacher le titre
@@ -52,7 +63,6 @@ if(titre !== null) {
 
 // Sélectionner l'élément sous-titre avec la classe ".h4"
 var sousTitre = document.querySelector('.h4');
-
 // Vérifier si l'élément sous-titre a été trouvé
 if(sousTitre !== null) {
   // Si l'élément sous-titre a été trouvé, cacher le sous-titre
@@ -73,7 +83,24 @@ setTimeout(function() {
 </script>
 
 <style scoped lang="scss">
-
+@font-face {
+	font-display: swap;
+	font-family: "Nexa";
+	src: local("Nexa"), url(/assets/fonts/Nexa-Book.ttf) format("truetype");
+	font-weight: 500;
+}
+@font-face {
+	font-display: swap;
+	font-family: "Nexa";
+	src: local("Nexa"), url(/assets/fonts/Nexa-Bold.ttf) format("truetype");
+	font-weight: 700;
+}
+@font-face {
+	font-display: swap;
+	font-family: "Nexa";
+	src: local("Nexa"), url(/assets/fonts/Nexa-Heavy.ttf) format("truetype");
+	font-weight: 900;
+}
 .reveal{
   width: 100%;
   margin-bottom: 54vh;
