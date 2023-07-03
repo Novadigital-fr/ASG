@@ -33,7 +33,7 @@
         event.preventDefault();
   
         try {
-          await emailjs.send('service_3zisftd', 'template_9768y2p', this.formData, 'g7UBWWl_qlG_I-BjC');
+          await emailjs.send('service_jaiou3h', 'template_9768y2p', this.formData, 'g7UBWWl_qlG_I-BjC');
           alert('Message envoyé avec succès !');
           // Réinitialiser les champs du formulaire après l'envoi réussi
           this.formData = {
