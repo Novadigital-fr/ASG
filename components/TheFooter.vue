@@ -73,8 +73,8 @@
         </div>
         <div class="right">
           <p>
-            &copy; {{ anneeCourante }} All rights reserved alexander strategy group |
-            <NuxtLink to="/privacy"> Privacy Policy</NuxtLink>
+            &copy; {{ anneeCourante }} All rights reserved alexander strategy group 
+            <!-- <NuxtLink to="/privacy"> Privacy Policy</NuxtLink> -->
           </p>
         </div>
       </div>
