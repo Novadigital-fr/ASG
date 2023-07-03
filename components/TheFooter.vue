@@ -73,7 +73,7 @@
         </div>
         <div class="right">
           <p>
-            ©2023 All rights reserved alexander strategy group |
+            &copy; {{ anneeCourante }} All rights reserved alexander strategy group |
             <NuxtLink to="/privacy"> Privacy Policy</NuxtLink>
           </p>
         </div>
@@ -83,6 +83,11 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
+
+// Définir une référence réactive pour l'année courante
+const anneeCourante = ref(new Date().getFullYear());
+
 onMounted(() => {
   // Sélectionner le footer
   const footer = document.querySelector("footer");
@@ -92,10 +97,13 @@ onMounted(() => {
     footer.style.display = "block";
   }
 
+   // Mettre à jour l'année courante une fois au chargement
+
   // Attendre 1 seconde avant d'appeler la fonction afficherFooter
   setTimeout(afficherFooter, 1000);
 });
 </script>
+
 
 <style lang="scss" scoped>
 footer {

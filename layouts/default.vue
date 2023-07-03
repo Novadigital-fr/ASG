@@ -1,7 +1,9 @@
 <template>
   <div> 
+    <div id="loading-screen"></div>
 
     <div class="loader">
+
     <div class="contain-video">
       <div id="lottie-animation" class="video" />
     </div>
@@ -42,17 +44,27 @@ import { ref, onMounted } from 'vue';
 import lottie from 'lottie-web';
 const showFooter = ref(false);
 let animation = ref(null);
+let isAnimationStarted = false;
 
 onMounted(() => {
+
+  setTimeout(function() {
+  document.getElementById('loading-screen').style.display = 'none';
+  }, 900)
+  
+  setTimeout(function() {
 
   animation.value = lottie.loadAnimation({
     container: document.getElementById('lottie-animation'), // ID du conteneur défini dans le template
     renderer: 'svg',
     loop: false,
     autoplay: true,
-    path: '/img/Anim/asg_logo.json' // Chemin vers votre fichier d'animation JSON
+    path: '/img/Anim/asg_logo.json', // Chemin vers votre fichier d'animation JSON
+   
   });
   animation.value.setSpeed(2);
+
+}, 1000)
 
 
 var titre = document.querySelector('.h1');
@@ -79,11 +91,21 @@ setTimeout(function() {
   if(sousTitre !== null) {
     sousTitre.style.opacity = 1;
   }
-}, 2800);
+}, 3000);
 })
 </script>
 
 <style scoped lang="scss">
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #202a35;
+  z-index: 99009;
+}
+
 @font-face {
 	font-display: swap;
 	font-family: "Nexa";
@@ -132,7 +154,7 @@ setTimeout(function() {
   z-index: 20;
   display: flex;
   padding-top: 15%;
-  animation: loading 4s linear;
+  animation: loading 5s linear;
   transform: scale(0);
 
   @keyframes loading {
@@ -140,7 +162,7 @@ setTimeout(function() {
       opacity: 1;
       transform: scale(1);
     }
-    60% {
+    80% {
       opacity: 1;
       background-color: #202a35;
 
@@ -156,22 +178,22 @@ setTimeout(function() {
 h4 {
     color: var(--color-orange);
     z-index: 10;
-    animation: soustitle 3s ease-in-out;
+    animation: soustitle 4s ease-in-out;
     @keyframes soustitle {
       0% {
         opacity: 0;
       }
-      45% {
+      55% {
         opacity: 0;
       }
-      65% {
+      75% {
         opacity: 1;
         transform: translateY(-150px);
       }
-      70% {
+      80% {
         transform: translateY(-150px);
       }
-      80% {
+      90% {
         //   transform: translateY(20px);
       }
       100% {
@@ -186,14 +208,14 @@ h4 {
   h1 {
     width: 60%;
     margin: 55px auto 39px auto;
-    animation: title 3s ease-in-out;
+    animation: title 4s ease-in-out;
 
     @keyframes title {
       0% {
-        transform: translateY(-250px);
+        transform: translateY(-300px);
       }
-      70% {
-        transform: translateY(-250px);
+      80% {
+        transform: translateY(-300px);
       }
       100% {
       }
@@ -233,7 +255,7 @@ h4 {
   margin-bottom: 79vh;
 }
 h4 {
-    animation: soustitle 3s ease-in-out;
+    animation: soustitle 4s ease-in-out;
 
     @keyframes soustitle {
       0% {
