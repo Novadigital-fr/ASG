@@ -80,7 +80,19 @@
 </template>
 
 <script setup>
-
+const config = useRuntimeConfig()
+useSeoMeta({
+  title: 'Privacy Policy & Terms of Use | Alexander Strategy Group',
+  ogTitle: 'Privacy Policy & Terms of Use | Alexander Strategy Group',
+  description: 'Privacy Policy and Terms of Use for Alexander Strategy Group. Learn how we collect, use, and protect your personal information.',
+  ogDescription: 'Privacy Policy and Terms of Use for Alexander Strategy Group. Learn how we collect, use, and protect your personal information.',
+  ogImage: `${config.public.siteUrl}/img/Social_image/alexanderstrategygroup_homepage.png`,
+  ogUrl: `${config.public.siteUrl}/privacy`,
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterSite: '@ASGroup',
+})
+useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/privacy` }] })
 </script>
 
 <style lang="scss" scoped>

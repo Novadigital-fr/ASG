@@ -34,19 +34,24 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 useSeoMeta({
   title: 'Resilient cities - Ready for the unexpected in every aspect of urban development | ASG',
   ogTitle: 'Resilient cities - Ready for the unexpected in every aspect of urban development | ASG',
   description: 'Resilient cities can absorb, recover from, and prepare for hazards. They come out stronger from crises and are adapting to tackle whatever challenge comes next',
   ogDescription: 'Resilient cities can absorb, recover from, and prepare for hazards. They come out stronger from crises and are adapting to tackle whatever challenge comes next',
-  ogImage: '/img/Social_image/alexanderstrategygroup_consulting_firm__service_resilient_cities.png',
+  ogImage: `${config.public.siteUrl}/img/Social_image/alexanderstrategygroup_consulting_firm__service_resilient_cities.png`,
+  ogUrl: `${config.public.siteUrl}/city-resilience`,
+  ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterSite: '@ASGroup',
 })
+useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/city-resilience` }] })
 
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+if (process.client) gsap.registerPlugin(ScrollTrigger);
 
 // Créer une référence à l'animation en dehors de la fonction onMounted
 let animation;

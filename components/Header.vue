@@ -6,7 +6,7 @@
         <img
           class="logo_ordi"
           src="../assets/img/logo.svg"
-          alt=""
+          alt="Alexander Strategy Group"
         />
         <p class="text_logo">
           alexander <br />
@@ -19,32 +19,7 @@
             <li class="link link--metis">
               <NuxtLink to="/">Home</NuxtLink>
             </li>
-            <li class="link link--metis top_sous">
-              Services
-              <ul class="sous">
-                <li>
-                <div class="image image5"></div>
-                <NuxtLink to="/communications">Communication</NuxtLink>
-                </li>
-                <li>
-                  <div class="image image1"></div>
-                  <NuxtLink to="/national_security">National Security</NuxtLink>
-                </li>
-                <li>
-                  <div class="image image2"></div>
-                  <NuxtLink to="/law_enforcement">Law Enforcement</NuxtLink>
-                </li>
-                <li>
-                <div class="image image3"></div>
-               <NuxtLink to="/urban_planning">Urban Planning</NuxtLink>
-               </li>
-                <li>
-                  <div class="image image4"></div>
-                  <NuxtLink to="/city_resilience">City Resilience</NuxtLink>
-                </li>
-                
-              </ul>
-            </li>
+
             <li class="link link--metis">
               <NuxtLink to="/expertise">Expertise</NuxtLink>
             </li>
@@ -67,15 +42,15 @@
 import { onMounted, onUnmounted, onUpdated, ref } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+if (process.client) gsap.registerPlugin(ScrollTrigger);
 
 const rond = ref(false);
 
 function openContact() {
   rond.value = true;
-  setTimeout (()=>{
-    window.location.href ="https://phenomenal-pothos-655a2a.netlify.app/contact"
-  },"500") 
+  setTimeout(() => {
+    window.location.href = '/contact'
+  }, 500)
 }
 
 let triggerArray = [];

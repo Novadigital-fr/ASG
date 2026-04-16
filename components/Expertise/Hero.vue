@@ -2,9 +2,22 @@
   <div class="espertise_parent">
   <div class="expertise">
     <div class="hero_text">
-      <h1 ref="title" class="title">Solving the toughest challenges</h1>
+      <h1 ref="title" class="title">Securing favorable and high-value results
+against powerful state and corporate
+adversaries.</h1>
       <p>
-        We help leaders resolve complex challenges and overcome crises, giving clients a competitive edge in a highly complex world.
+Alexander Strategy Group (ASG) specializes in
+navigating high-stakes global challenges and complex
+crossborder environments. Our unique value lies in
+the integration of strategic communications, global
+business intelligence, and political advisory to drive
+optimal commercial outcomes. We do not merely react
+to market or regulatory shifts; we proactively manage
+the parallel political, regulatory, and reputational
+landscapes. This approach is consistently characterized
+by mitigating risk, protecting enterprise value, and
+securing criticalobjectives for clients in globally
+contentious environments.
       </p>
       <NuxtLink to="/contact">
       <Button text="Contact" />
@@ -39,7 +52,8 @@ export default {
   overflow: hidden;
 }
 .expertise {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -74,7 +88,8 @@ export default {
 }
 .hero_text {
   margin-top: 10vh;
-  width: clamp(520px, 600px, 650px);
+  padding-bottom: 5vh;
+  width: clamp(620px, 50vw, 900px);
   p {
     margin: 2vh 0 5vh 0;
   }
@@ -90,7 +105,9 @@ export default {
     ),
       url("../../assets/img/Img_Expertise/alexander_strategy_group_expertise_mobile.webp");
     background-size: cover;
-    justify-content: flex-end;
+    height: auto;
+    min-height: 100vh;
+    justify-content: space-between;
     background-position: center center;
 
     img {
@@ -102,7 +119,8 @@ export default {
   }
   .hero_text {
     margin-top: 0;
-    padding-bottom: 25vh;
+    padding-top: 15vh;
+    padding-bottom: 8vh;
     width: 80vw;
     p {
       margin: 2vh 0 5vh 0;

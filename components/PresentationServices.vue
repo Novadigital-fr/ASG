@@ -2,7 +2,7 @@
   <div class="full light_mode">
     <div class="left">
       <h2 class="animation">
-        Alexander Strategy Group’s world class<span class="orange"> advisory services</span> encompass diverse disciplines: 
+        Alexander Strategy Group's world class<span class="orange"> advisory services</span> encompass diverse disciplines: 
       </h2>
 
       <div class="sevices">
@@ -15,7 +15,7 @@
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink to="/national_security">
+        <NuxtLink to="/national-security">
           <div class="service">
             <div class="image image1"></div>
             <div>
@@ -24,7 +24,7 @@
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink to="/law_enforcement">
+        <NuxtLink to="/law-enforcement">
           <div class="service">
             <div class="image image2"></div>
             <div>
@@ -33,7 +33,7 @@
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink to="/urban_planning">
+        <NuxtLink to="/urban-planning">
           <div class="service">
             <div class="image image3"></div>
             <div>
@@ -42,7 +42,7 @@
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink to="/city_resilience">
+        <NuxtLink to="/city-resilience">
           <div class="service">
             <div class="image image4"></div>
             <div>

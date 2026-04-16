@@ -13,63 +13,12 @@
         <div>
           <img
             src="/img/Logos/alexander_strategy_group_Logo_iconwhite.svg"
-            alt=""
+            alt="Alexander Strategy Group"
           />
         </div>
       </div>
       <div class="bottom">
         <div class="left">
-          <div>
-            <NuxtLink to="/communications">
-            <div class="service">
-              <img
-                src="/img/Services_Icons/alexander_strategy_group_services_communication_white.svg"
-                alt=""
-              />
-              <p>Communication</p>
-            </div>
-          </NuxtLink>
-            <NuxtLink to="/national_security">
-              <div class="service">
-                <img
-                  src="/img/Services_Icons/alexander_strategy_group_services_national_security_white.svg"
-                  alt=""
-                />
-                <p>National Security</p>
-              </div>
-            </NuxtLink>
-            
-          </div>
-          <div>
-            <NuxtLink to="/urban_planning">
-              <div class="service">
-                <img
-                  src="/img/Services_Icons/alexander_strategy_group_services_urban_planning_white.svg"
-                  alt=""
-                />
-                <p>Urban Planning</p>
-              </div>
-            </NuxtLink>
-            <NuxtLink to="/law_enforcement">
-              <div class="service">
-                <img
-                  src="/img/Services_Icons/alexander_strategy_group_services_law_enforcement_white.svg"
-                  alt=""
-                />
-                <p>Law Enforcement</p>
-              </div>
-            </NuxtLink>
-           
-          </div>
-          <NuxtLink to="/city_resilience">
-              <div class="service">
-                <img
-                  src="/img/Services_Icons/alexander_strategy_group_services_city_resilience_white.svg"
-                  alt=""
-                />
-                <p>City Resilience</p>
-              </div>
-            </NuxtLink>
         </div>
         <div class="right">
           <p>

@@ -24,9 +24,9 @@
     sousDesc1="Nefarious actors, state-backed, criminal groups, and private individuals, have targeted cities with cyberattacks. Major cities around the world have been crippled by ransomware attacks, holding critical data and services hostage until attackers are paid off."
     sousDesc2="The ASG team offers cybersecurity and cyber resilience solutions to help ensure that citizens, companies, and public entities are able to freely use digital channels without fear of privacy violations, theft, or malicious online attacks."
     titrePrime="Terrorism"
-    descriptionPrime="Terrorist attacks can bring cities to a standstill. The risk of terrorism can hamper a city’s economic growth, tourism industry, and harm community relations."
+    descriptionPrime="Terrorist attacks can bring cities to a standstill. The risk of terrorism can hamper a city's economic growth, tourism industry, and harm community relations."
     sousDesc1Prime="Preventing terrorist attacks requires a comprehensive strategy across law enforcement, intelligence agencies, federal and local officials, and other stakeholders."
-    sousDesc2Prime="ASG’s analysis and consulting services take a holistic approach in’ understanding and countering terrorist threats."
+    sousDesc2Prime="ASG's analysis and consulting services take a holistic approach in' understanding and countering terrorist threats."
     />
 
     <ServKeyServ
@@ -34,7 +34,7 @@
     title1="Risk Analysis"
     summary1="To mitigate risk, one must understand where the threats emanate. Our experts provide a 360 degree understanding of the national security risks that companies or communities face. From state actors, to terrorist groups, to cyber risks, ASG takes a holistic approach to risk analysis to ensure that our clients are able to detect, deter, prevent, and respond to evolving threats."
     title2="Intelligence"
-    summary2="Security depends on intelligence. Utilizing open and closed source intelligence and deep global relationships, ASG produces timely intelligence reports on the most pressing threats they face, ranging from those emanating from terrorist groups, cyberattackers, and hostile nation-states. ASG’s intelligence products enable clients to be aware of threats before they materialize."
+    summary2="Security depends on intelligence. Utilizing open and closed source intelligence and deep global relationships, ASG produces timely intelligence reports on the most pressing threats they face, ranging from those emanating from terrorist groups, cyberattackers, and hostile nation-states. ASG's intelligence products enable clients to be aware of threats before they materialize."
     title3="Policy Evaluation & Development"
     summary3="Risk analysis and intelligence is only beneficial if organizations and governments have policies and strategies in place to utilize such information. ASG provides policy evaluation and development to ensure our end users have comprehensive policies to defend against a variety of security threats, including cyberattacks, terrorism, white collar crime, chemical, biological, radiological and nuclear threats, and more. These policies enable policymakers to implement a security-first approach that keeps communities safe."
     title4="Policy Implementation"
@@ -45,19 +45,24 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 useSeoMeta({
   title: 'National security - We help create secure environments | ASG',
   ogTitle: 'National security - We help create secure environments | ASG',
   description: 'Having worked at the highest level of national security and law enforcement, Alexander Strategy Group provides cutting edge risk analysis and policy development',
   ogDescription: 'Having worked at the highest level of national security and law enforcement, Alexander Strategy Group provides cutting edge risk analysis and policy development',
-  ogImage: '/img/Social_image/alexanderstrategygroup_consulting_firm__national_security_strategy.png',
+  ogImage: `${config.public.siteUrl}/img/Social_image/alexanderstrategygroup_consulting_firm__national_security_strategy.png`,
+  ogUrl: `${config.public.siteUrl}/national-security`,
+  ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterSite: '@ASGroup',
 })
+useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/national-security` }] })
 
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+if (process.client) gsap.registerPlugin(ScrollTrigger);
 
 // Créer une référence à l'animation en dehors de la fonction onMounted
 let animation;

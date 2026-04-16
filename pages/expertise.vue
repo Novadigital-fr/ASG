@@ -3,45 +3,35 @@
     <Header/>
     <ExpertiseHero />
     <ExpertiseDegrade />
-    <ExpertiseFondu />
-    <div class="top_expertise light_mode">
-    <div class="div_logo">
-      <img
-        class="logo"
-        src="/img/Logos/alexander_strategy_group_Logo_icon.svg"
-        alt=""
-      />
-      <h2>Expertise at the highest levels of government</h2>
-      <p>
-        Alexander Strategy Group's team of experts has held leadership positions
-        at the highest levels of the U.S. federal government and in America’s
-        leading cities.
-      </p>
-    </div>
-  </div>
-    <ExpertiseHorizontal />
-    <PresentationServices />
+    <ExpertiseCapabilities />
+    <ExpertiseBovim />
+  
     <TheFooter />
 
   </div>
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 useSeoMeta({
   title: 'We help solve your toughest challenges - Strategic consulting services | ASG',
   ogTitle: 'We help solve your toughest challenges - Strategic consulting services | ASG',
   description: 'Driven by excellence and a global expertise, we offer a wide array of strategic consulting services supported by our team of experts at the highest levels',
   ogDescription: 'Driven by excellence and a global expertise, we offer a wide array of strategic consulting services supported by our team of experts at the highest levels',
-  ogImage: '/img/Social_image/alexanderstrategygroup_expertise.png',
+  ogImage: `${config.public.siteUrl}/img/Social_image/alexanderstrategygroup_expertise.png`,
+  ogUrl: `${config.public.siteUrl}/expertise`,
+  ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterSite: '@ASGroup',
 })
+useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/expertise` }] })
 // definePageMeta({
 //   layout: "custome",
 // });
 // import { onMounted, onUnmounted, onUpdated, ref } from "vue";
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
+// if (process.client) gsap.registerPlugin(ScrollTrigger);
 
 // let triggerArray = [];
 

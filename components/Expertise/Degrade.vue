@@ -1,6 +1,7 @@
 <template>
     <div class="degrade">
-    <div class="text">Global <br> Sophisticaded <br> Exclusive <br> Bold</div>
+    <div class="text">Real influence is quiet. It’s the kind that shifts conversations and redirects outcomes without ever announcing itself.
+    <br><br>We counsel our clients through insight, timing, and clear direction.</div>
     <!-- <div class="top"></div>
     <div class="bottom"></div> -->
     </div>
@@ -40,12 +41,12 @@ onMounted(() => {
 }
 .text{
     position: sticky;
-    line-height: 100px;
+    line-height: 60px;
     top: 27vh;
     bottom: 20vh;
     z-index: 2;
     width: clamp(450px, 100%, 800px);
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 900;
     text-align: center;
     margin: auto;
@@ -56,8 +57,8 @@ onMounted(() => {
     background-size: 200%;
     // transition: background-position 0.2s;
     @media (min-width: 1924px) {
-        font-size: 100px;
-        line-height: 130px;
+        font-size: 70px;
+        line-height: 80px;
   }
   @media screen and (max-width: 1381px) {
     top: 19vh;
@@ -68,8 +69,8 @@ onMounted(() => {
 @media screen and (max-width: 740px) {
     /* mobile */
     .text{
-    font-size: 45px;
-    line-height: 60px;
+    font-size: 22px;
+    line-height: 30px;
     width: 100%;
     top: 35vh;
 

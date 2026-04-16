@@ -47,19 +47,24 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 useSeoMeta({
   title: 'Communication - Get the message across, trust, validity, support, and success | ASG',
   ogTitle: 'Communication - Get the message across, trust, validity, support, and success | ASG',
   description: 'Alexander Strategy Group has a deep experience in corporate and public sector communications. Trust and success are all built on one thing: effective communication',
   ogDescription: 'Alexander Strategy Group has a deep experience in corporate and public sector communications. Trust and success are all built on one thing: effective communication',
-  ogImage: '/img/Social_image/alexanderstrategygroup_consulting_firm__stategic_communication.png',
+  ogImage: `${config.public.siteUrl}/img/Social_image/alexanderstrategygroup_consulting_firm__stategic_communication.png`,
+  ogUrl: `${config.public.siteUrl}/communications`,
+  ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterSite: '@ASGroup',
 })
+useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/communications` }] })
 
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+if (process.client) gsap.registerPlugin(ScrollTrigger);
 
 // Créer une référence à l'animation en dehors de la fonction onMounted
 let animation;

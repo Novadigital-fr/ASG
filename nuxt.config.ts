@@ -1,26 +1,25 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    runtimeConfig: {
+      public: {
+        siteUrl: 'https://www.alexander-strategy.com',
+      }
+    },
     build: {
       transpile: ['gsap'],
     },
     css: [
       '@/assets/css/base.scss'
     ],
-    render: {
-      preload: {
-        style: '@/assets/base.css'
-      }
-    },
     app: {
 
       head: {
         htmlAttrs: {
           lang: 'en'
         },
-        title: 'alexander strategy group',
+        title: 'Alexander Strategy Group | Global Strategic Consulting',
         meta: [
-          // <meta name="description" content="My amazing site">
-          { name: 'description', content: 'alexander strategy group' }
+          { name: 'description', content: 'Alexander Strategy Group is a leading global consulting firm. We help mitigate risk to keep communities, companies, and individuals safe.' }
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' },
        

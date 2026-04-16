@@ -19,7 +19,7 @@
     src1="/img/Img_Urban_Planning/alexander_strategy_group_services_urban_planning_vision_planing.webp"
     src2="/img/Img_Urban_Planning/alexander_strategy_group_services_urban_planning_vision_building.webp"
     titre="Vision-Planning"
-    description="Alexander Strategy Group ’s experts guide cities as they develop their vision for the future, and then work with them to build it."
+    description="Alexander Strategy Group 's experts guide cities as they develop their vision for the future, and then work with them to build it."
     sousDesc1="Our team takes an integrated approach, focusing on sustainability, livability, environment, resilience, fiscal impact, public health, and growth to guide our urban planning strategies. "
     sousDesc2="We are a data-first, technology-oriented firm that helps build happy, healthy, and long-standing communities."
     titrePrime="Vision-Building"
@@ -32,19 +32,24 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 useSeoMeta({
   title: 'Urban planning - Times are changing fast and cities need to adapt | ASG',
   ogTitle: 'Urban planning - Times are changing fast and cities need to adapt | ASG',
   description: 'Our urban planning experts have assisted cities around the world undergo the transformations they need to thrive in the 21st century. Vision planning & building',
   ogDescription: 'Our urban planning experts have assisted cities around the world undergo the transformations they need to thrive in the 21st century. Vision planning & building',
-  ogImage: '/img/Social_image/alexanderstrategygroup_consulting_firm__urban_planning_consultant.png',
+  ogImage: `${config.public.siteUrl}/img/Social_image/alexanderstrategygroup_consulting_firm__urban_planning_consultant.png`,
+  ogUrl: `${config.public.siteUrl}/urban-planning`,
+  ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterSite: '@ASGroup',
 })
+useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/urban-planning` }] })
 
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+if (process.client) gsap.registerPlugin(ScrollTrigger);
 
 // Créer une référence à l'animation en dehors de la fonction onMounted
 let animation;

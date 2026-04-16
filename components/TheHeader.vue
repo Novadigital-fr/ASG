@@ -8,7 +8,7 @@
         ></NuxtLink>
         <div class="menu_top">
           <ul>
-            <li class="link line-link">Services</li>
+
             <li class="link">
               <NuxtLink to="/expertise">Expertise</NuxtLink>
             </li>
@@ -32,61 +32,7 @@
               />
             </svg>
           </div>
-          <nav class="menu__nav-content">
-            <div class="column">
-              <img
-                src="/img/Logos/alexander_strategy_group_Logo_iconwhite.svg"
-                alt=""
-              />
-              <h2>Services</h2>
-              <div>
-                <NuxtLink to="/communications">
-                  <div class="service menu__back">
-                    <div class="image image5"></div>
-                    <div>
-                      <h3>Communications</h3>
-                      <p>Narrative Matters</p>
-                    </div>
-                  </div>
-                </NuxtLink>
-                <NuxtLink to="/national_security">
-                  <div class="service menu__back">
-                    <div class="image image1"></div>
-                    <div>
-                      <h3>National Security</h3>
-                      <p>Creating secure environments</p>
-                    </div>
-                  </div>
-                </NuxtLink>
-                <NuxtLink to="/law_enforcement">
-                  <div class="service menu__back">
-                    <div class="image image2"></div>
-                    <div>
-                      <h3>Law Enforcement</h3>
-                      <p>Making  communities safer</p>
-                    </div>
-                  </div>
-                </NuxtLink>
-                <NuxtLink to="/urban_planning">
-                  <div class="service menu__back">
-                    <div class="image image3"></div>
-                    <div>
-                      <h3>Urban Planning</h3>
-                      <p>Trendsetting in the 21<sup>st</sup> century</p>
-                    </div>
-                  </div>
-                </NuxtLink>
-                <NuxtLink to="/city_resilience">
-                  <div class="service menu__back">
-                    <div class="image image4"></div>
-                    <div>
-                      <h3>City Resilience</h3>
-                      <p>Preparing for the unexpected</p>
-                    </div>
-                  </div>
-                </NuxtLink>
-              </div>
-            </div>
+                    <nav class="menu__nav-content">
           </nav>
         </div>
       </div>
@@ -102,7 +48,7 @@
 import { onMounted, onUnmounted, onUpdated, ref } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+if (process.client) gsap.registerPlugin(ScrollTrigger);
 
 const scrollTween = ref(null);
 
@@ -110,9 +56,9 @@ const rond = ref(false);
 
 function openContact() {
   rond.value = true;
-  setTimeout (()=>{
-    window.location.href ="https://phenomenal-pothos-655a2a.netlify.app/contact"
-  },"1500") 
+  setTimeout(() => {
+    window.location.href = '/contact'
+  }, 1500)
 }
 
 onMounted(() => {

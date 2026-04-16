@@ -12,7 +12,7 @@
          <div class="reveal">
             <h2>
                 <span class="text_reveal">
-                With extensive experience in the nation’s most elite law enforcement organizations,</span><span class="text_reveal"> we provides clients with comprehensive, transformational, </span><span class="text_reveal">and bespoke law enforcement strategies and tactics.</span>
+                With extensive experience in the nation's most elite law enforcement organizations,</span><span class="text_reveal"> we provides clients with comprehensive, transformational, </span><span class="text_reveal">and bespoke law enforcement strategies and tactics.</span>
             </h2>
         </div>
         <ServLogo
@@ -35,13 +35,13 @@
     domaine="Law enfoncement"
     title1="Assessments"
     summary1="Every community has different law enforcement capabilities and law enforcement needs. ASG provides government officials assessments including: 
-    Deep understanding of the community’s crime concerns
+    Deep understanding of the community's crime concerns
     Current law enforcement capabilities
     Potential areas of improvement
 
     These assessments serve as a vital tool in improving law enforcement practices."
     title2="Policy Development"
-    summary2="One-size-fits-all approaches to law enforcement don’t work. The ASG team develops bespoke law enforcement strategies that are unique to the community that they serve. These strategies inform personnel, training, equipment, and operational decision making to develop the most effective and community-focused law enforcement agencies."
+    summary2="One-size-fits-all approaches to law enforcement don't work. The ASG team develops bespoke law enforcement strategies that are unique to the community that they serve. These strategies inform personnel, training, equipment, and operational decision making to develop the most effective and community-focused law enforcement agencies."
     title3="Real-Time Support"
     summary3="Criminal and emergency situations are ever evolving and strategies are only as effective as the manner in which they are implemented. ASG provides real-time strategic, operational, and tactical level support and consulting services. Our law enforcement experts are there when our clients need them."
     />
@@ -50,19 +50,24 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 useSeoMeta({
   title: 'Law enforcement - We help make communities safer | ASG',
   ogTitle: 'Law enforcement - We help make communities safer | ASG',
-  description: 'With extensive experience in the nation’s most elite law enforcement organisations, we provides clients with comprehensive law enforcement strategies',
-  ogDescription: 'With extensive experience in the nation’s most elite law enforcement organisations, we provides clients with comprehensive law enforcement strategies',
-  ogImage: '/img/Social_image/alexanderstrategygroup_consulting_firm__law-enforcement-consultant.png',
+  description: "With extensive experience in the nation's most elite law enforcement organisations, we provides clients with comprehensive law enforcement strategies",
+  ogDescription: "With extensive experience in the nation's most elite law enforcement organisations, we provides clients with comprehensive law enforcement strategies",
+  ogImage: `${config.public.siteUrl}/img/Social_image/alexanderstrategygroup_consulting_firm__law-enforcement-consultant.png`,
+  ogUrl: `${config.public.siteUrl}/law-enforcement`,
+  ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterSite: '@ASGroup',
 })
+useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/law-enforcement` }] })
 
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+if (process.client) gsap.registerPlugin(ScrollTrigger);
 
 // Créer une référence à l'animation en dehors de la fonction onMounted
 let animation;

@@ -35,7 +35,7 @@
       </div>
     </div>
   </div>
-    <h2 class="Worldwide">Worldwide offices</h2>
+    <h2 class="Worldwide">Global Resolutions</h2>
     <div class="sous-div"></div>
     <div class="offices">
       <div class="sevices">
@@ -89,14 +89,19 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 useSeoMeta({
   title: 'Alexander Strategy Group - Worldwide offices | ASG',
   ogTitle: 'Alexander Strategy Group - Worldwide offices | ASG',
   description: 'Get in touch. Washington DC, Riyadh, Tokyo, Paris, London, Los Angeles.',
   ogDescription: 'Get in touch. Washington DC, Riyadh, Tokyo, Paris, London, Los Angeles.',
-  ogImage: '/img/Social_image/alexanderstrategygroup_contact.png',
+  ogImage: `${config.public.siteUrl}/img/Social_image/alexanderstrategygroup_contact.png`,
+  ogUrl: `${config.public.siteUrl}/contact`,
+  ogType: 'website',
   twitterCard: 'summary_large_image',
+  twitterSite: '@ASGroup',
 })
+useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/contact` }] })
 
 </script>
 
@@ -113,8 +118,9 @@ useSeoMeta({
 .contenu-global {
   height: 100vh;
   background-color: var(--color-bg-dark);
-  background-image: linear-gradient(180deg, rgba(32, 42, 53, 0) 50.3%, #202A35 91%), url("../assets/img/Img_Contact/alexander_strategy_group_contact.webp");
+  background-image: linear-gradient(180deg, rgba(32, 42, 53, 0) 50.3%, #202A35 91%), url("/img/contact/alexander_strategy_group_contact.webp");
   background-size: cover;
+  background-position: center bottom;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
@@ -185,7 +191,7 @@ display: none;
 @media screen and (max-width: 1024px) {
   /* tablettte */
   .contenu-global {
-    background-position: center center;
+    background-position: center bottom;
   }
   .formulaire {
     width: 48vw;
@@ -199,9 +205,9 @@ display: none;
   .contenu-global {
     height: fit-content;
     background-image: linear-gradient(360deg, #202A35 0%, rgba(32, 42, 53, 0) 33.41%),
-      url("../assets/img/Img_Contact/alexander_strategy_group_contact_mobile.webp");
+      url("/img/contact/alexander_strategy_group_contact.webp");
     justify-content: center;
-    background-size: 100%;
+    background-size: cover;
     background-position: top center;
 
   }

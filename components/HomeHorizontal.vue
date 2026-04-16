@@ -5,10 +5,10 @@
       <section class="panel animationh1">
         <div>
           <img
-            src="../assets/img/Img_HP/alexander_strategy_group_world_interconnected.webp"
+            src="/img/hp/alexander_strategy_group_entry.webp"
             alt=""
           />
-          <h2>Our world is increasingly interconnected.</h2>
+          <h2>The Entry</h2>
           <p>
             We help clients navigate the most complex challenges.
           </p>
@@ -17,10 +17,10 @@
       <section class="panel animationh2">
         <div>
           <img
-            src="../assets/img/Img_HP/alexander_strategy_group_front_lines.webp"
+            src="/img/hp/alexander_strategy_group_mandate.webp"
             alt=""
           />
-          <h2>Living on the front lines</h2>
+          <h2>The Mandate</h2>
           <p>
             We provide national security and risk management advisory services to clients worldwide.
           </p>
@@ -29,10 +29,10 @@
       <section class="panel animationh3">
         <div>
           <img
-            src="../assets/img/Img_HP/alexander_strategy_group_horizon.webp"
+            src="/img/hp/alexander_strategy_group_orechestration.webp"
             alt=""
           />
-          <h2>On the ground and over-the-horizon</h2>
+          <h2>The Orchestration</h2>
           <p>We ally with clients – from planning to execution –to design sophisticated programs to redefine the future.</p>
         </div>
       </section>
@@ -47,7 +47,7 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+if (process.client) gsap.registerPlugin(ScrollTrigger);
 
 const scrollTween = ref(null);
 const updateProgressBar = ref(null);
