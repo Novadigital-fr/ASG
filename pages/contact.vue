@@ -35,7 +35,6 @@
       </div>
     </div>
   </div>
-    <h2 class="Worldwide">Global Resolutions</h2>
     <div class="sous-div"></div>
     <div class="offices">
       <div class="sevices">
@@ -173,7 +172,7 @@ margin: 4vh 0;
 .sous-div {
   width: 100%;
   height: 900px;
-  background-image: url("../assets/img/Img_Contact/alexander_strategy_group_contact_map_offices.webp");
+  background-image: url("../public/img/contact/map-contact.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
