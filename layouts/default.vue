@@ -41,17 +41,17 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import lottie from 'lottie-web';
 const showFooter = ref(false);
 let animation = ref(null);
 let isAnimationStarted = false;
 
-onMounted(() => {
+onMounted(async () => {
+  const lottie = (await import('lottie-web')).default;
 
   setTimeout(function() {
   document.getElementById('loading-screen').style.display = 'none';
   }, 900)
-  
+
   setTimeout(function() {
 
   animation.value = lottie.loadAnimation({

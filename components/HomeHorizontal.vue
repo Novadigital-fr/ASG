@@ -4,9 +4,10 @@
       <section class="tel panel"></section>
       <section class="panel animationh1">
         <div>
-          <img
+          <NuxtImg
             src="/img/hp/alexander_strategy_group_entry.webp"
             alt=""
+            loading="lazy"
           />
           <h2>The Entry</h2>
           <p>
@@ -16,9 +17,10 @@
       </section>
       <section class="panel animationh2">
         <div>
-          <img
+          <NuxtImg
             src="/img/hp/alexander_strategy_group_mandate.webp"
             alt=""
+            loading="lazy"
           />
           <h2>The Mandate</h2>
           <p>
@@ -28,9 +30,10 @@
       </section>
       <section class="panel animationh3">
         <div>
-          <img
+          <NuxtImg
             src="/img/hp/alexander_strategy_group_orechestration.webp"
             alt=""
+            loading="lazy"
           />
           <h2>The Orchestration</h2>
           <p>We ally with clients – from planning to execution –to design sophisticated programs to redefine the future.</p>

@@ -53,10 +53,10 @@
 </template>
 
 <script setup>
-import lottie from 'lottie-web';
 let animation = ref(null);
 
-onMounted(() => {
+onMounted(async () => {
+  const lottie = (await import('lottie-web')).default;
   animation.value = lottie.loadAnimation({
     container: document.getElementById('lottie-logo-white'), // ID du conteneur défini dans le template
     renderer: 'svg',

@@ -2,7 +2,7 @@
   <div class="capabilities light_mode">
     <div class="left">
       <div class="image-wrap">
-        <img src="/img/hp/alexander_strategy_group_scope_action.webp" alt="The Scope of Action" class="scope-img" />
+        <NuxtImg src="/img/hp/alexander_strategy_group_scope_action.webp" alt="The Scope of Action" class="scope-img" loading="lazy" />
       </div>
       <h2>The Scope of Action</h2>
       <NuxtLink to="/contact">

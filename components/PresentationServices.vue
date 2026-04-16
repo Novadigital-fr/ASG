@@ -71,9 +71,8 @@
 </template>
 
 <script setup>
-import lottie from 'lottie-web';
-
-onMounted(() => {
+onMounted(async () => {
+  const lottie = (await import('lottie-web')).default;
   lottie.loadAnimation({
     container: document.getElementById('lottie-logo'), // ID du conteneur défini dans le template
     renderer: 'svg',

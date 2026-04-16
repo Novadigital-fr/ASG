@@ -1,6 +1,11 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    runtimeConfig: {
+    modules: ['@nuxt/image'],
+    image: {
+      quality: 80,
+      format: ['webp'],
+    },
+runtimeConfig: {
       public: {
         siteUrl: 'https://www.alexander-strategy.com',
       }
