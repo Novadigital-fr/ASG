@@ -5,7 +5,7 @@
         src="/img/expertise/alexander_strategy_group_expertise_eric_bovim.webp"
         alt="Eric Bovim - Founder & CEO of Alexander Strategy Group"
         class="photo"
-        loading="lazy"
+       
       />
     </div>
     <div class="right">

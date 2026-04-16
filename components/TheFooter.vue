@@ -64,7 +64,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 55vh;
+  height: 42vh;
   z-index: -1;
   animation: apparition-footer 0.8s;
 
@@ -84,7 +84,7 @@ footer {
     height: 50vh;
   }
   @media (max-width: 1281px) {
-    height: 62vh;
+    height: 50vh;
 
     h4{
       font-size: 1em;

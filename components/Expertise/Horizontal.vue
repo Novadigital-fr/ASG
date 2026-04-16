@@ -2,39 +2,39 @@
     <div class="logo_defile">
     <div class="top defile">
     <div class="txt">
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_defense.webp" alt="" loading="lazy" /><p>Department of Defense</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_nsa.webp" alt="" loading="lazy" /><p>National Security Agency</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_security.webp" alt="" loading="lazy" /><p>Department of Homeland Security</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_white_house.webp" alt="" loading="lazy" /><p>The White House</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_u-s-department-of-housing-and-urban-development.webp" alt="" loading="lazy" /><p>Department of Housing and Urban Development</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_defense.webp" alt="" /><p>Department of Defense</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_nsa.webp" alt="" /><p>National Security Agency</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_security.webp" alt="" /><p>Department of Homeland Security</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_white_house.webp" alt="" /><p>The White House</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_u-s-department-of-housing-and-urban-development.webp" alt="" /><p>Department of Housing and Urban Development</p></div>
 
    </div>
    <div class="txt">
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_defense.webp" alt="" loading="lazy" /><p>Department of Defense</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_nsa.webp" alt="" loading="lazy" /><p>National Security Agency</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_security.webp" alt="" loading="lazy" /><p>Department of Homeland Security</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_white_house.webp" alt="" loading="lazy" /><p>The White House</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_u-s-department-of-housing-and-urban-development.webp" alt="" loading="lazy" /><p>Department of Housing and Urban Development</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_defense.webp" alt="" /><p>Department of Defense</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_nsa.webp" alt="" /><p>National Security Agency</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_security.webp" alt="" /><p>Department of Homeland Security</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_white_house.webp" alt="" /><p>The White House</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_u-s-department-of-housing-and-urban-development.webp" alt="" /><p>Department of Housing and Urban Development</p></div>
 
    </div>
     </div> 
     <div class="bottom defile">
     <div class="txt">
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_cia.webp" alt="" loading="lazy" /><p>Central Intelligence Agency</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_police_ny.webp" alt="" loading="lazy" /><p>NY. Police department counter terrorism bureau</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_boston.webp" alt="" loading="lazy" /><p>Boston Police Department</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_oakland.webp" alt="" loading="lazy" /><p>Oakland Police Department</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_marines.webp" alt="" loading="lazy" /><p>U.S Marine Corps</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_ArlingtonPolice.webp" alt="" loading="lazy" /><p>Arlington county Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_cia.webp" alt="" /><p>Central Intelligence Agency</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_police_ny.webp" alt="" /><p>NY. Police department counter terrorism bureau</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_boston.webp" alt="" /><p>Boston Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_oakland.webp" alt="" /><p>Oakland Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_marines.webp" alt="" /><p>U.S Marine Corps</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_ArlingtonPolice.webp" alt="" /><p>Arlington county Police Department</p></div>
 
    </div>
    <div class="txt">
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_cia.webp" alt="" loading="lazy" /><p>Central Intelligence Agency</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_police_ny.webp" alt="" loading="lazy" /><p>NY. Police department counter terrorism bureau</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_boston.webp" alt="" loading="lazy" /><p>Boston Police Department</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_oakland.webp" alt="" loading="lazy" /><p>Oakland Police Department</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_marines.webp" alt="" loading="lazy" /><p>U.S Marine Corps</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_ArlingtonPolice.webp" alt="" loading="lazy" /><p>Arlington county Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_cia.webp" alt="" /><p>Central Intelligence Agency</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_police_ny.webp" alt="" /><p>NY. Police department counter terrorism bureau</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_boston.webp" alt="" /><p>Boston Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_oakland.webp" alt="" /><p>Oakland Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_marines.webp" alt="" /><p>U.S Marine Corps</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_ArlingtonPolice.webp" alt="" /><p>Arlington county Police Department</p></div>
 
    </div>
 </div> 
@@ -42,39 +42,39 @@
 <div class="horizontal_tel">
   <div class="top defile">
     <div class="txt">
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_white_house.webp" alt="" loading="lazy" /><p>The White House</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_u-s-department-of-housing-and-urban-development.webp" alt="" loading="lazy" /><p>Department of Housing and Urban Development</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_defense.webp" alt="" loading="lazy" /><p>Department of Defense</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_nsa.webp" alt="" loading="lazy" /><p>National Security Agency</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_security.webp" alt="" loading="lazy" /><p>Department of Homeland Security</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_white_house.webp" alt="" /><p>The White House</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_u-s-department-of-housing-and-urban-development.webp" alt="" /><p>Department of Housing and Urban Development</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_defense.webp" alt="" /><p>Department of Defense</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_nsa.webp" alt="" /><p>National Security Agency</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_security.webp" alt="" /><p>Department of Homeland Security</p></div>
     
    </div>
    <div class="txt">
-   <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_white_house.webp" alt="" loading="lazy" /><p>The White House</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_u-s-department-of-housing-and-urban-development.webp" alt="" loading="lazy" /><p>Department of Housing and Urban Development</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_defense.webp" alt="" loading="lazy" /><p>Department of Defense</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_nsa.webp" alt="" loading="lazy" /><p>National Security Agency</p></div>
-    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_security.webp" alt="" loading="lazy" /><p>Department of Homeland Security</p></div>
+   <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_white_house.webp" alt="" /><p>The White House</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_u-s-department-of-housing-and-urban-development.webp" alt="" /><p>Department of Housing and Urban Development</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_defense.webp" alt="" /><p>Department of Defense</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_nsa.webp" alt="" /><p>National Security Agency</p></div>
+    <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_security.webp" alt="" /><p>Department of Homeland Security</p></div>
     
    </div>
     </div> 
     <div class="bottom defile">
     <div class="txt">
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_oakland.webp" alt="" loading="lazy" /><p>Oakland Police Department</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_marines.webp" alt="" loading="lazy" /><p>U.S Marine Corps</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_ArlingtonPolice.webp" alt="" loading="lazy" /><p>Arlington county Police Department</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_cia.webp" alt="" loading="lazy" /><p>Central Intelligence Agency</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_police_ny.webp" alt="" loading="lazy" /><p>NY. Police department counter terrorism bureau</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_boston.webp" alt="" loading="lazy" /><p>Boston Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_oakland.webp" alt="" /><p>Oakland Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_marines.webp" alt="" /><p>U.S Marine Corps</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_ArlingtonPolice.webp" alt="" /><p>Arlington county Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_cia.webp" alt="" /><p>Central Intelligence Agency</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_police_ny.webp" alt="" /><p>NY. Police department counter terrorism bureau</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_boston.webp" alt="" /><p>Boston Police Department</p></div>
         
    </div>
    <div class="txt">
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_oakland.webp" alt="" loading="lazy" /><p>Oakland Police Department</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_marines.webp" alt="" loading="lazy" /><p>U.S Marine Corps</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_ArlingtonPolice.webp" alt="" loading="lazy" /><p>Arlington county Police Department</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_cia.webp" alt="" loading="lazy" /><p>Central Intelligence Agency</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_police_ny.webp" alt="" loading="lazy" /><p>NY. Police department counter terrorism bureau</p></div>
-        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_boston.webp" alt="" loading="lazy" /><p>Boston Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_oakland.webp" alt="" /><p>Oakland Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_marines.webp" alt="" /><p>U.S Marine Corps</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_experts_ArlingtonPolice.webp" alt="" /><p>Arlington county Police Department</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_cia.webp" alt="" /><p>Central Intelligence Agency</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_police_ny.webp" alt="" /><p>NY. Police department counter terrorism bureau</p></div>
+        <div><NuxtImg src="~/assets/img/Img_Expertise/Experts_List/alexander_strategy_group_expertise_logo_boston.webp" alt="" /><p>Boston Police Department</p></div>
        
    </div>
 </div> 

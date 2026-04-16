@@ -8,7 +8,7 @@
       <p>It is a history of outcomes secured where others saw no path forward.</p>
     </div>
     <div class="right">
-      <NuxtImg src="/img/hp/alexander_strategy_group_provenance.webp" alt="The Provenance" class="provenance-img" loading="lazy" />
+      <NuxtImg src="/img/hp/alexander_strategy_group_provenance.webp" alt="The Provenance" class="provenance-img" />
     </div>
   </div>
 </template>

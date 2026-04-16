@@ -126,15 +126,15 @@ setTimeout(function() {
 }
 .reveal{
   width: 100%;
-  margin-bottom: 54vh;
+  margin-bottom: 42vh;
   background: none;
   z-index: 1;
   pointer-events: none;
   @media (min-width: 1924px) {
-    margin-bottom: 50vh;
+    margin-bottom: 38vh;
   }
   @media (max-width: 1281px) {
-    margin-bottom: 59vh;
+    margin-bottom: 50vh;
   }
 
 }
@@ -252,7 +252,7 @@ h4 {
   @media screen and (max-width: 840px) {
     /* mobile */
     .reveal{
-  margin-bottom: 79vh;
+  margin-bottom: 80vh;
 }
 h4 {
     animation: soustitle 4s ease-in-out;

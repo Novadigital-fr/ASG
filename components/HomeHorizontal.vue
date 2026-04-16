@@ -7,12 +7,13 @@
           <NuxtImg
             src="/img/hp/alexander_strategy_group_entry.webp"
             alt=""
-            loading="lazy"
+           
           />
           <h2>The Entry</h2>
-          <p>
-            We help clients navigate the most complex challenges.
-          </p>
+          <p><strong>You discover ASG through word-of-mouth.</strong></p>
+          <p>We are engaged exclusively through a trusted network of global leaders.</p>
+          <p>We do not advertise.</p>
+          <p>We do not seek the limelight, and we do not leave a trace.</p>
         </div>
       </section>
       <section class="panel animationh2">
@@ -20,12 +21,11 @@
           <NuxtImg
             src="/img/hp/alexander_strategy_group_mandate.webp"
             alt=""
-            loading="lazy"
+           
           />
           <h2>The Mandate</h2>
-          <p>
-            We provide national security and risk management advisory services to clients worldwide.
-          </p>
+          <p><strong>Clients come when the situation has moved beyond average complexity, when the traditional mix of firms no longer works.</strong></p>
+          <p>When a challenge has become hyper-critical, when the stakes transcend financial or legacy interests, ASG is engaged.</p>
         </div>
       </section>
       <section class="panel animationh3">
@@ -33,10 +33,13 @@
           <NuxtImg
             src="/img/hp/alexander_strategy_group_orechestration.webp"
             alt=""
-            loading="lazy"
+           
           />
           <h2>The Orchestration</h2>
-          <p>We ally with clients – from planning to execution –to design sophisticated programs to redefine the future.</p>
+          <p><strong>We do not offer a menu of services. We solve the matter.</strong></p>
+          <p>Critical issues rarely live within one lane; they spill across legal, political, reputational, and financial borders, sometimes simultaneously.</p>
+          <p>ASG designs the complete architecture of the solution and orchestrates each part to ensure it holds.</p>
+          <p>Whether the intervention is a sudden, surgical strike or a partnership that spans years and multiple continents, our focus is the same: the quiet resolution of the impossible.</p>
         </div>
       </section>
       <div class="slider__progress-wrap js-progress-wrap">
@@ -126,8 +129,8 @@ onUnmounted(() => {
   width: 35vw;
   color: var(--color-secondaire);
   img {
-    width: 75%;
-    margin-bottom: 10%;
+    width: 50%;
+    margin-bottom: 6%;
   }
   h2,
   p {
@@ -173,7 +176,7 @@ onUnmounted(() => {
   padding: 7vh 0 0 20vw;
 }
 .panel {
-  width: 40vw;
+  width: 48vw;
 
   img {
     margin-bottom: 5%;
