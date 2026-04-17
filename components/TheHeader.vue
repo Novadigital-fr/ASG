@@ -306,6 +306,9 @@ display: none;
 }
 
   header {
+    left: 0;
+    right: 0;
+    width: 100vw;
     animation: ordi 2s;
 
     @keyframes ordi {
@@ -369,11 +372,13 @@ display: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 90vw;
+    gap: 2rem;
+    width: 70vw;
+    margin: 0 auto;
     background: var(--color-orange);
     border-radius: 40px;
     @media (min-width: 767px) {
-      width: 60vw;
+      width: 50vw;
     }
   }
   .menu__content {

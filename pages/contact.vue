@@ -215,7 +215,7 @@ display: none;
     display: flex;
     // margin-left: 0;
     margin-right: 0;
-    margin-top: 60vh;
+    margin-top: 30vh;
     width: 100%;
   }
   .sous-div {
