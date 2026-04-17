@@ -59,7 +59,7 @@ runtimeConfig: {
       script: [
         {
           async: true,
-          src: "https://www.googletagmanager.com/gtag/js?id=G-T3TH6MB697"
+          src: "https://www.googletagmanager.com/gtag/js?id=G-EYNX6VQTEN"
         },
         {
           hid: "gtm",
@@ -67,7 +67,7 @@ runtimeConfig: {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-T3TH6MB697');
+            gtag('config', 'G-EYNX6VQTEN');
           `
         }
       ]
