@@ -69,11 +69,11 @@ onMounted(() => {
   let lastScrollValue = 0;
   document.addEventListener("scroll", () => {
     let top = document.documentElement.scrollTop;
-    if (lastScrollValue < top || menuStatus.isOpen ) {
+    if (top <= 10) {
+      logo.classList.remove("hidden");
+    } else if (menuStatus.isOpen || lastScrollValue < top) {
       logo.classList.add("hidden");
-    } else if (top === 0) {
-    logo.classList.remove("hidden");
-    }else {
+    } else {
       logo.classList.remove("hidden");
     }
     lastScrollValue = top;
