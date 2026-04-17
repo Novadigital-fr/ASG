@@ -189,6 +189,7 @@ display: none;
     transform: none;
     width: 100%;
     border-radius: 0;
+    background-color: rgb(33, 42, 53);
   }
   .sous-div {
     height: 50vh;
