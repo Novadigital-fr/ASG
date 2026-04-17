@@ -106,7 +106,7 @@ export default {
       url("../../assets/img/Img_Expertise/alexander_strategy_group_expertise_mobile.webp");
     background-size: cover;
     height: auto;
-    min-height: 100vh;
+    min-height: 130vh;
     justify-content: space-between;
     background-position: center center;
 
@@ -115,13 +115,14 @@ export default {
     }
   }
   h1{
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .hero_text {
     margin-top: 0;
-    padding-top: 15vh;
+    padding-top: 22vh;
     padding-bottom: 8vh;
-    width: 80vw;
+    width: 88vw;
     p {
       margin: 2vh 0 5vh 0;
     }

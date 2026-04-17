@@ -232,7 +232,8 @@ onUnmounted(() => {
   border-color: #202a35;
   border-width: 0;
   border-style: solid;
-  border-radius: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
   max-width: 120vw;
   max-height: 120vw;
   align-items: center;
@@ -244,6 +245,8 @@ onUnmounted(() => {
   margin: auto -10vw;
   inset: 0;
   z-index: 5;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 @media screen and (max-width: 1024px) {

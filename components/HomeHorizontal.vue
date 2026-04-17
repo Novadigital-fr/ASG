@@ -204,11 +204,12 @@ onUnmounted(() => {
   }
   .container {
     width: 600%;
-    height: 90vh;
+    min-height: 90vh;
+    height: auto;
     display: flex;
     flex-wrap: nowrap;
-    // padding-left: 10%;
     padding: 10vh 0 0 10vw;
+    align-items: flex-start;
   }
   .panel {
     position: relative;
@@ -216,7 +217,7 @@ onUnmounted(() => {
     width: 100vw;
     margin: 5vh 3vw 10vh 3vw;
     font-weight: 300;
-    overflow: hidden;
+    overflow: visible;
   }
   .panel div {
     margin: 0 4%;
@@ -241,11 +242,11 @@ onUnmounted(() => {
     width: 100vw;
     margin: 7vh 2vw 10vh 2vw;
     font-weight: 300;
-    overflow: hidden;
+    overflow: visible;
 
     img {
-      width: 100%;
-      margin-bottom: 10%;
+      width: 70%;
+      margin-bottom: 8%;
     }
     h2,
     p {

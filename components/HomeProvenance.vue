@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 840px) {
   .provenance {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 8vh 5vw;
     gap: 6vh;
   }
