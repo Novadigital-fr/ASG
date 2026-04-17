@@ -13,9 +13,10 @@ import { onMounted, onUnmounted, ref } from 'vue';
 onMounted(() => {  
     
     const text = document.querySelector('.text');
+    const isMobile = window.matchMedia("(max-width: 840px)").matches;
     window.addEventListener ( "scroll", function(e) {
 
-    const degrade =  -window.scrollY + 600         
+    const degrade = isMobile ? -window.scrollY + 1100 : -window.scrollY + 600;
             text.style.backgroundPosition = "center " + degrade + "px";
         //     if (window.scrollY < 800) {
         //         text.style.backgroundPosition = "center top";
@@ -35,9 +36,14 @@ onMounted(() => {
 <style lang="scss" scoped>
 .degrade{
     background-color: #070B1D ;
-    height: 250vh;
+    height: 280vh;
     z-index: 21;
     position: relative;
+    @media screen and (max-width: 1381px) {
+        height: 200vh;
+
+
+  }
 }
 .text{
     position: sticky;
@@ -62,6 +68,7 @@ onMounted(() => {
   }
   @media screen and (max-width: 1381px) {
     top: 19vh;
+    padding: 20px;
 
   }
 }

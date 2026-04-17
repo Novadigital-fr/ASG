@@ -309,6 +309,7 @@ display: none;
     left: 0;
     right: 0;
     width: 100vw;
+    pointer-events: none;
     animation: ordi 2s;
 
     @keyframes ordi {
@@ -332,6 +333,7 @@ display: none;
       display: flex !important;
       justify-content: center;
       transition: margin-top 0.5s;
+      pointer-events: auto;
       @media (min-width: 767px) {
       width: 60vw;
       }
@@ -360,6 +362,7 @@ display: none;
     color: var(--color-text);
     display: flex;
     flex-direction: column;
+    pointer-events: none;
     @media (min-width: 767px) {
       left: 20vw;
     }
@@ -382,6 +385,7 @@ display: none;
     }
   }
   .menu__content {
+    pointer-events: auto;
     margin-top: -6.1rem;
     position: relative;
     z-index: 15;

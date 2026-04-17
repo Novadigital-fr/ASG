@@ -3,36 +3,16 @@
 
   <div class="contact">
   <div class="contenu-global-parent">
-    <div class="contenu-global">
-      <div class="formulaire">
-        <div class="texte">
-          <h1>Engage</h1>
-          <br />
-          <p>Use the contact form or direct mail to:</p>
-          <p class="orange">contact@alexanderstrategygroup.co</p>
-          <br />
-        </div>
-        <Formulaire/>
-        <!-- <form>
-          <input type="text" name="name" placeholder="Name" class="name" />
-          <input type="text" name="email" placeholder="Email" class="email" />
-          <input
-            type="text"
-            name="Subject"
-            placeholder="Subject"
-            class="support"
-          />
-          <textarea
-            name="message"
-            cols="30"
-            rows="5"
-            placeholder="Message"
-          ></textarea>
-          <div class="bouton">
-            <Button text="Send" />
-          </div>
-        </form> -->
+    <div class="contenu-global"></div>
+    <div class="formulaire">
+      <div class="texte">
+        <h1>Engage</h1>
+        <br />
+        <p>Use the contact form or direct mail to:</p>
+        <p class="orange">contact@alexanderstrategygroup.co</p>
+        <br />
       </div>
+      <Formulaire/>
     </div>
   </div>
     <div class="sous-div"></div>
@@ -111,7 +91,8 @@ useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/contact` }]
   display: flex;
   flex-direction: column;
 }
-.contenu-global-parent{
+.contenu-global-parent {
+  position: relative;
   overflow: hidden;
 }
 .contenu-global {
@@ -121,51 +102,41 @@ useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/contact` }]
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   transform: scale(1.1);
   animation: 2s back;
 
   @keyframes back {
     0%{
-      // opacity: 0;
       transform: scale(1);
     }
     100%{
-
     }
-    
-  }
-  @media (max-width: 1381px) {
-    min-height: 100vh;
-    height: auto;
   }
 }
 
 .texte {
-margin: 4vh 0;
-  p{
+  margin: 4vh 0;
+  p {
     font-weight: 700;
   }
 }
 .formulaire {
+  position: absolute;
+  top: 50%;
+  right: 10vw;
+  transform: translateY(-50%) scale(0.9);
   display: flex;
   flex-direction: column;
   background-color: rgba(33, 42, 53, 0.9);
   border-radius: 20px;
-  margin: 7vh 10vw 5vh 0;
   padding: 0 4% 4% 4%;
   width: 38vw;
   z-index: 1;
   height: fit-content;
-  transform: scale(0.9);
   @media (min-width: 1000px) and (max-width: 1381px) {
-    margin: -14vh 10vw 0vh 0;
     width: 44vw;
-    transform: scale(0.6);
+    transform: translateY(-50%) scale(0.7);
   }
-
 }
 
 
@@ -201,61 +172,32 @@ display: none;
 }
 
 @media screen and (max-width: 840px) {
-  .contenu-global {
-    height: fit-content;
-    background-image: linear-gradient(360deg, #202A35 0%, rgba(32, 42, 53, 0) 33.41%),
-      url("/img/contact/alexander_strategy_group_contact.webp");
-    justify-content: center;
-    background-size: cover;
-    background-position: top center;
-
+  .contenu-global-parent {
+    overflow: visible;
   }
-
+  .contenu-global {
+    height: 60vh;
+    min-height: 60vh;
+    background-position: top center;
+    transform: none;
+    animation: none;
+  }
   .formulaire {
-    display: flex;
-    // margin-left: 0;
-    margin-right: 0;
-    margin-top: 30vh;
+    position: static;
+    top: auto;
+    right: auto;
+    transform: none;
     width: 100%;
+    border-radius: 0;
   }
   .sous-div {
-    background-image: none;
-    height: 10vh;
-    background-color: var(--color-bg-dark);
-
-  }
-  .offices{
-    background-color: var(--color-bg-dark);
-  }
-
-  .Worldwide {
-
-  padding: 10vh 0 0 0;
-}
-  .service {
-  padding: 0 2.5vh ;
-  margin-bottom: 35px;
-  display: flex;
-  align-items: center;
-  transition: 0.5s;
-  // width: max-content;
-  .image {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    background-repeat: no-repeat;
-    background-position: center center;
+    height: 50vh;
+    background-image: url("/img/contact/map-contact.jpeg");
     background-size: cover;
-    transform-origin: center center;
-    transition: 1s;
-
+    background-position: center;
   }
-  .image1 {
-    background-image: url("../assets/img/local1.svg");
+  .offices {
+    display: none;
   }
-  .image2 {
-    background-image: url("../assets/img/local2.svg");
-  }
-}
 }
 </style>
