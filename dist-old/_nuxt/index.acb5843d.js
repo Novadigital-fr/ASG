@@ -1,1 +1,0 @@
-import{r as u,q as c,u as l,s as p,x as f}from"./entry.50e8a5a4.js";const d=(t,a)=>{const e=u({});return c(()=>{const s=p(t),{title:o,titleTemplate:r,...n}=s;e.value={title:o,titleTemplate:r,meta:f(n)}}),l(e,a)};export{d as u};
