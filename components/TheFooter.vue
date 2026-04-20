@@ -22,8 +22,11 @@
         </div>
         <div class="right">
           <p>
-            &copy; {{ anneeCourante }} All rights reserved alexander strategy group 
-            <!-- <NuxtLink to="/privacy"> Privacy Policy</NuxtLink> -->
+            &copy; {{ anneeCourante }} All rights reserved alexander strategy group<br />
+            <span class="recaptcha-notice">This site is protected by reCAPTCHA and the Google
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and
+              <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.
+            </span>
           </p>
         </div>
       </div>
@@ -150,6 +153,16 @@ input {
     font-size: 12px;
     margin-bottom: 2vh;
     text-align: end;
+
+    .recaptcha-notice {
+      font-size: 10px;
+      opacity: 0.7;
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
