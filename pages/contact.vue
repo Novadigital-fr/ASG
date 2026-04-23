@@ -9,7 +9,7 @@
         <h1>Engage</h1>
         <br />
         <p>Use the contact form or direct mail to:</p>
-        <p class="orange">contact@alexanderstrategygroup.co</p>
+        <p class="orange">contact@alexander-strategy.com</p>
         <br />
       </div>
       <Formulaire/>

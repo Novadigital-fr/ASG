@@ -11,7 +11,9 @@
           <h2>The Entry</h2>
           <p><strong>You discover ASG through word-of-mouth.</strong></p>
           <p>We are engaged exclusively through a trusted network of global leaders.</p>
+          <br />
           <p>We do not advertise.</p>
+          <br />
           <p>We do not seek the limelight, and we do not leave a trace.</p>
         </div>
       </section>
@@ -35,6 +37,7 @@
           <h2>The Orchestration</h2>
           <p><strong>We do not offer a menu of services. We solve the matter.</strong></p>
           <p>Critical issues rarely live within one lane; they spill across legal, political, reputational, and financial borders, sometimes simultaneously.</p>
+          <br />
           <p>ASG designs the complete architecture of the solution and orchestrates each part to ensure it holds.</p>
         </div>
       </section>

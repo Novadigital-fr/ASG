@@ -11,7 +11,7 @@
     <div class="right">
       <h2 class="name">Eric Bovim</h2>
       <h3 class="role">Founder & CEO</h3>
-      <p>Mr. Eric Bovim is global advisor who has represented CEOs, governments, and executives from some of the world's top companies.</p>
+      <p>Mr. Eric Bovim is a global advisor who has represented CEOs, governments, and executives from some of the world's top companies.</p>
       <p>Bovim is the founder and CEO of ASG, an advisory firm based in Washington, D.C. that counsels clients across the world on how to mitigate legal, political and reputational risk and win. He has advised C-suite executives at Google, NASDAQ, Gilead Sciences, Vodafone, Pfizer, handled sensitive cases for financial powerhouse, Elliott Management, and worked alongside legal giants like Gibson Dunn and Quinn Emmanuel.</p>
       <p>His penchant for solving high-stakes cases has made him an in-demand figure among sovereigns in Africa, the Middle East, and in Japan, managing several matters involving the United Nations this past decade.</p>
       <p>Bovim began his career in journalism as a foreign correspondent for Dow Jones Newswires/Wall Street Journal and Reuters, based in Madrid.</p>
