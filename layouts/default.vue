@@ -126,15 +126,15 @@ setTimeout(function() {
 }
 .reveal{
   width: 100%;
-  margin-bottom: 42vh;
+  margin-bottom: 420px;
   background: none;
   z-index: 1;
   pointer-events: none;
   @media (min-width: 1924px) {
-    margin-bottom: 38vh;
+    margin-bottom: 520px;
   }
   @media (max-width: 1281px) {
-    margin-bottom: 50vh;
+    margin-bottom: 480px;
   }
 
 }

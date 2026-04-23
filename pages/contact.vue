@@ -15,7 +15,10 @@
       <Formulaire/>
     </div>
   </div>
-    <div class="sous-div"></div>
+    <div class="Worldwide">
+      <h2>Worldwide</h2>
+      <div class="sous-div"></div>
+    </div>
     <div class="offices">
       <div class="sevices">
           <div class="service">
@@ -142,16 +145,22 @@ useHead({ link: [{ rel: 'canonical', href: `${config.public.siteUrl}/contact` }]
 
 .sous-div {
   width: 100%;
-  height: 900px;
-  background-image: url("../public/img/contact/map-contact.jpeg");
-  background-size: cover;
+  height: 1050px;
+  background-image: url("/img/contact/alexander_strategy_group_map.svg");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .Worldwide {
   background-color: var(--color-bg-dark);
   text-align: center;
-  padding: 10vh 0;
+  padding: 8vh 0 4vh 0;
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 4vh;
+    color: var(--color-text);
+  }
 }
 .service {
 display: none;
@@ -192,9 +201,9 @@ display: none;
     background-color: rgb(33, 42, 53);
   }
   .sous-div {
-    height: 50vh;
-    background-image: url("/img/contact/map-contact.jpeg");
-    background-size: cover;
+    height: 40vh;
+    background-image: url("/img/contact/alexander_strategy_group_map.svg");
+    background-size: contain;
     background-position: center;
   }
   .offices {

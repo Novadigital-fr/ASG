@@ -88,7 +88,7 @@ scrollListener = function (e) {
       blockTitle.style.zIndex = 4;
       animationJouee = false;
     }
-    if (window.scrollY > 1900) {
+    if (window.scrollY > window.innerHeight * 2) {
       cercle.style.display = "none";
     } else {
       cercle.style.display = "block";
