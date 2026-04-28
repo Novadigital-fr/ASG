@@ -15,6 +15,8 @@
 </template>
   
   <script>
+  const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/contact@alexander-strategy.com';
+
   export default {
     data() {
       return {
@@ -31,13 +33,21 @@
         event.preventDefault();
 
         try {
-          const response = await fetch('/contact.php', {
+          const response = await fetch(FORMSUBMIT_ENDPOINT, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
               Accept: 'application/json',
             },
-            body: JSON.stringify(this.formData),
+            body: JSON.stringify({
+              name: this.formData.name,
+              email: this.formData.email,
+              subject: this.formData.subject,
+              message: this.formData.message,
+              _subject: `[Site ASG] ${this.formData.subject}`,
+              _template: 'table',
+              _replyto: this.formData.email,
+            }),
           });
 
           if (!response.ok) {
