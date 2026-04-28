@@ -15,8 +15,8 @@
 </template>
   
   <script>
-  import emailjs from 'emailjs-com';
-  
+  const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/novadigital.contact@gmail.com';
+
   export default {
     data() {
       return {
@@ -33,21 +33,32 @@
         event.preventDefault();
 
         try {
-          await this.$recaptchaLoaded();
-          const token = await this.$recaptcha('contact_form');
+          const response = await fetch(FORMSUBMIT_ENDPOINT, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'application/json',
+            },
+            body: JSON.stringify({
+              name: this.formData.name,
+              email: this.formData.email,
+              subject: this.formData.subject,
+              message: this.formData.message,
+              _subject: `Contact ASG: ${this.formData.subject}`,
+              _template: 'table',
+              _replyto: this.formData.email,
+            }),
+          });
 
-          const payload = {
-            ...this.formData,
-            'g-recaptcha-response': token,
-          };
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
 
-          await emailjs.send('service_jg2ol7m', 'template_oiwzjgt', payload, 'Mn1rBcHv9OjKsfz56');
           alert('Message envoyé avec succès !');
-          // Réinitialiser les champs du formulaire après l'envoi réussi
           this.formData = {
             name: '',
             email: '',
-            subject:'',
+            subject: '',
             message: ''
           };
         } catch (error) {
