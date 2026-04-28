@@ -87,7 +87,7 @@ $headers = [
     'X-Mailer: PHP/' . phpversion(),
 ];
 
-$ok = mail($to, $encodedSubject, $body, implode("\r\n", $headers), '-f' . $fromAddress);
+$ok = mail($to, $encodedSubject, $body, implode("\r\n", $headers));
 
 if (!$ok) {
     http_response_code(500);
