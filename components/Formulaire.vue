@@ -31,9 +31,17 @@
     methods: {
       async submitForm(event) {
         event.preventDefault();
-  
+
         try {
-          await emailjs.send('service_jg2ol7m', 'template_oiwzjgt', this.formData, 'Mn1rBcHv9OjKsfz56');
+          await this.$recaptchaLoaded();
+          const token = await this.$recaptcha('contact_form');
+
+          const payload = {
+            ...this.formData,
+            'g-recaptcha-response': token,
+          };
+
+          await emailjs.send('service_jg2ol7m', 'template_oiwzjgt', payload, 'Mn1rBcHv9OjKsfz56');
           alert('Message envoyé avec succès !');
           // Réinitialiser les champs du formulaire après l'envoi réussi
           this.formData = {
