@@ -15,8 +15,6 @@
 </template>
   
   <script>
-  const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/novadigital.contact@gmail.com';
-
   export default {
     data() {
       return {
@@ -33,21 +31,13 @@
         event.preventDefault();
 
         try {
-          const response = await fetch(FORMSUBMIT_ENDPOINT, {
+          const response = await fetch('/contact.php', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
               Accept: 'application/json',
             },
-            body: JSON.stringify({
-              name: this.formData.name,
-              email: this.formData.email,
-              subject: this.formData.subject,
-              message: this.formData.message,
-              _subject: `Contact ASG: ${this.formData.subject}`,
-              _template: 'table',
-              _replyto: this.formData.email,
-            }),
+            body: JSON.stringify(this.formData),
           });
 
           if (!response.ok) {
