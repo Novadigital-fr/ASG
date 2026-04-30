@@ -12,7 +12,10 @@
 
           <p v-if="error" class="form-error">Something went wrong. Please try again.</p>
 
-          <Button type="submit" text="Send" />
+          <div class="submit-wrap" :class="{ loading }">
+            <Button type="submit" :text="loading ? 'Sending…' : 'Send'" />
+            <span v-if="loading" class="spinner" aria-hidden="true"></span>
+          </div>
         </form>
 
         <div v-else key="success" class="success">
@@ -43,13 +46,16 @@
           subject: ''
         },
         sent: false,
-        error: false
+        error: false,
+        loading: false
       };
     },
     methods: {
       async submitForm(event) {
         event.preventDefault();
+        if (this.loading) return;
         this.error = false;
+        this.loading = true;
 
         try {
           const response = await fetch(FORMSUBMIT_ENDPOINT, {
@@ -77,6 +83,8 @@
         } catch (error) {
           console.error(error);
           this.error = true;
+        } finally {
+          this.loading = false;
         }
       },
       resetForm() {
@@ -128,6 +136,28 @@ form textarea {
   color: #ff8a8a;
   margin: 0 0 1.5vh;
   font-size: 14px;
+}
+
+.submit-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: opacity 0.2s ease;
+}
+.submit-wrap.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.spinner {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-top-color: var(--color-orange);
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .success {
